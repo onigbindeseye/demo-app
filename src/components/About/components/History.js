@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 const History = () => {
   return (
-    <Box paddingTop={{ xs: "15%", sm: "2%" }}>
+    <Box paddingTop={{ xs: "5%", sm: "0%" }}>
       <Box
         width={{ xs: "100%", sm: "100%" }}
         marginLeft={{ xs: "0%", sm: "0%" }}

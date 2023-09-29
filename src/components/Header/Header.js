@@ -79,16 +79,16 @@ const Header = () => {
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={95}
+        width={125}
       >
-        <Box component="a" underline="none" href="/" title="Forefront Africa">
+        <Box component="a" underline="none" href="/" title="Prominent Ogbomoso">
           <img src={logo} alt="logo" width={"100%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "70%" }}
+        width={{ xs: "100%", sm: "60%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -158,20 +158,20 @@ const Header = () => {
                   component="a"
                   underline="none"
                   href="/"
-                  title="Forefront Africa"
-                  width={125}
-                  marginRight={20}
+                  title="Prominent Ogbomoso"
+                  width={105}
+                  marginRight={23}
                   marginTop={1}
                   marginBottom={1}
                 >
                   <Box
                     component="img"
-                    height={"7.5vh"}
+                    height={"6vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
-                      width: "90%",
+                      width: "100%",
                     }}
                     src={logo}
                     alt={"logo"}

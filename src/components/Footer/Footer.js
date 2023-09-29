@@ -324,9 +324,9 @@ const Footer = () => {
           marginTop={"3%"}
         >
           <Box width={{ xs: "100%", sm: "100%" }}>
-            <Typography align={"center"} variant={"subtitle2"} color="#1A4D2E">
+            <Typography align={"center"} variant={"subtitle2"} color="#4f4f4f">
               &copy;{new Date().getFullYear()} Prominent Ogbomoso Sons &
-              Daughters Africa. All rights reserved
+              Daughters. All rights reserved
             </Typography>
           </Box>
         </Box>

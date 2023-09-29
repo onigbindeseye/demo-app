@@ -15,7 +15,7 @@ const Intro = () => {
       >
         <Box
           width={{ xs: "100%", sm: "50%" }}
-          padding={{ xs: "5% 1%", sm: "5% 3% 3% 0%" }}
+          padding={{ xs: "5% 1%", sm: "0% 3% 0% 0%" }}
           marginLeft={{ xs: "0%", sm: "0%" }}
         >
           <Box
@@ -26,7 +26,7 @@ const Intro = () => {
               variant="h3"
               color="#DC0000"
               fontWeight={700}
-              paddingBottom={{ xs: "4%", sm: "2%" }}
+              paddingBottom={{ xs: "5%", sm: "2%" }}
               textAlign={"left"}
             >
               Message from the King
@@ -39,19 +39,44 @@ const Intro = () => {
             color={"#000"}
             data-aos={"fade-up"}
             lineHeight={"1.625em"}
-            padding={"2% 10% 1% 0%"}
+            paddingBottom={{ xs: "5%", sm: "2%" }}
           >
-            Ogbomoso is located on the 8°101 North of the equator and 4°101 East
-            of the Greenwich meridian. It is a derived Savannah region and it is
-            104 km North East of Ibadan, 58 km North West of Osogbo, 57 km South
-            West of Ilorin and 53 km North East of Oyo. The physical and
-            economic growth of the town began in 19th century; when there was an
-            unrest through-out the Yoruba land due to inter ethnic wars and
-            Fulani Jihad. This brought more than 140 communities to seek refuge
-            in Ogbomoso because of its strong defense. Most of these people took
-            permanent residence in Ogbomoso, and by the end of 19th century, a
-            continuous built-up compact settlement was evolved from the hamlet,
-            covering an extensive area of land
+            I trust this message finds you in good health and prosperity. As the
+            revered Soun of Ogbomoso, it is both my duty and privilege to extend
+            my heartfelt gratitude and appreciation for your dedicated service
+            and significant contributions to our beloved town of Ogbomoso, Oyo
+            State and Nigeria at large.
+          </Typography>
+          <Typography
+            variant={"body1"}
+            fontWeight={500}
+            textAlign={"left"}
+            color={"#000"}
+            data-aos={"fade-up"}
+            lineHeight={"1.625em"}
+            paddingBottom={{ xs: "5%", sm: "2%" }}
+          >
+            Your unwavering commitment to the progress and development of our
+            community has been a beacon of hope, inspiring countless lives and
+            shaping the future of our town. Through your tireless efforts and
+            initiatives, you have significantly impacted various sectors,
+            including but not limited to politics, education, healthcare,
+            community development, etc.
+          </Typography>
+          <Typography
+            variant={"body1"}
+            fontWeight={500}
+            textAlign={"left"}
+            color={"#000"}
+            data-aos={"fade-up"}
+            lineHeight={"1.625em"}
+            paddingBottom={{ xs: "5%", sm: "2%" }}
+          >
+            It is with great pride that I acknowledge your invaluable endeavors,
+            which have strengthened the fabric of our society and enriched the
+            lives of our people. Your dedication, passion, and selflessness are
+            the pillars upon which Ogbomoso stands tall, and for that, we are
+            eternally grateful.
           </Typography>
         </Box>
         <Box width={{ xs: "100%", sm: "50%" }}>
