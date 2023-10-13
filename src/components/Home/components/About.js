@@ -227,9 +227,10 @@ const About = () => {
             display={"flex"}
             marginLeft={{ xs: "0%", sm: "0%" }}
             justifyContent={"space-between"}
+            flexWrap={"wrap"}
             width={"80%"}
           >
-            <Box padding={"5% 0% 1% 0%"}>
+            <Box padding={{ xs: "5% 0% 1% 15%", sm: "5% 0% 1% 0%" }}>
               <ColorButton
                 component={"a"}
                 variant="contained"
@@ -251,7 +252,7 @@ const About = () => {
                 About Forefront
               </ColorButton>
             </Box>
-            <Box padding={"5% 2% 1% 4%"}>
+            <Box padding={{ xs: "5% 2% 1% 15%", sm: "5% 2% 1% 4%" }}>
               <ColorButton2
                 component={"a"}
                 variant="contained"
@@ -278,7 +279,8 @@ const About = () => {
         <Box
           width={{ xs: "100%", sm: "40%" }}
           backgroundColor={"#D4F6CC"}
-          padding={"2%"}
+          marginTop={{ xs: "25%", sm: "0%" }}
+          padding={{ xs: "4%", sm: "2%" }}
         >
           <Box padding={"5%"} backgroundColor={"#fff"}>
             <Typography

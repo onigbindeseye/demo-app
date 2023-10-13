@@ -170,14 +170,14 @@ const Header = () => {
                   underline="none"
                   href="/"
                   title="Forefront Africa"
-                  width={155}
+                  width={115}
                   marginRight={20}
                   marginTop={1}
                   marginBottom={1}
                 >
                   <Box
                     component="img"
-                    height={"11vh"}
+                    height={"8vh"}
                     sx={{
                       display: "block",
                       position: "relative",
@@ -191,7 +191,7 @@ const Header = () => {
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <IconButton onClick={toggleDrawer(anchor, true)}>
-                      <MenuIcon fontSize="large" sx={{ color: "#D7A036" }} />
+                      <MenuIcon fontSize="large" sx={{ color: "#5BB318" }} />
                     </IconButton>
                     <SwipeableDrawer
                       anchor={anchor}

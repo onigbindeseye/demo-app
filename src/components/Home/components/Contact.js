@@ -6,6 +6,20 @@ import Button from "@mui/material/Button";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import image_1 from "../../../assets/images/contact.jpg";
 
+const ImageContainer = styled(Box)({
+  position: "relative",
+  width: "100%",
+});
+
+const OverlayText = styled(Box)({
+  position: "absolute",
+  textAlign: "center",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  color: "#fff",
+});
+
 const Contact = () => {
   const ColorButton = styled(Button)(() => ({
     color: "#fff",
@@ -24,13 +38,12 @@ const Contact = () => {
   }));
 
   return (
-    <Box marginTop={{ xs: "25%", sm: "0%" }}>
-      <Box width={{ xs: "100%", sm: "100%" }}>
+    <Box marginTop={{ xs: "0%", sm: "0%" }}>
+      <ImageContainer>
         <Box
           component="img"
-          height={{ xs: "30vh", sm: "75vh" }}
+          height={{ xs: "70vh", sm: "75vh" }}
           marginRight={{ xs: "0%", sm: "0%" }}
-          display={{ xs: "none", sm: "block" }}
           sx={{
             objectFit: "cover",
             position: "relative",
@@ -40,15 +53,7 @@ const Contact = () => {
           src={image_1}
           alt={"image_1"}
         />
-        <Box
-          paddingBottom={"3%"}
-          position={"absolute"}
-          top={{ xs: "55%", sm: "440%" }}
-          left={{ xs: "55%", sm: "30%" }}
-          padding={{ xs: "0%", sm: "4%" }}
-          marginLeft={{ xs: "0%", sm: "0%" }}
-          width={"40%"}
-        >
+        <OverlayText>
           <Typography
             variant="h3"
             color="#fff"
@@ -97,8 +102,8 @@ const Contact = () => {
               </ColorButton>
             </Box>
           </Box>
-        </Box>
-      </Box>
+        </OverlayText>
+      </ImageContainer>
     </Box>
   );
 };

@@ -87,17 +87,22 @@ function Banner() {
   };
 
   return (
-    <Box backgroundColor={"#1A4D2E"} padding={"3% 3% 3% 3%"}>
+    <Box
+      backgroundColor={"#1A4D2E"}
+      padding={{ xs: "5% 3%", sm: "3% 3% 3% 3%" }}
+    >
       <Box
         width={"100%"}
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
+        // flexWrap={"wrap"}
       >
         <Box
           sx={{ flexGrow: 1 }}
           marginTop={{ xs: "15%", sm: "0%" }}
-          width={"48%"}
+          display={{ xs: "none", sm: "block" }}
+          width={{ xs: "100%", sm: "48%" }}
         >
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -114,7 +119,6 @@ function Banner() {
                       component="img"
                       height={{ xs: "30vh", sm: "40vh" }}
                       marginRight={{ xs: "0%", sm: "0%" }}
-                      display={{ xs: "none", sm: "block" }}
                       sx={{
                         objectFit: "cover",
                         position: "relative",
@@ -135,7 +139,8 @@ function Banner() {
           width={{ xs: "100%", sm: "65%" }}
           paddingLeft={{ xs: "0%", sm: "4%" }}
           marginRight={{ xs: "0%", sm: "5%" }}
-          marginTop={{ xs: "0%", sm: "10%" }}
+          marginTop={{ xs: "30%", sm: "10%" }}
+          display={{ xs: "none", sm: "block" }}
         >
           <Typography
             variant="h2"
@@ -178,9 +183,56 @@ function Banner() {
           </Box>
         </Box>
         <Box
+          width={{ xs: "100%", sm: "65%" }}
+          paddingLeft={{ xs: "0%", sm: "4%" }}
+          marginRight={{ xs: "0%", sm: "5%" }}
+          marginTop={{ xs: "45%", sm: "10%" }}
+          display={{ xs: "block", sm: "none" }}
+        >
+          <Typography
+            variant="h3"
+            color="#fff"
+            paddingBottom={"4%"}
+            fontWeight={700}
+            textAlign={"left"}
+          >
+            Empowering Sustainability, Forging a Greener Tomorrow
+          </Typography>
+          <Typography
+            variant="body1"
+            color="#fff"
+            fontWeight={500}
+            textAlign={"left"}
+          >
+            Leading the Path Towards a Sustainable Future!
+          </Typography>
+          <Box padding={"5% 2% 1% 0%"}>
+            <ColorButton
+              component={"a"}
+              variant="contained"
+              size="medium"
+              href={"/about-us"}
+              endIcon={
+                <ArrowRightAltIcon
+                  sx={{
+                    color: "#fff",
+                    height: "32px",
+                    width: "32px",
+                    "&:hover": {
+                      color: "#1A4D2E",
+                    },
+                  }}
+                />
+              }
+            >
+              Talk to us
+            </ColorButton>
+          </Box>
+        </Box>
+        <Box
           sx={{ flexGrow: 1 }}
           marginTop={{ xs: "15%", sm: "20%" }}
-          width={"48%"}
+          width={{ xs: "100%", sm: "48%" }}
         >
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -195,9 +247,8 @@ function Banner() {
                   <Box>
                     <Box
                       component="img"
-                      height={{ xs: "30vh", sm: "40vh" }}
+                      height={{ xs: "50vh", sm: "40vh" }}
                       marginRight={{ xs: "0%", sm: "0%" }}
-                      display={{ xs: "none", sm: "block" }}
                       sx={{
                         objectFit: "cover",
                         position: "relative",
@@ -215,13 +266,15 @@ function Banner() {
           </AutoPlaySwipeableViews>
         </Box>
       </Box>
-      <Container>
+      <Container display={{ xs: "none", sm: "block" }}>
         <Box
           position={"absolute"}
           top={{ xs: "55%", sm: "95%" }}
           width={"70%"}
+          left={"15%"}
           backgroundColor={"#5BB318"}
           padding={"0.5%"}
+          transform="translate(-50%, -50%)"
         >
           <Box
             width={"100%"}
@@ -230,8 +283,9 @@ function Banner() {
             display={"flex"}
             justifyContent={"space-between"}
             alignItems={"center"}
+            flexWrap={"wrap"}
           >
-            <Box width={"20%"}>
+            <Box width={{ xs: "100%", sm: "20%" }}>
               <Typography
                 variant="body1"
                 color="#1A4D2E"
@@ -263,7 +317,7 @@ function Banner() {
                 parts per million
               </Typography>
             </Box>
-            <Box width={"20%"}>
+            <Box width={{ xs: "100%", sm: "20%" }}>
               <Typography
                 variant="body1"
                 color="#1A4D2E"
@@ -295,7 +349,7 @@ function Banner() {
                 since 1880
               </Typography>
             </Box>
-            <Box width={"20%"}>
+            <Box width={{ xs: "100%", sm: "20%" }}>
               <Typography
                 variant="body1"
                 color="#1A4D2E"
@@ -327,7 +381,7 @@ function Banner() {
                 percent per decade
               </Typography>
             </Box>
-            <Box width={"20%"}>
+            <Box width={{ xs: "100%", sm: "20%" }}>
               <Typography
                 variant="body1"
                 color="#1A4D2E"
