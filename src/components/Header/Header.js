@@ -13,7 +13,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import CloseIcon from "@mui/icons-material/Close";
 import Divider from "@mui/material/Divider";
-import logo from "../../assets/logos/logo1.png";
+import logo from "../../assets/logos/logo.png";
 import navConfig from "./config";
 
 const Header = () => {
@@ -73,22 +73,22 @@ const Header = () => {
       alignItems={"center"}
       width={"100%"}
       marginBottom={{ xs: 2, sm: 0 }}
-      marginTop={{ xs: 2, sm: 1 }}
+      marginTop={{ xs: 2, sm: 0 }}
       id="back-to-top-anchor"
     >
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={125}
+        width={150}
       >
-        <Box component="a" underline="none" href="/" title="Prominent Ogbomoso">
-          <img src={logo} alt="logo" width={"100%"} />
+        <Box component="a" underline="none" href="/" title="Forefront Africa">
+          <img src={logo} alt="logo" width={"80%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "60%" }}
+        width={{ xs: "100%", sm: "70%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -104,7 +104,7 @@ const Header = () => {
               underline="none"
               component="a"
               href="/"
-              color={"#DC0000"}
+              color={"#5BB318"}
               fontWeight={700}
             >
               Home
@@ -114,33 +114,44 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/about-ogbomoso"
-              color={"#DC0000"}
+              href="/about-us"
+              color={"#5BB318"}
               fontWeight={700}
             >
-              About Ogbomoso
+              About Us
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/prominent-indigenes"
-              color={"#DC0000"}
+              href="/about-us"
+              color={"#5BB318"}
               fontWeight={700}
             >
-              Prominent Indigenes
+              Our Services
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/"
-              color="#DC0000"
+              href="/blog"
+              color="#5BB318"
               fontWeight={700}
             >
               Blog
+            </Link>
+          </Box>
+          <Box>
+            <Link
+              underline="none"
+              component="a"
+              href="/contact"
+              color="#5BB318"
+              fontWeight={700}
+            >
+              Contact Us
             </Link>
           </Box>
         </Box>
@@ -158,20 +169,20 @@ const Header = () => {
                   component="a"
                   underline="none"
                   href="/"
-                  title="Prominent Ogbomoso"
-                  width={105}
-                  marginRight={23}
+                  title="Forefront Africa"
+                  width={155}
+                  marginRight={20}
                   marginTop={1}
                   marginBottom={1}
                 >
                   <Box
                     component="img"
-                    height={"6vh"}
+                    height={"11vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
-                      width: "100%",
+                      width: "90%",
                     }}
                     src={logo}
                     alt={"logo"}
@@ -180,7 +191,7 @@ const Header = () => {
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <IconButton onClick={toggleDrawer(anchor, true)}>
-                      <MenuIcon fontSize="large" sx={{ color: "#DC0000" }} />
+                      <MenuIcon fontSize="large" sx={{ color: "#D7A036" }} />
                     </IconButton>
                     <SwipeableDrawer
                       anchor={anchor}
@@ -190,7 +201,7 @@ const Header = () => {
                     >
                       <DrawerHeader>
                         <IconButton onClick={handleDrawerClose}>
-                          <CloseIcon sx={{ color: "#DC0000" }} />
+                          <CloseIcon sx={{ color: "#D7A036" }} />
                         </IconButton>
                       </DrawerHeader>
                       <Divider />

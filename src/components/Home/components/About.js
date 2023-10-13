@@ -4,27 +4,46 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import image from "../../../assets/images/map.png";
+import Avatar from "@mui/material/Avatar";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
+import ParkIcon from "@mui/icons-material/Park";
+import HubIcon from "@mui/icons-material/Hub";
 
 const About = () => {
   const ColorButton = styled(Button)(() => ({
+    color: "#205723",
+    width: 225,
+    height: 65,
+    fontWeight: 700,
+    fontSize: "16px",
+    textTransform: "capitalize",
+    backgroundColor: "#fff",
+    border: "2px solid #205723",
+    "&:hover": {
+      color: "#fff",
+      backgroundColor: "#5BB318",
+      borderColor: "#5BB318",
+    },
+  }));
+  const ColorButton2 = styled(Button)(() => ({
     color: "#fff",
     width: 225,
     height: 65,
     fontWeight: 700,
     fontSize: "16px",
     textTransform: "capitalize",
-    backgroundColor: "#DC0000",
-    borderColor: "#DC0000",
+    backgroundColor: "#205723",
+    borderColor: "#205723",
     "&:hover": {
       color: "#fff",
-      backgroundColor: "#850000",
-      borderColor: "#850000",
+      backgroundColor: "#5BB318",
+      borderColor: "#5BB318",
     },
   }));
 
   return (
-    <Box paddingTop={{ xs: "15%", sm: "5%" }}>
+    <Box paddingTop={{ xs: "25%", sm: "12%" }}>
       <Box
         display={"flex"}
         justifyContent={"space-between"}
@@ -34,88 +53,262 @@ const About = () => {
       >
         <Box
           width={{ xs: "100%", sm: "50%" }}
-          padding={{ xs: "5% 1%", sm: "5% 3% 3% 0%" }}
+          padding={{ xs: "5% 1%", sm: "1% 3% 3% 0%" }}
           marginLeft={{ xs: "0%", sm: "0%" }}
         >
           <Box
-            width={{ xs: "100%", sm: "100%" }}
+            width={{ xs: "100%", sm: "90%" }}
             marginLeft={{ xs: "0%", sm: "0%" }}
           >
             <Typography
-              variant="h3"
-              color="#DC0000"
-              fontWeight={700}
+              variant="h2"
+              color="#5BB318"
+              fontWeight={800}
               paddingBottom={"2%"}
-              textAlign={"center"}
+              textAlign={"left"}
             >
-              About Ogbomoso
+              Who We Are?
             </Typography>
           </Box>
           <Typography
             variant={"body1"}
-            fontWeight={500}
+            fontWeight={400}
             textAlign={"left"}
             color={"#000"}
             data-aos={"fade-up"}
             lineHeight={"1.625em"}
-            padding={{ xs: "4% 1% 1% 0%", sm: "2% 10% 1% 0%" }}
+            padding={"2% 10% 1% 0%"}
           >
-            Ogbomoso is located on the 8°101 North of the equator and 4°101 East
-            of the Greenwich meridian. It is a derived Savannah region and it is
-            104 km North East of Ibadan, 58 km North West of Osogbo, 57 km South
-            West of Ilorin and 53 km North East of Oyo. The physical and
-            economic growth of the town began in 19th century; when there was an
-            unrest through-out the Yoruba land due to inter ethnic wars and
-            Fulani Jihad. This brought more than 140 communities to seek refuge
-            in Ogbomoso because of its strong defense. Most of these people took
-            permanent residence in Ogbomoso, and by the end of 19th century, a
-            continuous built-up compact settlement was evolved from the hamlet,
-            covering an extensive area of land
+            We are a team passionate in creating a world that thrives on green
+            innovation, responsible consumption, and a healthier climate for
+            generations to come.
           </Typography>
-          <Box padding={"5% 2% 1% 0%"}>
-            <ColorButton
-              component={"a"}
-              variant="contained"
-              size="medium"
-              href={"/about-ogbomoso"}
-              endIcon={
-                <ArrowRightAltIcon
-                  sx={{
-                    color: "#fff",
-                    height: "32px",
-                    width: "32px",
-                    "&:hover": {
-                      color: "#fff",
-                    },
-                  }}
-                />
-              }
+          <Box
+            marginTop={{ xs: "7%", sm: "4%" }}
+            marginBottom={{ xs: "7%", sm: "2%" }}
+            width={"100%"}
+            display={"flex"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
+            flexWrap={"wrap"}
+          >
+            <Box
+              width={"50%"}
+              display={"flex"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+              data-aos={"fade-down"}
             >
-              Read More
-            </ColorButton>
+              <Box width={"15%"} marginRight={2}>
+                <Avatar
+                  variant="square"
+                  sx={{
+                    bgcolor: "#fff",
+                    border: " 2px dotted #CACACA",
+                    padding: "5%",
+                  }}
+                >
+                  <EmojiObjectsIcon
+                    sx={{ color: "#5BB318", width: 36, height: 36 }}
+                  />
+                </Avatar>
+              </Box>
+              <Box width={"85%"}>
+                <Typography
+                  variant={"body1"}
+                  fontWeight={700}
+                  textAlign={"left"}
+                  color={"#000"}
+                  paddingBottom={"1%"}
+                >
+                  Innovation
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              width={"50%"}
+              display={"flex"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+              data-aos={"fade-down"}
+            >
+              <Box width={"15%"} marginRight={2}>
+                <Avatar
+                  variant="square"
+                  sx={{
+                    bgcolor: "#fff",
+                    border: " 2px dotted #CACACA",
+                    padding: "5%",
+                  }}
+                >
+                  <ParkIcon sx={{ color: "#5BB318", width: 36, height: 36 }} />
+                </Avatar>
+              </Box>
+              <Box width={"85%"}>
+                <Typography
+                  variant={"body1"}
+                  fontWeight={700}
+                  textAlign={"left"}
+                  color={"#000"}
+                  paddingBottom={"1%"}
+                >
+                  Sustainability
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              width={"50%"}
+              display={"flex"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+              marginTop={"5%"}
+              data-aos={"fade-down"}
+            >
+              <Box width={"15%"} marginRight={2}>
+                <Avatar
+                  variant="square"
+                  sx={{
+                    bgcolor: "#fff",
+                    border: " 2px dotted #CACACA",
+                    padding: "5%",
+                  }}
+                >
+                  <ThumbUpAltIcon
+                    sx={{ color: "#5BB318", width: 36, height: 36 }}
+                  />
+                </Avatar>
+              </Box>
+              <Box width={"85%"}>
+                <Typography
+                  variant={"body1"}
+                  fontWeight={700}
+                  textAlign={"left"}
+                  color={"#000"}
+                  paddingBottom={"1%"}
+                >
+                  Integrity
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              width={"50%"}
+              display={"flex"}
+              justifyContent={"space-between"}
+              alignItems={"center"}
+              marginTop={"5%"}
+              data-aos={"fade-down"}
+            >
+              <Box width={"15%"} marginRight={2}>
+                <Avatar
+                  variant="square"
+                  sx={{
+                    bgcolor: "#fff",
+                    border: " 2px dotted #CACACA",
+                    padding: "5%",
+                  }}
+                >
+                  <HubIcon sx={{ color: "#5BB318", width: 36, height: 36 }} />
+                </Avatar>
+              </Box>
+              <Box width={"85%"}>
+                <Typography
+                  variant={"body1"}
+                  fontWeight={700}
+                  textAlign={"left"}
+                  color={"#000"}
+                  paddingBottom={"1%"}
+                >
+                  Resilience
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          <Box
+            display={"flex"}
+            marginLeft={{ xs: "0%", sm: "0%" }}
+            justifyContent={"space-between"}
+            width={"80%"}
+          >
+            <Box padding={"5% 0% 1% 0%"}>
+              <ColorButton
+                component={"a"}
+                variant="contained"
+                size="medium"
+                href={"/about-us"}
+                endIcon={
+                  <ArrowRightAltIcon
+                    sx={{
+                      color: "#205723",
+                      height: "32px",
+                      width: "32px",
+                      "&:hover": {
+                        color: "#fff",
+                      },
+                    }}
+                  />
+                }
+              >
+                About Forefront
+              </ColorButton>
+            </Box>
+            <Box padding={"5% 2% 1% 4%"}>
+              <ColorButton2
+                component={"a"}
+                variant="contained"
+                size="medium"
+                href={"/about-us"}
+                endIcon={
+                  <ArrowRightAltIcon
+                    sx={{
+                      color: "#fff",
+                      height: "32px",
+                      width: "32px",
+                      "&:hover": {
+                        color: "#fff",
+                      },
+                    }}
+                  />
+                }
+              >
+                Our Services
+              </ColorButton2>
+            </Box>
           </Box>
         </Box>
-        <Box width={{ xs: "100%", sm: "50%" }}>
-          <Box
-            component="img"
-            height={{ xs: "30vh", sm: "78vh" }}
-            marginRight={{ xs: "0%", sm: "0%" }}
-            sx={{
-              objectFit: "cover",
-              width: "100%",
-            }}
-            src={image}
-            alt={"about_image"}
-          />
-          <Typography
-            color={"#aaa"}
-            variant="caption"
-            fontWeight={400}
-            textAlign={"center"}
-          >
-            Map of Ogbomoso township showing the road network. Source: Ministry
-            of Lands, Housing and Physical Planning, Ibadan Oyo State (2006).
-          </Typography>
+        <Box
+          width={{ xs: "100%", sm: "40%" }}
+          backgroundColor={"#D4F6CC"}
+          padding={"2%"}
+        >
+          <Box padding={"5%"} backgroundColor={"#fff"}>
+            <Typography
+              variant="h3"
+              color="#000"
+              fontWeight={800}
+              paddingTop={"9%"}
+              paddingBottom={"2%"}
+              textAlign={"left"}
+            >
+              Why Forefront Africa?
+            </Typography>
+            <Typography
+              variant="body1"
+              color="#000"
+              fontWeight={400}
+              paddingTop={"9%"}
+              paddingBottom={"2%"}
+              lineHeight={1.75}
+              textAlign={"left"}
+            >
+              At Forefront Africa, we are committed to making a meaningful
+              impact on the fight against climate change. Our mission is to
+              provide comprehensive services that empower businesses,
+              organizations, and individuals to actively engage in sustainable
+              practices and make a positive difference for our planet. Together,
+              we can create a world that thrives on renewable energy,
+              responsible consumption, and a resilient climate.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>

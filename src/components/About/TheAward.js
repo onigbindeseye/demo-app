@@ -5,31 +5,34 @@ import Container from "../../common/Container";
 import Header from "../../components/Header";
 import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
-import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner";
-import About from "./components/About";
-import Image2 from "../../assets/banner/banner4.jpg";
-import Services from "./components/Services";
-import Highlights from "./components/Highlights";
-import Contact from "./components/Contact";
+import Award from "./components/Award";
+import Scroll from "../Header/Scroll";
+import Image2 from "../../assets/banner/rollup2.jpg";
 
 const styles = {
   paperContainer: {
-    height: 800,
+    height: 1000,
     backgroundImage: `url(${Image2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
 };
 
-const Home = () => {
+const About = () => {
   return (
     <Box>
       <Helmet>
-        <title> Homepage | Forefront Africa</title>
+        <title> The Award | BudgIT Active Citizens Awards</title>
       </Helmet>
       <Scroll>
-        <AppBar position={"fixed"} elevation={0}>
+        <AppBar
+          position={"fixed"}
+          elevation={0}
+          sx={{
+            padding: "10px 0px",
+          }}
+        >
           <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
             <Header />
           </Container>
@@ -43,21 +46,10 @@ const Home = () => {
       </Box>
       <Box>
         <Container>
-          <About />
+          <Award />
         </Container>
       </Box>
-      <Box>
-        <Highlights />
-      </Box>
-      <Box bgcolor={"#F2FFE9"}>
-        <Container>
-          <Services />
-        </Container>
-      </Box>
-      <Box>
-        <Contact />
-      </Box>
-      <Box bgcolor={"#fff"}>
+      <Box bgcolor={"#049593"}>
         <Container>
           <Footer />
         </Container>
@@ -66,4 +58,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

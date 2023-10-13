@@ -1,23 +1,23 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-// import Link from "@mui/material/Link";
+import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-// import Avatar from "@mui/material/Avatar";
-// import { blue } from "@mui/material/colors";
-// import FacebookIcon from "@mui/icons-material/Facebook";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Avatar from "@mui/material/Avatar";
+import { blue } from "@mui/material/colors";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Divider } from "@mui/material";
-// import HouseIcon from "@mui/icons-material/House";
-// import EmailIcon from "@mui/icons-material/Email";
-// import PhoneIcon from "@mui/icons-material/Phone";
-// import logo from "../../assets/logos/logo.png";
+import HouseIcon from "@mui/icons-material/House";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
+import logo from "../../assets/logos/logo.png";
 
 const Footer = () => {
   return (
     <Grid container spacing={1} marginTop={5}>
-      {/* <Grid item xs={12} sm={6} md={12} marginBottom={2}>
+      <Grid item xs={12} sm={6} md={12} marginBottom={2}>
         <Box
           display={"flex"}
           justifyContent={"space-between"}
@@ -39,7 +39,7 @@ const Footer = () => {
               title="Forefront Africa"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
-              <img src={"logo"} alt="logo" width={"100%"} />
+              <img src={logo} alt="logo" width={"100%"} />
             </Box>
             <Typography color="#1A4D2E" variant={"body1"} paddingTop={"2%"}>
               We are committed to making a meaningful impact on the fight
@@ -312,9 +312,9 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
-      </Grid> */}
+      </Grid>
       <Grid item xs={12}>
-        <Divider color={"#DC0000"} />
+        <Divider color={"#1A4D2E"} />
         <Box
           display="flex"
           justifyContent={"space-between"}
@@ -324,9 +324,9 @@ const Footer = () => {
           marginTop={"3%"}
         >
           <Box width={{ xs: "100%", sm: "100%" }}>
-            <Typography align={"center"} variant={"subtitle2"} color="#4f4f4f">
-              &copy;{new Date().getFullYear()} Prominent Ogbomoso Sons &
-              Daughters. All rights reserved
+            <Typography align={"center"} variant={"subtitle2"} color="#1A4D2E">
+              &copy;{new Date().getFullYear()} Forefront Africa. All rights
+              reserved
             </Typography>
           </Box>
         </Box>

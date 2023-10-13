@@ -1,297 +1,367 @@
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
+import { useTheme, styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import Avatar from "@mui/material/Avatar";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import banner1 from "../../../assets/images/palace1.jpg";
-import AgricultureIcon from "@mui/icons-material/Agriculture";
-import PeopleIcon from "@mui/icons-material/People";
-import PublicIcon from "@mui/icons-material/Public";
-import LandscapeIcon from "@mui/icons-material/Landscape";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import banner1 from "../../../assets/banner/banner1.jpg";
+import banner2 from "../../../assets/banner/banner2.jpg";
+import banner3 from "../../../assets/banner/banner3.jpg";
+import banner4 from "../../../assets/banner/banner4.jpg";
+import banner5 from "../../../assets/banner/banner5.jpg";
+import banner6 from "../../../assets/banner/banner6.jpg";
+import banner7 from "../../../assets/banner/banner7.jpg";
+import banner8 from "../../../assets/banner/banner8.jpg";
+import Container from "../../../common/Container";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+const ColorButton = styled(Button)(() => ({
+  color: "#fff",
+  width: 200,
+  height: 65,
+  fontWeight: 700,
+  fontSize: "16px",
+  textTransform: "capitalize",
+  backgroundColor: "#5BB318",
+  borderColor: "#5BB318",
+  "&:hover": {
+    color: "#1A4D2E",
+    backgroundColor: "#fff",
+    borderColor: "#fff",
+  },
+}));
 
 const images = [
   {
     label: "banner_image1",
     imgPath: banner1,
   },
+  {
+    label: "banner_image3",
+    imgPath: banner3,
+  },
+
+  {
+    label: "banner_image2",
+    imgPath: banner2,
+  },
+  {
+    label: "banner_image5",
+    imgPath: banner5,
+  },
 ];
 
-const list = [
+const images2 = [
   {
-    icon: (
-      <LandscapeIcon
-        sx={{
-          width: 36,
-          height: 36,
-        }}
-      />
-    ),
-    title: "Land Mass",
-    description: "235 sq km",
+    label: "banner_image6",
+    imgPath: banner6,
   },
   {
-    icon: (
-      <PublicIcon
-        sx={{
-          width: 36,
-          height: 36,
-        }}
-      />
-    ),
-    title: "State",
-    description: "Oyo State",
+    label: "banner_image8",
+    imgPath: banner8,
   },
   {
-    icon: (
-      <AgricultureIcon
-        sx={{
-          width: 36,
-          height: 36,
-        }}
-      />
-    ),
-    title: "Occupation",
-    description: "Farming",
+    label: "banner_image4",
+    imgPath: banner4,
   },
   {
-    icon: (
-      <PeopleIcon
-        sx={{
-          width: 36,
-          height: 36,
-        }}
-      />
-    ),
-    serial: "4",
-    title: "Population",
-    description: "628,682 (estimated)",
+    label: "banner_image7",
+    imgPath: banner7,
   },
 ];
 
 function Banner() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep2, setActiveStep2] = React.useState(0);
 
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
 
+  const handleStepChange2 = (step) => {
+    setActiveStep2(step);
+  };
+
   return (
-    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "15%", sm: "4%" }}>
-      <Box display={{ xs: "none", sm: "inline" }}>
-        <AutoPlaySwipeableViews
-          axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-          index={activeStep}
-          onChangeIndex={handleStepChange}
-          enableMouseEvents
-          interval={5000}
-        >
-          {images.map((step, index) => (
-            <div key={step.label}>
-              {Math.abs(activeStep - index) <= 2 ? (
-                <Box>
-                  <Box
-                    component="img"
-                    height={{ xs: "30vh", sm: "75vh" }}
-                    sx={{
-                      objectFit: "cover",
-                      position: "relative",
-                      overflow: "hidden",
-                      width: "100%",
-                    }}
-                    src={step.imgPath}
-                    alt={step.label}
-                  />
-                  <Box
-                    paddingBottom={"3%"}
-                    position={"absolute"}
-                    top={{ xs: "25%", sm: "23%" }}
-                    marginLeft={{ xs: "10%", sm: "10%" }}
-                    width={"75%"}
-                  >
-                    <Typography
-                      variant="h2"
-                      color="#fff"
-                      fontWeight={700}
-                      paddingBottom={"2%"}
-                      textAlign={"center"}
-                    >
-                      Ògbómọ̀ṣọ́
-                    </Typography>
-                    <Typography
-                      variant="h6"
-                      color="#fff"
-                      fontWeight={400}
-                      paddingBottom={"2%"}
-                      textAlign={"center"}
-                    >
-                      Ògbómọ̀ṣọ́ is a city in Oyo State, south-western Nigeria. It
-                      was founded in the mid 17th century and an estimated
-                      population of 628,682 as at 2023. It is the second largest
-                      city in Oyo State and also among the most populated in
-                      Nigeria. It is the 2nd most populated city in South
-                      Western Nigeria after Lagos and Ibadan.
-                    </Typography>
-                    <Box
-                      display={"flex"}
-                      justifyContent={"space-between"}
-                      alignItems={"center"}
-                      width={{ xs: "100%", sm: "75%" }}
-                      flexWrap={"wrap"}
-                    >
-                      {list.map((lists, id) => (
-                        <Box
-                          key={id}
-                          width={{ xs: "50%", sm: "23%" }}
-                          marginTop={{ xs: "5%", sm: "4%" }}
-                          padding={{ xs: "2%", sm: "1%" }}
-                          data-aos={"fade-up"}
-                          marginLeft={{ xs: "0%", sm: "0%" }}
-                          display={"flex"}
-                        >
-                          <Box>
-                            <Box marginTop={"2%"}>
-                              <Avatar
-                                sx={{
-                                  bgcolor: "#fff",
-                                  color: "#DC0000",
-                                  width: 56,
-                                  height: 56,
-                                }}
-                                variant="rounded"
-                              >
-                                {lists.icon}
-                              </Avatar>
-                            </Box>
-                            <Typography
-                              variant={"body1"}
-                              fontWeight={400}
-                              textAlign={"center"}
-                              paddingTop={"5%"}
-                              color={"#fff"}
-                            >
-                              {lists.title}
-                            </Typography>
-                            <Typography
-                              variant={"body1"}
-                              fontWeight={700}
-                              textAlign={"center"}
-                              color={"#fff"}
-                            >
-                              {lists.description}
-                            </Typography>
-                          </Box>
-                          <Divider
-                            color={"#fff"}
-                            orientation="vertical"
-                            variant="middle"
-                            flexItem
-                          />
-                        </Box>
-                      ))}
-                    </Box>
-                  </Box>
-                </Box>
-              ) : null}
-            </div>
-          ))}
-        </AutoPlaySwipeableViews>
-      </Box>
-      <Box display={{ xs: "inline", sm: "none" }}>
+    <Box backgroundColor={"#1A4D2E"} padding={"3% 3% 3% 3%"}>
+      <Box
+        width={"100%"}
+        display={"flex"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+      >
         <Box
-          paddingBottom={"3%"}
-          position={"absolute"}
-          top={{ xs: "20%", sm: "23%" }}
-          paddingLeft={{ xs: "7%", sm: "10%" }}
-          width={{ xs: "90%", sm: "75%" }}
+          sx={{ flexGrow: 1 }}
+          marginTop={{ xs: "15%", sm: "0%" }}
+          width={"48%"}
+        >
+          <AutoPlaySwipeableViews
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+            interval={10000}
+          >
+            {images.map((step, index) => (
+              <div key={step.label}>
+                {Math.abs(activeStep - index) <= 2 ? (
+                  <Box>
+                    <Box
+                      component="img"
+                      height={{ xs: "30vh", sm: "40vh" }}
+                      marginRight={{ xs: "0%", sm: "0%" }}
+                      display={{ xs: "none", sm: "block" }}
+                      sx={{
+                        objectFit: "cover",
+                        position: "relative",
+                        overflow: "hidden",
+                        width: "100%",
+                        borderRadius: "10px",
+                      }}
+                      src={step.imgPath}
+                      alt={step.label}
+                    />
+                  </Box>
+                ) : null}
+              </div>
+            ))}
+          </AutoPlaySwipeableViews>
+        </Box>
+        <Box
+          width={{ xs: "100%", sm: "65%" }}
+          paddingLeft={{ xs: "0%", sm: "4%" }}
+          marginRight={{ xs: "0%", sm: "5%" }}
+          marginTop={{ xs: "0%", sm: "10%" }}
         >
           <Typography
             variant="h2"
             color="#fff"
+            paddingBottom={"4%"}
             fontWeight={700}
-            paddingBottom={"2%"}
-            textAlign={"center"}
+            textAlign={"left"}
           >
-            Ògbómọ̀ṣọ́
+            Empowering Sustainability, Forging a Greener Tomorrow
           </Typography>
           <Typography
-            variant="h6"
+            variant="body1"
             color="#fff"
-            fontWeight={400}
-            paddingBottom={"2%"}
-            textAlign={"center"}
+            fontWeight={500}
+            textAlign={"left"}
           >
-            Ògbómọ̀ṣọ́ is a city in Oyo State, south-western Nigeria. It was
-            founded in the mid 17th century and an estimated population of
-            628,682 as at 2023. It is the second largest city in Oyo State and
-            also among the most populated in Nigeria. It is the 2nd most
-            populated city in South Western Nigeria after Lagos and Ibadan.
+            Leading the Path Towards a Sustainable Future!
           </Typography>
+          <Box padding={"5% 2% 1% 0%"}>
+            <ColorButton
+              component={"a"}
+              variant="contained"
+              size="medium"
+              href={"/about-us"}
+              endIcon={
+                <ArrowRightAltIcon
+                  sx={{
+                    color: "#fff",
+                    height: "32px",
+                    width: "32px",
+                    "&:hover": {
+                      color: "#1A4D2E",
+                    },
+                  }}
+                />
+              }
+            >
+              Talk to us
+            </ColorButton>
+          </Box>
+        </Box>
+        <Box
+          sx={{ flexGrow: 1 }}
+          marginTop={{ xs: "15%", sm: "20%" }}
+          width={"48%"}
+        >
+          <AutoPlaySwipeableViews
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={activeStep2}
+            onChangeIndex={handleStepChange2}
+            enableMouseEvents
+            interval={10000}
+          >
+            {images2.map((step, index) => (
+              <div key={step.label}>
+                {Math.abs(activeStep2 - index) <= 2 ? (
+                  <Box>
+                    <Box
+                      component="img"
+                      height={{ xs: "30vh", sm: "40vh" }}
+                      marginRight={{ xs: "0%", sm: "0%" }}
+                      display={{ xs: "none", sm: "block" }}
+                      sx={{
+                        objectFit: "cover",
+                        position: "relative",
+                        overflow: "hidden",
+                        width: "100%",
+                        borderRadius: "10px",
+                      }}
+                      src={step.imgPath}
+                      alt={step.label}
+                    />
+                  </Box>
+                ) : null}
+              </div>
+            ))}
+          </AutoPlaySwipeableViews>
+        </Box>
+      </Box>
+      <Container>
+        <Box
+          position={"absolute"}
+          top={{ xs: "55%", sm: "95%" }}
+          width={"70%"}
+          backgroundColor={"#5BB318"}
+          padding={"0.5%"}
+        >
           <Box
+            width={"100%"}
+            backgroundColor={"#fff"}
+            padding={"2%"}
             display={"flex"}
             justifyContent={"space-between"}
             alignItems={"center"}
-            width={{ xs: "100%", sm: "75%" }}
-            flexWrap={"wrap"}
           >
-            {list.map((lists, id) => (
-              <Box
-                key={id}
-                width={{ xs: "50%", sm: "23%" }}
-                marginTop={{ xs: "5%", sm: "4%" }}
-                padding={{ xs: "2%", sm: "1%" }}
-                data-aos={"fade-up"}
-                marginLeft={{ xs: "0%", sm: "0%" }}
-                display={"flex"}
+            <Box width={"20%"}>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
               >
-                <Box>
-                  <Box marginTop={"2%"}>
-                    <Avatar
-                      sx={{
-                        bgcolor: "#fff",
-                        color: "#DC0000",
-                        width: 56,
-                        height: 56,
-                      }}
-                      variant="rounded"
-                    >
-                      {lists.icon}
-                    </Avatar>
-                  </Box>
-                  <Typography
-                    variant={"body1"}
-                    fontWeight={400}
-                    textAlign={"center"}
-                    paddingTop={"5%"}
-                    color={"#fff"}
-                  >
-                    {lists.title}
-                  </Typography>
-                  <Typography
-                    variant={"body1"}
-                    fontWeight={700}
-                    textAlign={"center"}
-                    color={"#fff"}
-                  >
-                    {lists.description}
-                  </Typography>
-                </Box>
-                <Divider
-                  color={"#fff"}
-                  orientation="vertical"
-                  variant="middle"
-                  flexItem
-                />
-              </Box>
-            ))}
+                {" "}
+                Carbon Dioxide
+              </Typography>
+              <Typography
+                variant="h4"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                417
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={500}
+                textAlign={"center"}
+              >
+                {" "}
+                parts per million
+              </Typography>
+            </Box>
+            <Box width={"20%"}>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                Global Temperature
+              </Typography>
+              <Typography
+                variant="h4"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                1.9 &#176;F
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={500}
+                textAlign={"center"}
+              >
+                {" "}
+                since 1880
+              </Typography>
+            </Box>
+            <Box width={"20%"}>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                Arctic Ice Minimum
+              </Typography>
+              <Typography
+                variant="h4"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                13 %
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={500}
+                textAlign={"center"}
+              >
+                {" "}
+                percent per decade
+              </Typography>
+            </Box>
+            <Box width={"20%"}>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                Sea Level
+              </Typography>
+              <Typography
+                variant="h4"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={700}
+                textAlign={"center"}
+              >
+                {" "}
+                3.3
+              </Typography>
+              <Typography
+                variant="body1"
+                color="#1A4D2E"
+                paddingBottom={"0.5%"}
+                fontWeight={500}
+                textAlign={"center"}
+              >
+                {" "}
+                millimeters per year
+              </Typography>
+            </Box>
           </Box>
         </Box>
-      </Box>
+      </Container>
     </Box>
   );
 }

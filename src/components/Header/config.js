@@ -4,16 +4,20 @@ const navConfig = [
     path: "/",
   },
   {
-    title: "About Ogbomoso",
-    path: "/about-ogbomoso",
+    title: "About Us",
+    path: "/about-us",
   },
   {
-    title: "Prominent Indigenes",
-    path: "/prominent-indigenes",
+    title: "Our Services",
+    path: "/our-services",
   },
   {
     title: "Blog",
-    path: "/",
+    path: "/blog",
+  },
+  {
+    title: "Contact Us",
+    path: "/contact-us",
   },
 ];
 
