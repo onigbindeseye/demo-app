@@ -269,7 +269,7 @@ function Banner() {
       <Container display={{ xs: "none", sm: "block" }}>
         <Box
           position={"absolute"}
-          top={{ xs: "55%", sm: "95%" }}
+          top={{ xs: "55%", sm: "105%" }}
           width={"70%"}
           left={"15%"}
           backgroundColor={"#5BB318"}

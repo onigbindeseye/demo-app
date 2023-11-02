@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import image_1 from "../../../assets/images/forest.jpg";
-import image_2 from "../../../assets/images/elephant.jpg";
+// import image_2 from "../../../assets/images/elephant.jpg";
 
 const ImageContainer = styled(Box)({
   position: "relative",
@@ -42,12 +42,12 @@ const Highlights = () => {
     <Box marginTop={{ xs: "25%", sm: "8%" }}>
       <Box
         width={"100%"}
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        flexWrap={"wrap"}
+        // display={"flex"}
+        // justifyContent={"space-between"}
+        // alignItems={"center"}
+        // flexWrap={"wrap"}
       >
-        <Box width={{ xs: "100%", sm: "50%" }}>
+        <Box width={{ xs: "100%", sm: "100%" }}>
           <ImageContainer>
             <Box
               component="img"
@@ -115,7 +115,7 @@ const Highlights = () => {
             </OverlayText>
           </ImageContainer>
         </Box>
-        <Box width={{ xs: "100%", sm: "50%" }}>
+        {/* <Box width={{ xs: "100%", sm: "50%" }}>
           <ImageContainer>
             <Box
               component="img"
@@ -181,7 +181,7 @@ const Highlights = () => {
               </Box>
             </OverlayText>
           </ImageContainer>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
