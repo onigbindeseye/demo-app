@@ -6,21 +6,21 @@ import Header from "../../components/Header";
 import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
 import Scroll from "../Header/Scroll";
-import Banner from "./components/Banner";
+import Banner from "./components/Banner1";
 import About from "./components/About";
-// import Image2 from "../../assets/banner/banner4.jpg";
+import Image2 from "../../assets/banner/banner9.jpg";
 import Services from "./components/Services";
 import Highlights from "./components/Highlights";
 import Contact from "./components/Contact";
 
-// const styles = {
-//   paperContainer: {
-//     height: 800,
-//     backgroundImage: `url(${Image2})`,
-//     backgroundSize: "cover",
-//     backgroundPosition: "center",
-//   },
-// };
+const styles = {
+  paperContainer: {
+    height: 800,
+    backgroundImage: `url(${Image2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  },
+};
 
 const Home = () => {
   return (
@@ -35,12 +35,12 @@ const Home = () => {
           </Container>
         </AppBar>
       </Scroll>
-      <Box>
+      <Box display={{ xs: "none", sm: "inline" }}>
         <Banner />
       </Box>
-      {/* <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
         <Banner />
-      </Box> */}
+      </Box>
       <Box>
         <Container>
           <About />

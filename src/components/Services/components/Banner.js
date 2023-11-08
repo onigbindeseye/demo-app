@@ -21,7 +21,7 @@ const Banner = () => {
           textAlign={"left"}
           color={"#fff"}
         >
-          About Us
+          Our Services
         </Typography>
         <Stack
           spacing={2}
@@ -60,9 +60,9 @@ const Banner = () => {
                 fontSize: "23px",
                 fontStyle: "bold",
               }}
-              href="/about-us"
+              href="/our-services"
             >
-              About Us
+              Our Services
             </Link>
           </Breadcrumbs>
         </Stack>

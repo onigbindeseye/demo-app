@@ -61,7 +61,7 @@ const Contact = () => {
             fontWeight={800}
             textAlign={"center"}
           >
-            Watch Your Investment Grow
+            Interested in learning more?
           </Typography>
           <Typography
             variant={"h6"}
@@ -71,7 +71,7 @@ const Contact = () => {
             data-aos={"fade-up"}
             lineHeight={"1.625em"}
           >
-            Get in touch with Frontfront Africa to find out more
+            Get in touch with Forefront Africa today
           </Typography>
           <Box
             display={"flex"}

@@ -1,1 +1,1 @@
-export { default } from "./TheAward";
+export { default } from "./About";

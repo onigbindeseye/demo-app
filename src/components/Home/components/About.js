@@ -77,7 +77,7 @@ const About = () => {
             color={"#000"}
             data-aos={"fade-up"}
             lineHeight={"1.625em"}
-            padding={"2% 10% 1% 0%"}
+            padding={{ xs: "0%", sm: "2% 10% 1% 0%" }}
           >
             We are a team passionate in creating a world that thrives on green
             innovation, responsible consumption, and a healthier climate for
@@ -227,10 +227,10 @@ const About = () => {
             display={"flex"}
             marginLeft={{ xs: "0%", sm: "0%" }}
             justifyContent={"space-between"}
-            flexWrap={"wrap"}
-            width={"80%"}
+            // flexWrap={"wrap"}
+            width={{ xs: "100%", sm: "80%" }}
           >
-            <Box padding={{ xs: "5% 0% 1% 15%", sm: "5% 0% 1% 0%" }}>
+            <Box padding={{ xs: "5% 0% 1% 1%", sm: "5% 0% 1% 0%" }}>
               <ColorButton
                 component={"a"}
                 variant="contained"
@@ -252,12 +252,15 @@ const About = () => {
                 About Forefront
               </ColorButton>
             </Box>
-            <Box padding={{ xs: "5% 2% 1% 15%", sm: "5% 2% 1% 4%" }}>
+            <Box
+              padding={{ xs: "5% 2% 1% 1%", sm: "5% 2% 1% 4%" }}
+              display={{ xs: "none", sm: "block" }}
+            >
               <ColorButton2
                 component={"a"}
                 variant="contained"
                 size="medium"
-                href={"/about-us"}
+                href={"/our-services"}
                 endIcon={
                   <ArrowRightAltIcon
                     sx={{
@@ -285,7 +288,7 @@ const About = () => {
           <Box padding={"5%"} backgroundColor={"#fff"}>
             <Typography
               variant="h3"
-              color="#000"
+              color="#379237"
               fontWeight={800}
               paddingTop={"9%"}
               paddingBottom={"2%"}

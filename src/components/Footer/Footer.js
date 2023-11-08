@@ -39,11 +39,12 @@ const Footer = () => {
               title="Forefront Africa"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
-              <img src={logo} alt="logo" width={"100%"} />
+              <img src={logo} alt="logo" width={"80%"} />
             </Box>
             <Typography color="#1A4D2E" variant={"body1"} paddingTop={"2%"}>
-              We are committed to making a meaningful impact on the fight
-              against climate change.
+              We help companies, investors and governments, accelerate their
+              decarbonisation process. Speak with our expert team today to find
+              out how Forefront Africa can help you meet your targets.
             </Typography>
           </Box>
           <Box
@@ -75,7 +76,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/the-award"
+                href="/about-us"
                 color="#1A4D2E"
                 variant={"body1"}
                 fontWeight={500}
@@ -92,7 +93,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/our-judges"
+                href="/blog"
                 color="#1A4D2E"
                 variant={"body1"}
                 fontWeight={500}
@@ -109,7 +110,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/blog"
+                href="/our-team"
                 color="#1A4D2E"
                 variant={"body1"}
                 fontWeight={500}
@@ -126,7 +127,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/event-gallery/2022-red-carpet"
+                href="/resources"
                 color="#1A4D2E"
                 variant={"body1"}
                 display={{ xs: "none", sm: "block" }}
@@ -251,7 +252,7 @@ const Footer = () => {
                 component="a"
                 underline="none"
                 target={"_blank"}
-                href="https://twitter.com/BudgITng"
+                href="https://twitter.com/Forefront"
                 title="Twitter"
               >
                 <Avatar
@@ -272,7 +273,7 @@ const Footer = () => {
                 component="a"
                 underline="none"
                 target={"_blank"}
-                href="https://www.facebook.com/budgitng/"
+                href="https://www.facebook.com/forefront/"
                 title="Facebook"
               >
                 <Avatar
@@ -293,7 +294,7 @@ const Footer = () => {
                 component="a"
                 underline="none"
                 target={"_blank"}
-                href="https://www.linkedin.com/company/budgit-nigeria"
+                href="https://www.linkedin.com/company/forefront-africa"
                 title="LinkedIn"
               >
                 <Avatar

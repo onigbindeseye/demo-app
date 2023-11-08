@@ -79,16 +79,16 @@ const Header = () => {
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={150}
+        width={"20%"}
       >
         <Box component="a" underline="none" href="/" title="Forefront Africa">
-          <img src={logo} alt="logo" width={"80%"} />
+          <img src={logo} alt="logo" width={"100%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "70%" }}
+        width={{ xs: "100%", sm: "65%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -99,17 +99,6 @@ const Header = () => {
           width={"100%"}
           fontWeight={600}
         >
-          <Box>
-            <Link
-              underline="none"
-              component="a"
-              href="/"
-              color={"#5BB318"}
-              fontWeight={700}
-            >
-              Home
-            </Link>
-          </Box>
           <Box>
             <Link
               underline="none"
@@ -125,7 +114,7 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/about-us"
+              href="/our-services"
               color={"#5BB318"}
               fontWeight={700}
             >
@@ -147,7 +136,7 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/contact"
+              href="/contact-us"
               color="#5BB318"
               fontWeight={700}
             >
@@ -170,19 +159,19 @@ const Header = () => {
                   underline="none"
                   href="/"
                   title="Forefront Africa"
-                  width={115}
-                  marginRight={20}
+                  width={"100%"}
+                  marginRight={23}
                   marginTop={1}
                   marginBottom={1}
                 >
                   <Box
                     component="img"
-                    height={"8vh"}
+                    height={"5vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
-                      width: "90%",
+                      width: "100%",
                     }}
                     src={logo}
                     alt={"logo"}

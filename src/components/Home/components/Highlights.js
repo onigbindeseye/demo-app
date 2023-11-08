@@ -89,12 +89,12 @@ const Highlights = () => {
                 justifyContent={"space-between"}
                 width={{ xs: "100%", sm: "80%" }}
               >
-                <Box padding={{ xs: "5% 0% 1% 1%", sm: "5% 0% 1% 18%" }}>
+                <Box padding={{ xs: "5% 0% 1% 1%", sm: "5% 0% 1% 25%" }}>
                   <ColorButton
                     component={"a"}
                     variant="contained"
                     size="medium"
-                    href={"/about-us"}
+                    href={"/our-services"}
                     endIcon={
                       <ArrowRightAltIcon
                         sx={{
