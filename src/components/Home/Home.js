@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner1";
 import About from "./components/About";
-import Image2 from "../../assets/banner/banner9.jpg";
+import Image2 from "../../assets/banner/banner11.jpg";
 import Services from "./components/Services";
 import Highlights from "./components/Highlights";
 import Contact from "./components/Contact";

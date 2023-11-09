@@ -124,7 +124,7 @@ function Banner1() {
                 >
                   <Typography
                     variant="h3"
-                    color="#379237"
+                    color="#fff"
                     fontWeight={700}
                     padding={"40% 3% 1% 3%"}
                     textAlign={"left"}

@@ -190,7 +190,7 @@ const Header = () => {
                     >
                       <DrawerHeader>
                         <IconButton onClick={handleDrawerClose}>
-                          <CloseIcon sx={{ color: "#D7A036" }} />
+                          <CloseIcon sx={{ color: "#379237" }} />
                         </IconButton>
                       </DrawerHeader>
                       <Divider />
