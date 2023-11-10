@@ -150,7 +150,7 @@ const Header = () => {
                   title="Forefront Africa"
                   width={"100%"}
                   marginRight={23}
-                  marginTop={1}
+                  marginTop={2}
                   marginBottom={2}
                 >
                   <Box

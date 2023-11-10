@@ -130,7 +130,6 @@ const Footer = () => {
                 href="#"
                 color="#1A4D2E"
                 variant={"body1"}
-                display={{ xs: "none", sm: "block" }}
                 fontWeight={500}
                 paddingBottom={{ xs: "2%", sm: "2%" }}
                 lineHeight={2}
