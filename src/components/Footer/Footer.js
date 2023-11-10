@@ -39,7 +39,7 @@ const Footer = () => {
               title="Forefront Africa"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
-              <img src={logo} alt="logo" width={"80%"} />
+              <img src={logo} alt="logo" width={"60%"} />
             </Box>
             <Typography color="#1A4D2E" variant={"body1"} paddingTop={"2%"}>
               We help companies, investors and governments, accelerate their
@@ -84,7 +84,7 @@ const Footer = () => {
                 lineHeight={2}
                 sx={{
                   "&:hover": {
-                    color: "#bbb",
+                    color: "#5BB318",
                   },
                 }}
               >
@@ -93,7 +93,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/blog"
+                href="#"
                 color="#1A4D2E"
                 variant={"body1"}
                 fontWeight={500}
@@ -101,7 +101,7 @@ const Footer = () => {
                 lineHeight={2}
                 sx={{
                   "&:hover": {
-                    color: "#bbb",
+                    color: "#5BB318",
                   },
                 }}
               >
@@ -110,7 +110,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/our-team"
+                href="#"
                 color="#1A4D2E"
                 variant={"body1"}
                 fontWeight={500}
@@ -118,7 +118,7 @@ const Footer = () => {
                 lineHeight={2}
                 sx={{
                   "&:hover": {
-                    color: "#bbb",
+                    color: "#5BB318",
                   },
                 }}
               >
@@ -127,7 +127,7 @@ const Footer = () => {
               <Link
                 underline="none"
                 component="a"
-                href="/resources"
+                href="#"
                 color="#1A4D2E"
                 variant={"body1"}
                 display={{ xs: "none", sm: "block" }}
@@ -136,7 +136,7 @@ const Footer = () => {
                 lineHeight={2}
                 sx={{
                   "&:hover": {
-                    color: "#bbb",
+                    color: "#5BB318",
                   },
                 }}
               >
@@ -225,7 +225,7 @@ const Footer = () => {
                   color={"#1A4D2E"}
                   textAlign={"left"}
                 >
-                  55 Moleye Street, Alagomeji, Lagos, Nigeria.
+                  42, Montgomery Road, Yaba, Lagos, Nigeria.
                 </Typography>
               </Box>
             </Box>

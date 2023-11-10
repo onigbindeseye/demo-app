@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
-import image_1 from "../../../assets/images/rainforest.jpg";
+import image_1 from "../../../assets/images/mission.jpg";
 
 const ImageContainer = styled(Box)({
   position: "relative",
@@ -35,7 +35,7 @@ const Vision = () => {
                 width: "100%",
               }}
               src={image_1}
-              alt={"image_1"}
+              alt={"our_mission"}
             />
             <OverlayText>
               <Typography

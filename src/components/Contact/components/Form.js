@@ -197,7 +197,7 @@ const Form = () => {
                 textAlign={"left"}
                 color={"#000"}
               >
-                55 Moleye Street, Alagomeji, Lagos, Nigeria.
+                42, Montgomery Road, Yaba, Lagos, Nigeria.
               </Typography>
             </Box>
           </Box>

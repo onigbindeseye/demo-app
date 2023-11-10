@@ -288,7 +288,7 @@ const About = () => {
           <Box padding={"5%"} backgroundColor={"#fff"}>
             <Typography
               variant="h3"
-              color="#379237"
+              color="#5BB318"
               fontWeight={800}
               paddingTop={"9%"}
               paddingBottom={"2%"}

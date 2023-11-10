@@ -15,7 +15,7 @@ const Map = ({ themeMode = "light" }) => {
         marginHeight="0"
         marginWidth="0"
         scrolling="no"
-        src="https://www.google.com/maps/embed/v1/place?q=55+Moleye+Street,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+        src="https://www.google.com/maps/embed/v1/place?q=42+Montgomery+Road,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
         sx={{
           filter: themeMode === "dark" ? "grayscale(0.5) opacity(0.7)" : "none",
         }}

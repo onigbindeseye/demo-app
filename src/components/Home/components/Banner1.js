@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import SwipeableViews from "react-swipeable-views";
+import { Link } from "@mui/material";
 import { autoPlay } from "react-swipeable-views-utils";
 import banner1 from "../../../assets/banner/banner9.jpg";
 
@@ -14,7 +15,8 @@ const images = [
   {
     label: "banner_image1",
     imgPath: banner1,
-    title: "Empowering Sustainability, Forging a Greener Tomorrow in Africa",
+    // title: "Empowering Sustainability, Forging a Greener Tomorrow in Africa",
+    title: "Sustainable Solutions for Africa, by Africans",
     subtitle: "Leading the Path Towards a Sustainable Future!",
   },
 ];
@@ -72,7 +74,7 @@ function Banner1() {
                   display={{ xs: "none", sm: "inline" }}
                   paddingBottom={"3%"}
                   position={"absolute"}
-                  top={{ xs: "55%", sm: "25%" }}
+                  top={{ xs: "55%", sm: "27%" }}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={"80%"}
                 >
@@ -94,27 +96,24 @@ function Banner1() {
                   >
                     {step.subtitle}
                   </Typography>
-                  <Box padding={"2% 1% 1% 50%"}>
-                    <ColorButton
-                      component={"a"}
-                      variant="contained"
-                      size="medium"
-                      href={"/contact-us"}
-                      endIcon={
-                        <ArrowRightAltIcon
-                          sx={{
-                            color: "#fff",
-                            height: "32px",
-                            width: "32px",
-                            "&:hover": {
-                              color: "#1A4D2E",
-                            },
-                          }}
-                        />
-                      }
-                    >
-                      Talk to us
-                    </ColorButton>
+                  <Box
+                    marginTop={"10%"}
+                    display={"flex"}
+                    justifyContent={"center"}
+                    paddingLeft={"13%"}
+                  >
+                    <Box padding={"2%"} backgroundColor={"#fff"}>
+                      <Link
+                        underline="always"
+                        component="a"
+                        href="/contact-us"
+                        color="#379237"
+                        fontWeight={700}
+                        variant={"h6"}
+                      >
+                        Register for our Launch at COP28, Dubai
+                      </Link>
+                    </Box>
                   </Box>
                 </Box>
                 <Box

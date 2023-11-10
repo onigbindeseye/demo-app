@@ -95,7 +95,7 @@ const Energy = () => {
               objectFit: "cover",
             }}
             src={service}
-            alt={"about_img"}
+            alt={"energy"}
             marginRight={{ xs: "0%", sm: "8%" }}
             marginBottom={{ xs: "1%", sm: "0.5%" }}
             borderRadius={"20px"}

@@ -71,7 +71,7 @@ const Carbon = () => {
               objectFit: "cover",
             }}
             src={service}
-            alt={"about_img"}
+            alt={"Carbon_emission"}
             marginLeft={{ xs: "0%", sm: "7%" }}
             marginBottom={{ xs: "1%", sm: "0.5%" }}
             borderRadius={"20px"}

@@ -82,13 +82,13 @@ const Header = () => {
         width={"20%"}
       >
         <Box component="a" underline="none" href="/" title="Forefront Africa">
-          <img src={logo} alt="logo" width={"100%"} />
+          <img src={logo} alt="logo" width={"70%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "65%" }}
+        width={{ xs: "100%", sm: "55%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -125,17 +125,6 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/blog"
-              color="#5BB318"
-              fontWeight={700}
-            >
-              Blog
-            </Link>
-          </Box>
-          <Box>
-            <Link
-              underline="none"
-              component="a"
               href="/contact-us"
               color="#5BB318"
               fontWeight={700}
@@ -162,11 +151,11 @@ const Header = () => {
                   width={"100%"}
                   marginRight={23}
                   marginTop={1}
-                  marginBottom={1}
+                  marginBottom={2}
                 >
                   <Box
                     component="img"
-                    height={"5vh"}
+                    height={"4vh"}
                     sx={{
                       display: "block",
                       position: "relative",
