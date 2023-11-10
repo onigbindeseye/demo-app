@@ -17,7 +17,7 @@ const images = [
     imgPath: banner1,
     // title: "Empowering Sustainability, Forging a Greener Tomorrow in Africa",
     title: "Sustainable Solutions for Africa, by Africans",
-    subtitle: "Leading the Path Towards a Sustainable Future!",
+    // subtitle: "Leading the Path Towards a Sustainable Future!",
   },
 ];
 
@@ -74,13 +74,13 @@ function Banner1() {
                   display={{ xs: "none", sm: "inline" }}
                   paddingBottom={"3%"}
                   position={"absolute"}
-                  top={{ xs: "55%", sm: "27%" }}
+                  top={{ xs: "55%", sm: "23%" }}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={"80%"}
                 >
                   <Typography
                     variant="h2"
-                    color="#379237"
+                    color="#5BB318"
                     fontWeight={800}
                     padding={"1% 1% 1% 18%"}
                     textAlign={"center"}

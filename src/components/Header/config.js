@@ -12,10 +12,6 @@ const navConfig = [
     path: "/our-services",
   },
   {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
     title: "Contact Us",
     path: "/contact-us",
   },
