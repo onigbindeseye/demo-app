@@ -99,8 +99,8 @@ const ColorButton = styled(Button)(() => ({
   borderColor: "#071783",
   "&:hover": {
     color: "#fff",
-    backgroundColor: "#071783",
-    borderColor: "#071783",
+    backgroundColor: "#050C4C",
+    borderColor: "#050C4C",
   },
 }));
 

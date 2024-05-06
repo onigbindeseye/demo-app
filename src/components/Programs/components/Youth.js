@@ -30,7 +30,7 @@ const Youth = () => {
         <Typography
           fontWeight={500}
           variant="body2"
-          color={"#F2C844"}
+          color={"#fff"}
           padding={"4% 0%"}
         >
           PROGRAM
@@ -41,7 +41,7 @@ const Youth = () => {
           variant="h3"
           paddingTop={"5%"}
           paddingBottom={"2%"}
-          color="#fff"
+          color="#F2C844"
         >
           Youth Development Programs
         </Typography>

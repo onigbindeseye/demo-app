@@ -24,33 +24,17 @@ const ColorButton = styled(Button)(() => ({
 
 const Events = () => {
   return (
-    <Box
-      sx={{
-        position: "relative",
-        "&::after": {
-          position: "absolute",
-          content: '""',
-          width: "30%",
-          zIndex: 1,
-          top: 0,
-          right: 0,
-          height: "21%",
-          backgroundSize: "18px 18px",
-          backgroundImage: `radial-gradient(${"#050C4C"} 20%, transparent 30%)`,
-          opacity: 0.1,
-        },
-      }}
-    >
+    <Box>
       <Grid
         container
         display={"flex"}
         alignItems={"center"}
         margin={{ xs: "0%", sm: "5% 0%" }}
       >
-        <Grid item xs={12} sm={6} margin={{ xs: "2% 0% 20% 0%", sm: "0%" }}>
+        <Grid item xs={12} sm={6} margin={{ xs: "25% 0% 10% 0%", sm: "0%" }}>
           <Box
             component="img"
-            height={{ xs: "105vh", sm: "450px" }}
+            height={{ xs: "75vh", sm: "450px" }}
             width={{ xs: "100%", sm: "100%" }}
             src={library}
             alt={"image"}
@@ -63,7 +47,7 @@ const Events = () => {
           item
           xs={12}
           sm={6}
-          padding={{ xs: "30% 0% 5% 0%", sm: "0% 0% 3% 6%" }}
+          padding={{ xs: "10% 0% 25% 0%", sm: "0% 0% 3% 6%" }}
           marginBottom={{ xs: "0%", sm: "0%" }}
         >
           <Typography

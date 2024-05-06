@@ -30,7 +30,7 @@ const Educational = () => {
         <Typography
           fontWeight={500}
           variant="body2"
-          color={"#F2C844"}
+          color={"#fff"}
           padding={"4% 0%"}
         >
           PROGRAM
@@ -41,7 +41,7 @@ const Educational = () => {
           variant="h3"
           paddingTop={"2%"}
           paddingBottom={"2%"}
-          color="#fff"
+          color="#F2C844"
         >
           Educational Support Programs
         </Typography>

@@ -34,7 +34,7 @@ const Community = () => {
         <Typography
           fontWeight={500}
           variant="body2"
-          color={"#F2C844"}
+          color={"#fff"}
           padding={"4% 0%"}
         >
           PROGRAM
@@ -44,7 +44,7 @@ const Community = () => {
           fontWeight={300}
           variant="h3"
           paddingBottom={"2%"}
-          color="#fff"
+          color="#F2C844"
         >
           Community-Based Support Programs
         </Typography>

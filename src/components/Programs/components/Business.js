@@ -34,7 +34,7 @@ const Business = () => {
         <Typography
           fontWeight={500}
           variant="body2"
-          color={"#F2C844"}
+          color={"#fff"}
           padding={"4% 0%"}
         >
           PROGRAM
@@ -44,7 +44,7 @@ const Business = () => {
           fontWeight={300}
           variant="h3"
           paddingBottom={"2%"}
-          color="#fff"
+          color="#F2C844"
         >
           Business and Entrepreneurship Support Programs
         </Typography>
@@ -115,7 +115,7 @@ const Business = () => {
         <Typography
           fontWeight={500}
           variant="body2"
-          color={"#F2C844"}
+          color={"#fff"}
           padding={"4% 0%"}
         >
           PROGRAM
@@ -125,7 +125,7 @@ const Business = () => {
           fontWeight={300}
           variant="h4"
           paddingBottom={"2%"}
-          color="#fff"
+          color="#F2C844"
         >
           Business and Entrepreneurship Support Programs
         </Typography>

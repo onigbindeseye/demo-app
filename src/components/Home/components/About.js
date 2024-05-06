@@ -70,7 +70,7 @@ const About = () => {
           height: "21%",
           backgroundSize: "18px 18px",
           backgroundImage: `radial-gradient(${"#050C4C"} 20%, transparent 30%)`,
-          opacity: 0.1,
+          opacity: 0.05,
         },
       }}
     >

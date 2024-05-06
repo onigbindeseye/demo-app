@@ -37,13 +37,13 @@ const Programs = () => {
       <Box bgcolor={"#050C4C"}>
         <Educational />
       </Box>
-      <Box bgcolor={"#071783"}>
+      <Box bgcolor={"#050C4C"}>
         <Community />
       </Box>
-      <Box bgcolor={"#071783"}>
+      <Box bgcolor={"#050C4C"}>
         <Youth />
       </Box>
-      <Box bgcolor={"#071783"}>
+      <Box bgcolor={"#050C4C"}>
         <Business />
       </Box>
       <Box bgcolor={"#F6F5F5"}>
