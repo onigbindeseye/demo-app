@@ -16,18 +16,45 @@ import { Avatar } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import { blue } from "@mui/material/colors";
-import press from "../../../assets/banner/press_1.jpeg";
-import press2 from "../../../assets/2022_aca/img13.jpg";
-import rollup from "../../../assets/banner/rollup.jpg";
+import fishing from "../../../assets/images/fishing.jpg";
+import aqua from "../../../assets/images/floating.jpg";
+import covid from "../../../assets/images/covid.jpg";
+import retirement from "../../../assets/images/retirement.jpg";
+import award1 from "../../../assets/banner/banner1.jpg";
 
 const latest = [
   {
-    img: press2,
-    title: " Tunde Onakoya bags BudgIT’s Active Citizens Award",
-    date: "September 18, 2022",
-    links: "/tunde-onakoya-bags-budgit-active-citizens-award",
+    img: retirement,
+    title: "Retirement Just Ahead!",
+    subtitle:
+      "One of the greatest challenges facing typical employees throughout their...",
+    date: "March 13, 2020",
+    links: "/2020-03-13/retirement-just-ahead",
+  },
+  {
+    img: fishing,
+    title: "Fish Farming",
+    subtitle:
+      "Fish farming activity in Nigeria dates back to about 50 years ago...",
+    date: "April 4, 2019",
+    links: "/2019-04-04/fish-farming",
+  },
+  {
+    img: aqua,
+    title: "Aquaculture, the Ideal Industry",
+    subtitle: "The demand for fish in Nigeria is much higher than the local...",
+    date: "March 19, 2019",
+    links: "/2019-03-19/aquaculture-the-ideal-industry",
+  },
+  {
+    img: award1,
+    title: "Aquahack 2019",
+    subtitle:
+      "AquaHack2019 exists to create solutions that can tackle problems...",
+    date: "March 4, 2019",
+    links: "/2019-03-04/aquahack-2019",
   },
 ];
 
@@ -69,10 +96,10 @@ const FirstPressRelease = () => {
   return (
     <Box>
       <Helmet>
-        <title> Blog | BudgIT Active Citizens Awards</title>
+        <title> Blog | Aquatic Hub Afrique</title>
       </Helmet>
       <AppBar
-        position={"fixed"}
+        position={"sticky"}
         sx={{
           backgroundColor: theme.palette.background.paper,
         }}
@@ -91,63 +118,75 @@ const FirstPressRelease = () => {
         >
           <Box
             width={{ xs: "100%", sm: "65%" }}
-            paddingTop={{ xs: "35%", sm: "10%" }}
+            padding={{ xs: "35% 0%", sm: "10% 0%" }}
             marginLeft={{ xs: "0%", sm: "0%" }}
           >
             <Box display={"flex"} alignItems={"center"} marginBottom={"5%"}>
-              <img src={press} alt="logo" width="95%" />
+              <img src={covid} alt="covid_img" width="95%" />
             </Box>
             <Typography
-              variant="h4"
-              color={"#049593"}
+              variant="h3"
+              color={"#050C4C"}
               fontWeight={700}
               paddingBottom={{ xs: "10%", sm: "5%" }}
-              textAlign={"center"}
+              textAlign={"left"}
             >
-              PRESS RELEASE: BudgIT Set to Host the Maiden Edition of the Active
-              Citizens Awards: Calls for Nomination
+              After COVID-19, What Next?
             </Typography>
             <Box
               paddingBottom={{ xs: "10%", sm: "5%" }}
               display={"flex"}
               alignItems={"center"}
               justifyContent={"space-between"}
-              flexWrap={"wrap"}
-              width={{ xs: "90%", sm: "55%" }}
-              marginLeft={0}
+              // flexWrap={"wrap"}
+              width={{ xs: "100%", sm: "50%" }}
+              marginLeft={{ xs: "0%", sm: "0%" }}
             >
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                width={{ xs: "45%", sm: "35%" }}
-                paddingBottom={{ xs: "5%", sm: "0%" }}
+                width={{ xs: "35%", sm: "30%" }}
+                paddingBottom={{ xs: "0%", sm: "0%" }}
+                marginLeft={{ xs: "0%", sm: "0%" }}
               >
-                <CalendarTodayIcon sx={{ color: "#049593" }} />
+                <CalendarTodayIcon
+                  sx={{
+                    color: "#194ec3",
+                    width: 18,
+                    height: 18,
+                  }}
+                />
                 <Typography variant="body1" color={"#4f4f4f"}>
-                  July 15, 2022
+                  April 8, 2020
                 </Typography>
               </Box>
-              <Box width={{ xs: "65%", sm: "40%" }}>
+              <Box width={{ xs: "55%", sm: "40%" }}>
                 <Breadcrumbs
                   aria-label="breadcrumb"
-                  separator={<NavigateNextIcon fontSize="small" />}
+                  separator={<DoubleArrowIcon fontSize="small" />}
                 >
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#049593"
+                    color="#194ec3"
                     href="/"
                   >
-                    <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+                    <HomeIcon
+                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
+                      fontSize="inherit"
+                    />
                     Home
                   </Link>
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#049593"
-                    href="/Blog"
+                    color="#194ec3"
+                    href="/blog"
                   >
-                    <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+                    <WhatshotIcon
+                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
+                      fontSize="inherit"
+                    />
                     Blog
                   </Link>
                 </Breadcrumbs>
@@ -159,14 +198,12 @@ const FirstPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              On Thursday, July 14, 2022, BudgIT, a foremost civic-tech
-              organisation leading the advocacy for accountability, transparency
-              and effective service delivery in Nigeria and four other African
-              countries, officially announced the maiden edition of its Active
-              Citizens Awards. This event which is scheduled to hold on
-              September 10, 2022, at the Civic Centre, Lagos, seeks to promote
-              and recognise individuals and organisations doing tremendous
-              humanitarian work in Nigeria.
+              The bright side of COVID-19 #StayAtHome provides you an
+              opportunity to re-strategize and re-examine your business models
+              again; see where you may need finance to upscale or start a new
+              business entirely. Those who seize the moment now for expansion or
+              create new values will be regarded as smart guys when this
+              pandemic passes away.
             </Typography>
             <Typography
               variant="body1"
@@ -174,14 +211,13 @@ const FirstPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              According to Oluseun Onigbinde, BudgIT’s Global Director, the
-              awards is one of BudgIT’s signature initiatives and efforts to
-              spotlight and recognise personalities, organisations and agencies
-              that are championing causes, programs and initiatives that have
-              positively influenced women’s rights, community service,
-              disability rights and inclusion, political activism, civic
-              engagement and action, journalism, human rights, effective service
-              delivery and other gains of social activism in Nigeria.
+              NIRSAL Microfinance Bank licenced by the Central Bank of Nigeria
+              to operate as a National Microfinance Bank is the solution to
+              problems surrounding funds for your start-up or upscaling of your
+              business. With NIRSAL, Beneficiaries have the opportunity to
+              access loans and credit facilities up to Ten (10) Million Naira
+              with absolutely no collateral, moratorium given and a single digit
+              interest of 9% payable over a good number of years.
             </Typography>
             <Typography
               variant="body1"
@@ -189,18 +225,13 @@ const FirstPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              There is nothing more remarkable than recognising personalities
-              who do exceptional work within the civic ecosystem and are
-              committed to ensuring citizens and government continually uphold
-              the ideals of democracy. We believe that the Active Citizens
-              Awards would stir more conversations on the need to entrench a
-              culture of recognising and celebrating the tremendous
-              contributions of development leaders to effective governance and
-              an active civic space in Nigeria. The awards will feature ten (10)
-              categories, including the Oby Ezekwesili Award for Women Advocacy,
-              Award for Community Service, Disability Rights Advocacy or
-              Empowerment Award, Award for Institutional Transparency, Art for
-              Activism and many more.
+              An Enterprise Development Training for all enterprise and not
+              solely Agriculture is the basic minimum requirement to apply for
+              this loan and we are currently running online training; therefore,
+              you can apply and attend training from anywhere across the country
+              and have your Certificate mailed to you with a security code . As
+              soon as your registration is valid, you would be admitted and
+              contacted thereafter.
             </Typography>
             <Typography
               variant="body1"
@@ -208,28 +239,13 @@ const FirstPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              BudgIT looks forward to a thrilling event with support from civic
-              leaders, industry leaders and the general public. Nominations are
-              officially open; thus, you can nominate heroes directly at{" "}
-              <Link
-                component={"a"}
-                color="#049593"
-                fontWeight={700}
-                variant={"body1"}
-                sx={{
-                  cursor: "pointer",
-                }}
-              >
-                https://awards.civichive.org/
-              </Link>
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "2%", sm: "1%" }}
-              fontWeight={700}
-              color={"#4f4f4f"}
-            >
-              Nominations
+              If interested, kindly visit bit.ly/AquaNIRSAL to create a profile
+              and signup, in the process of creating a password, your password
+              must contain at least an upper case letter, lower case, a digit
+              and a special character and then sign in with the password created
+              and register to be trained. In the space provided for Training
+              Centre, kindly select “Ogun State” and select “Aquatic Hub Afrique
+              Network/Fish Shoal Nigeria”.
             </Typography>
             <Typography
               variant="body1"
@@ -237,59 +253,10 @@ const FirstPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              There are Ten (10) categories of awards. Of these categories, only
-              5 are open to nominations from the public. A panel of selected
-              judges will carefully select winners for the other five categories
-              after thorough research and deliberations hinged on specific
-              criteria and the selection process.
+              Kindly also endeavour to inform someone about this opportunity
+              today. For further enquiries, please contact us on 07086675628.
             </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "2%", sm: "1%" }}
-              fontWeight={700}
-              color={"#4f4f4f"}
-            >
-              Criteria and Eligibility for Nomination
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              To nominate an individual or organisation for any category, you
-              must carefully review their eligibility for the category they are
-              being nominated for. The shortlist and winner of each category
-              will only be considered based on the specified criteria including,
-              innovation, impact, milestones, sustainability, diversity and
-              inclusion, organisational structure and leadership quality. This
-              invariably means that once you make a nomination, you must provide
-              links to some impacts or projects that the nominee has executed
-              within a specified period of time, covering the specified
-              criteria.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "2%", sm: "1%" }}
-              fontWeight={700}
-              color={"#4f4f4f"}
-            >
-              Shortlisting and Final Selection
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              After the nominations, all the submissions will be reviewed in a
-              three-stage selection process by selected Panel of Judges. Once
-              the selection process has been completed, the final shortlist will
-              consist of three individuals with the highest grade points from
-              each category. Of these three, only one nominee will emerge as the
-              winner in each category. The winner will be announced during the
-              Awards event at the Civic Centre, Lagos.
-            </Typography>
+
             <Typography
               variant="body1"
               color={"#4f4f4f"}
@@ -298,97 +265,111 @@ const FirstPressRelease = () => {
               Signed
             </Typography>
             <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
-              Iyanu Fatoba
-            </Typography>
-            <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
-              Ag Head; Media, Communications and Creatives
+              Lekan Aquatic
             </Typography>
             <Box
               marginTop={"5%"}
               width={{ xs: "60%", sm: "40%" }}
               marginLeft={0}
             >
-              <Typography variant="body1" fontWeight={700} color={"#049593"}>
+              <Typography
+                variant="body1"
+                fontWeight={700}
+                color={"#3E4095"}
+                gutterBottom
+              >
                 Share this post
-                <Box
-                  display={"flex"}
-                  justifyContent={"space-between"}
-                  width={{ xs: "70%", sm: "50%" }}
-                  marginLeft={"0%"}
+              </Typography>
+              <Box
+                display={"flex"}
+                justifyContent={"space-between"}
+                width={{ xs: "70%", sm: "50%" }}
+                marginLeft={{ xs: "0%", sm: "0%" }}
+              >
+                <Avatar
+                  sx={{
+                    bgcolor: blue[900],
+                    width: 36,
+                    height: 36,
+                    cursor: "pointer",
+                  }}
+                  id="facebook"
+                  onClick={handleShare}
                 >
-                  <Avatar
-                    sx={{
-                      bgcolor: blue[900],
-                      width: 36,
-                      height: 36,
-                      cursor: "pointer",
-                    }}
-                    id="facebook"
-                    onClick={handleShare}
-                  >
-                    <FacebookIcon />
-                  </Avatar>
-                  <Avatar
-                    sx={{
-                      bgcolor: blue[300],
-                      width: 36,
-                      height: 36,
-                      cursor: "pointer",
-                    }}
-                    id="twitter"
-                    onClick={handleShare}
-                  >
-                    <TwitterIcon />
-                  </Avatar>
-                  <Avatar
+                  <FacebookIcon />
+                </Avatar>
+                <Avatar
+                  sx={{
+                    bgcolor: blue[300],
+                    width: 36,
+                    height: 36,
+                    cursor: "pointer",
+                  }}
+                  id="twitter"
+                  onClick={handleShare}
+                >
+                  <TwitterIcon />
+                </Avatar>
+                <Avatar
+                  sx={{
+                    bgcolor: blue[700],
+                    width: 36,
+                    height: 36,
+                    cursor: "pointer",
+                  }}
+                  id="linkedin"
+                  onClick={handleShare}
+                >
+                  <LinkedInIcon
                     sx={{
                       bgcolor: blue[700],
-                      width: 36,
-                      height: 36,
-                      cursor: "pointer",
                     }}
-                    id="linkedin"
-                    onClick={handleShare}
-                  >
-                    <LinkedInIcon
-                      sx={{
-                        bgcolor: blue[700],
-                      }}
-                    />
-                  </Avatar>
-                </Box>
-              </Typography>
+                  />
+                </Avatar>
+              </Box>
             </Box>
           </Box>
           <Box
             width={{ xs: "92%", sm: "25%" }}
-            marginTop={{ xs: "25%", sm: "10%" }}
+            marginTop={{ xs: "5%", sm: "10%" }}
           >
-            <Typography variant="h5" fontWeight={700} color={"#049593"}>
-              Related Posts
+            <Typography variant="h5" fontWeight={700} color={"#3E4095"}>
+              Previous Posts
             </Typography>
             {latest.map((post, index) => (
               <Box
-                marginTop={"10%"}
+                marginTop={{ xs: "5%", sm: "10%" }}
                 display={"flex"}
                 key={index}
                 justifyContent={"space-between"}
-                alignItems={"center"}
+                alignItems={"flex-start"}
                 flexWrap={{ xs: "wrap", sm: "none" }}
+                marginBottom={"5%"}
               >
                 <Box
-                  display={"flex"}
-                  alignItems={"left"}
-                  marginBottom={"5%"}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={{ xs: "65%", sm: "40%" }}
                 >
-                  <img src={post.img} alt="logo" width={"100%"} />
+                  <Link href={post.links}>
+                    <Box
+                      component="img"
+                      height={{ xs: "15vh", sm: "15vh" }}
+                      width={{ xs: "100%", sm: "100%" }}
+                      src={post.img}
+                      alt={"Fishery"}
+                      sx={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Link>
                 </Box>
-                <Box width={{ xs: "100%", sm: "50%" }}>
+                <Box
+                  width={{ xs: "65%", sm: "50%" }}
+                  marginLeft={{ xs: "0%", sm: "0%" }}
+                >
                   <Link
                     variant="body2"
-                    color={"#049593"}
+                    color={"#3E4095"}
                     fontWeight={500}
                     paddingBottom={{ xs: "10%", sm: "5%" }}
                     textAlign={"center"}
@@ -399,6 +380,14 @@ const FirstPressRelease = () => {
                   </Link>
                   <Typography
                     variant="body2"
+                    fontWeight={400}
+                    color={"#4f4f4f"}
+                    paddingTop={"2%"}
+                  >
+                    {post.subtitle}
+                  </Typography>
+                  <Typography
+                    variant="caption"
                     fontWeight={500}
                     color={"#aaa"}
                     paddingTop={"2%"}
@@ -408,23 +397,10 @@ const FirstPressRelease = () => {
                 </Box>
               </Box>
             ))}
-            <Box
-              component="img"
-              height={{ xs: "27vh", sm: "170vh" }}
-              sx={{
-                objectFit: "cover",
-              }}
-              src={rollup}
-              alt={"aca2023_img"}
-              display={{ xs: "none", sm: "block" }}
-              marginRight={{ xs: "0%", sm: "0.5%" }}
-              marginBottom={{ xs: "1%", sm: "0.5%" }}
-              marginTop={{ xs: "1%", sm: "10%" }}
-            />
           </Box>
         </Box>
       </Container>
-      <Box bgcolor={"#049593"}>
+      <Box bgcolor={"#000058"}>
         <Container>
           <Footer />
         </Container>

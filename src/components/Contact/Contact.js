@@ -1,58 +1,42 @@
 import React from "react";
-import { useTheme } from "@mui/material/styles";
+import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar";
 import Container from "../../common/Container";
 import Header from "../../components/Header";
-import Scroll from "../Header/Scroll";
-import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
+import ContactDetails from "./components/ContactDetails";
 import Banner from "./components/Banner";
-import Image from "../../assets/banner/banner8.jpg";
-import Map from "./components/Map";
-import Form from "./components/Form";
-
-const styles = {
-  paperContainer: {
-    height: 350,
-    backgroundImage: `url(${Image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
 
 const Contact = () => {
-  const theme = useTheme();
-
   return (
     <Box>
-      <Scroll>
-        <AppBar
-          position={"sticky"}
-          elevation={0}
-          sx={{
-            backgroundColor: theme.palette.background.paper,
-            padding: "10px 0px",
-          }}
-        >
-          <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
-            <Header />
-          </Container>
-        </AppBar>
-      </Scroll>
-      <Box style={styles.paperContainer}>
+      <Helmet>
+        <title> Contact Us | Oluseun Onigbinde Resource Centre</title>
+      </Helmet>
+      <AppBar
+        position={"sticky"}
+        elevation={0}
+        padding={"5px 0px"}
+        sx={{
+          backgroundColor: "#F6F5F5",
+        }}
+      >
+        <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
+          <Header />
+        </Container>
+      </AppBar>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <Banner />
         </Container>
       </Box>
-      <Box>
-        <Map />
-      </Box>
-      <Box>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
-          <Form />
+          <ContactDetails />
         </Container>
       </Box>
-      <Box>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <Footer />
         </Container>

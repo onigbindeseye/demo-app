@@ -72,8 +72,8 @@ const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       width={"100%"}
-      marginBottom={{ xs: 2, sm: 0 }}
-      marginTop={{ xs: 2, sm: 0 }}
+      marginBottom={{ xs: 2, sm: 1 }}
+      marginTop={{ xs: 2, sm: 2 }}
       id="back-to-top-anchor"
     >
       <Box
@@ -81,7 +81,12 @@ const Header = () => {
         marginLeft={{ xs: "0%", sm: "0%" }}
         width={"20%"}
       >
-        <Box component="a" underline="none" href="/" title="Forefront Africa">
+        <Box
+          component="a"
+          underline="none"
+          href="/"
+          title="Oluseun Onigbinde Resource Centre"
+        >
           <img src={logo} alt="logo" width={"70%"} />
         </Box>
       </Box>
@@ -103,22 +108,65 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/about-us"
-              color={"#5BB318"}
+              href="/who-we-are"
+              color={"#071783"}
               fontWeight={700}
+              sx={{
+                "&:hover": {
+                  color: "#050C4C",
+                },
+              }}
             >
-              About Us
+              Who We Are
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/our-services"
-              color={"#5BB318"}
+              href="/what-we-do"
+              color={"#071783"}
               fontWeight={700}
+              sx={{
+                "&:hover": {
+                  color: "#050C4C",
+                },
+              }}
             >
-              Our Services
+              What We Do
+            </Link>
+          </Box>
+
+          <Box>
+            <Link
+              underline="none"
+              component="a"
+              href="/our-events"
+              color={"#071783"}
+              fontWeight={700}
+              sx={{
+                "&:hover": {
+                  color: "#050C4C",
+                },
+              }}
+            >
+              Events
+            </Link>
+          </Box>
+          <Box>
+            <Link
+              underline="none"
+              component="a"
+              href="/blog"
+              color={"#071783"}
+              fontWeight={700}
+              sx={{
+                "&:hover": {
+                  color: "#050C4C",
+                },
+              }}
+            >
+              Blog
             </Link>
           </Box>
           <Box>
@@ -126,8 +174,13 @@ const Header = () => {
               underline="none"
               component="a"
               href="/contact-us"
-              color="#5BB318"
+              color="#071783"
               fontWeight={700}
+              sx={{
+                "&:hover": {
+                  color: "#050C4C",
+                },
+              }}
             >
               Contact Us
             </Link>
@@ -139,7 +192,7 @@ const Header = () => {
               position="fixed"
               zIndex={theme.zIndex.drawer + 1}
               sx={{
-                backgroundColor: theme.palette.background.paper,
+                backgroundColor: "#F6F5F5",
               }}
             >
               <Toolbar>
@@ -147,20 +200,21 @@ const Header = () => {
                   component="a"
                   underline="none"
                   href="/"
-                  title="Forefront Africa"
+                  title="Oluseun Onigbinde Resource Centre"
                   width={"100%"}
-                  marginRight={23}
+                  marginRight={18}
                   marginTop={2}
                   marginBottom={2}
                 >
                   <Box
                     component="img"
-                    height={"4vh"}
+                    height={"9vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
                       width: "100%",
+                      objectFit: "cover",
                     }}
                     src={logo}
                     alt={"logo"}
@@ -169,7 +223,7 @@ const Header = () => {
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <IconButton onClick={toggleDrawer(anchor, true)}>
-                      <MenuIcon fontSize="large" sx={{ color: "#5BB318" }} />
+                      <MenuIcon fontSize="large" sx={{ color: "#071783" }} />
                     </IconButton>
                     <SwipeableDrawer
                       anchor={anchor}
@@ -179,7 +233,7 @@ const Header = () => {
                     >
                       <DrawerHeader>
                         <IconButton onClick={handleDrawerClose}>
-                          <CloseIcon sx={{ color: "#379237" }} />
+                          <CloseIcon sx={{ color: "#071783" }} />
                         </IconButton>
                       </DrawerHeader>
                       <Divider />

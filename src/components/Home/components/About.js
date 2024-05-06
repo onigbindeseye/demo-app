@@ -1,321 +1,181 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
+import { useTheme, styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import Avatar from "@mui/material/Avatar";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
-import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
-import ParkIcon from "@mui/icons-material/Park";
-import HubIcon from "@mui/icons-material/Hub";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
+import outreach from "../../../assets/images/medical.jpg";
+import library from "../../../assets/images/library.jpg";
+import iread from "../../../assets/images/iread3.jpeg";
+import fellowship from "../../../assets/images/fellowship.jpg";
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+const images = [
+  {
+    label: "banner_image1",
+    imgPath: outreach,
+  },
+  {
+    label: "banner_image2",
+    imgPath: library,
+  },
+  {
+    label: "banner_image3",
+    imgPath: iread,
+  },
+  {
+    label: "banner_image4",
+    imgPath: fellowship,
+  },
+];
+
+const ColorButton = styled(Button)(() => ({
+  color: "#F2C844",
+  width: 185,
+  height: 55,
+  fontWeight: 700,
+  fontSize: "16px",
+  textTransform: "capitalize",
+  backgroundColor: "#050C4C",
+  borderColor: "#050C4C",
+  "&:hover": {
+    color: "#fff",
+    backgroundColor: "#071783",
+    borderColor: "#071783",
+  },
+}));
 
 const About = () => {
-  const ColorButton = styled(Button)(() => ({
-    color: "#205723",
-    width: 225,
-    height: 65,
-    fontWeight: 700,
-    fontSize: "16px",
-    textTransform: "capitalize",
-    backgroundColor: "#fff",
-    border: "2px solid #205723",
-    "&:hover": {
-      color: "#fff",
-      backgroundColor: "#5BB318",
-      borderColor: "#5BB318",
-    },
-  }));
-  const ColorButton2 = styled(Button)(() => ({
-    color: "#fff",
-    width: 225,
-    height: 65,
-    fontWeight: 700,
-    fontSize: "16px",
-    textTransform: "capitalize",
-    backgroundColor: "#205723",
-    borderColor: "#205723",
-    "&:hover": {
-      color: "#fff",
-      backgroundColor: "#5BB318",
-      borderColor: "#5BB318",
-    },
-  }));
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
 
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
   return (
-    <Box paddingTop={{ xs: "25%", sm: "12%" }}>
-      <Box
+    <Box
+      sx={{
+        position: "relative",
+        "&::after": {
+          position: "absolute",
+          content: '""',
+          width: "30%",
+          zIndex: 1,
+          top: 0,
+          right: 0,
+          height: "21%",
+          backgroundSize: "18px 18px",
+          backgroundImage: `radial-gradient(${"#050C4C"} 20%, transparent 30%)`,
+          opacity: 0.1,
+        },
+      }}
+    >
+      <Grid
+        container
         display={"flex"}
-        justifyContent={"space-between"}
-        alignCenter={"center"}
-        flexWrap={"wrap"}
-        width={"100%"}
+        alignItems={"center"}
+        marginTop={{ xs: "0%", sm: "5%" }}
       >
-        <Box
-          width={{ xs: "100%", sm: "50%" }}
-          padding={{ xs: "5% 1%", sm: "1% 3% 3% 0%" }}
-          marginLeft={{ xs: "0%", sm: "0%" }}
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          padding={{ xs: "30% 0% 5% 0%", sm: "4% 6% 3% 0%" }}
+          marginBottom={{ xs: "0%", sm: "5%" }}
         >
-          <Box
-            width={{ xs: "100%", sm: "90%" }}
-            marginLeft={{ xs: "0%", sm: "0%" }}
+          <Typography
+            variant={"h3"}
+            fontWeight={300}
+            textAlign={"left"}
+            color={"#071783"}
+            paddingBottom={"1%"}
           >
-            <Typography
-              variant="h2"
-              color="#5BB318"
-              fontWeight={800}
-              paddingBottom={"2%"}
-              textAlign={"left"}
-            >
-              Who We Are?
-            </Typography>
-          </Box>
+            Who We Are
+          </Typography>
+
           <Typography
             variant={"body1"}
             fontWeight={400}
             textAlign={"left"}
-            color={"#000"}
-            data-aos={"fade-up"}
-            lineHeight={"1.625em"}
-            padding={{ xs: "0%", sm: "2% 10% 1% 0%" }}
+            color={"#4f4f4f"}
+            padding={{ xs: "1% 0%", sm: "4% 0% 0% 0%" }}
+            lineHeight={1.5}
           >
-            We are a team passionate in creating a world that thrives on green
-            innovation, responsible consumption, and a healthier climate for
-            generations to come.
+            Oluseun Onigbinde Resource Centre is a dynamic charitable
+            organization founded by Oluseun Onigbinde, dedicated to fostering
+            positive change and empowerment within communities across Oyo State.
+            With a steadfast commitment to uplifting individuals and creating
+            sustainable opportunities, the Trust operates across various sectors
+            including healthcare, education, skill development, and
+            entrepreneurship.
           </Typography>
-          <Box
-            marginTop={{ xs: "7%", sm: "4%" }}
-            marginBottom={{ xs: "7%", sm: "2%" }}
-            width={"100%"}
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            flexWrap={"wrap"}
+          <Typography
+            variant={"body1"}
+            fontWeight={400}
+            textAlign={"left"}
+            color={"#4f4f4f"}
+            padding={{ xs: "2% 0%", sm: "2% 0%" }}
+            lineHeight={1.5}
           >
-            <Box
-              width={"50%"}
-              display={"flex"}
-              justifyContent={"space-between"}
-              alignItems={"center"}
-              data-aos={"fade-down"}
+            With a firm belief in the transformative power of collective action
+            and community engagement, the Trust endeavors to address pressing
+            social challenges and unlock opportunities for individuals to
+            thrive.
+          </Typography>
+          <Box marginTop={"4%"}>
+            <ColorButton
+              component={"a"}
+              variant="contained"
+              size="medium"
+              href={"/who-we-are"}
             >
-              <Box width={"15%"} marginRight={2}>
-                <Avatar
-                  variant="square"
-                  sx={{
-                    bgcolor: "#fff",
-                    border: " 2px dotted #CACACA",
-                    padding: "5%",
-                  }}
-                >
-                  <EmojiObjectsIcon
-                    sx={{ color: "#5BB318", width: 36, height: 36 }}
-                  />
-                </Avatar>
-              </Box>
-              <Box width={"85%"}>
-                <Typography
-                  variant={"body1"}
-                  fontWeight={700}
-                  textAlign={"left"}
-                  color={"#000"}
-                  paddingBottom={"1%"}
-                >
-                  Innovation
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              width={"50%"}
-              display={"flex"}
-              justifyContent={"space-between"}
-              alignItems={"center"}
-              data-aos={"fade-down"}
-            >
-              <Box width={"15%"} marginRight={2}>
-                <Avatar
-                  variant="square"
-                  sx={{
-                    bgcolor: "#fff",
-                    border: " 2px dotted #CACACA",
-                    padding: "5%",
-                  }}
-                >
-                  <ParkIcon sx={{ color: "#5BB318", width: 36, height: 36 }} />
-                </Avatar>
-              </Box>
-              <Box width={"85%"}>
-                <Typography
-                  variant={"body1"}
-                  fontWeight={700}
-                  textAlign={"left"}
-                  color={"#000"}
-                  paddingBottom={"1%"}
-                >
-                  Sustainability
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              width={"50%"}
-              display={"flex"}
-              justifyContent={"space-between"}
-              alignItems={"center"}
-              marginTop={"5%"}
-              data-aos={"fade-down"}
-            >
-              <Box width={"15%"} marginRight={2}>
-                <Avatar
-                  variant="square"
-                  sx={{
-                    bgcolor: "#fff",
-                    border: " 2px dotted #CACACA",
-                    padding: "5%",
-                  }}
-                >
-                  <ThumbUpAltIcon
-                    sx={{ color: "#5BB318", width: 36, height: 36 }}
-                  />
-                </Avatar>
-              </Box>
-              <Box width={"85%"}>
-                <Typography
-                  variant={"body1"}
-                  fontWeight={700}
-                  textAlign={"left"}
-                  color={"#000"}
-                  paddingBottom={"1%"}
-                >
-                  Integrity
-                </Typography>
-              </Box>
-            </Box>
-            <Box
-              width={"50%"}
-              display={"flex"}
-              justifyContent={"space-between"}
-              alignItems={"center"}
-              marginTop={"5%"}
-              data-aos={"fade-down"}
-            >
-              <Box width={"15%"} marginRight={2}>
-                <Avatar
-                  variant="square"
-                  sx={{
-                    bgcolor: "#fff",
-                    border: " 2px dotted #CACACA",
-                    padding: "5%",
-                  }}
-                >
-                  <HubIcon sx={{ color: "#5BB318", width: 36, height: 36 }} />
-                </Avatar>
-              </Box>
-              <Box width={"85%"}>
-                <Typography
-                  variant={"body1"}
-                  fontWeight={700}
-                  textAlign={"left"}
-                  color={"#000"}
-                  paddingBottom={"1%"}
-                >
-                  Resilience
-                </Typography>
-              </Box>
-            </Box>
+              Read More
+            </ColorButton>
           </Box>
-          <Box
-            display={"flex"}
-            marginLeft={{ xs: "0%", sm: "0%" }}
-            justifyContent={"space-between"}
-            // flexWrap={"wrap"}
-            width={{ xs: "100%", sm: "80%" }}
+        </Grid>
+        <Grid item xs={12} sm={6} margin={{ xs: "2% 0% 20% 0%", sm: "0%" }}>
+          {/* <AutoPlaySwipeableViews
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+            interval={10000}
           >
-            <Box padding={{ xs: "5% 0% 1% 1%", sm: "5% 0% 1% 0%" }}>
-              <ColorButton
-                component={"a"}
-                variant="contained"
-                size="medium"
-                href={"/about-us"}
-                endIcon={
-                  <ArrowRightAltIcon
-                    sx={{
-                      color: "#205723",
-                      height: "32px",
-                      width: "32px",
-                      "&:hover": {
-                        color: "#fff",
-                      },
-                    }}
-                  />
-                }
-              >
-                About Forefront
-              </ColorButton>
-            </Box>
-            <Box
-              padding={{ xs: "5% 2% 1% 1%", sm: "5% 2% 1% 4%" }}
-              display={{ xs: "none", sm: "block" }}
-            >
-              <ColorButton2
-                component={"a"}
-                variant="contained"
-                size="medium"
-                href={"/our-services"}
-                endIcon={
-                  <ArrowRightAltIcon
-                    sx={{
-                      color: "#fff",
-                      height: "32px",
-                      width: "32px",
-                      "&:hover": {
-                        color: "#fff",
-                      },
-                    }}
-                  />
-                }
-              >
-                Our Services
-              </ColorButton2>
-            </Box>
-          </Box>
-        </Box>
-        <Box
-          width={{ xs: "100%", sm: "40%" }}
-          backgroundColor={"#D4F6CC"}
-          marginTop={{ xs: "25%", sm: "0%" }}
-          padding={{ xs: "4%", sm: "2%" }}
-        >
-          <Box padding={"5%"} backgroundColor={"#fff"}>
-            <Typography
-              variant="h3"
-              color="#5BB318"
-              fontWeight={800}
-              paddingTop={"9%"}
-              paddingBottom={"2%"}
-              textAlign={"left"}
-            >
-              Why Forefront Africa?
-            </Typography>
-            <Typography
-              variant="body1"
-              color="#000"
-              fontWeight={400}
-              paddingTop={"9%"}
-              paddingBottom={"2%"}
-              lineHeight={1.75}
-              textAlign={"left"}
-            >
-              At Forefront Africa, we are committed to making a meaningful
-              impact on the fight against climate change. Our mission is to
-              provide comprehensive services that empower businesses,
-              organizations, and individuals to actively engage in sustainable
-              practices and make a positive difference for our planet. Together,
-              we can create a world that thrives on renewable energy,
-              responsible consumption, and a resilient climate.
-            </Typography>
-          </Box>
-        </Box>
-      </Box>
+            {images.map((step, index) => (
+              <div key={step.label}>
+                {Math.abs(activeStep - index) <= 2 ? (
+                  <Box>
+                    <Box
+                      component="img"
+                      height={{ xs: "105vh", sm: "450px" }}
+                      width={{ xs: "100%", sm: "100%" }}
+                      src={step.imgPath}
+                      alt={step.label}
+                      sx={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Box>
+                ) : null}
+              </div>
+            ))}
+          </AutoPlaySwipeableViews> */}
+          <Box
+            component="img"
+            height={{ xs: "105vh", sm: "450px" }}
+            width={{ xs: "100%", sm: "100%" }}
+            src={library}
+            alt={"image"}
+            sx={{
+              objectFit: "cover",
+            }}
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };

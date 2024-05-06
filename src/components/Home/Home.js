@@ -2,62 +2,53 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
 import Container from "../../common/Container";
-import Header from "../../components/Header";
 import AppBar from "@mui/material/AppBar";
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner1";
+import Image2 from "../../assets/banner/banner1.jpg";
+import Programs from "./components/Programs";
 import About from "./components/About";
-import Image2 from "../../assets/banner/banner11.jpg";
-import Services from "./components/Services";
-import Highlights from "./components/Highlights";
-import Contact from "./components/Contact";
-
-const styles = {
-  paperContainer: {
-    height: 800,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
+import Events from "./components/Events";
 
 const Home = () => {
   return (
     <Box>
       <Helmet>
-        <title> Homepage | Forefront Africa</title>
+        <title> Homepage | Oluseun Onigbinde Resource Centre</title>
       </Helmet>
-      <Scroll>
-        <AppBar position={"fixed"} elevation={0}>
-          <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
-            <Header />
-          </Container>
-        </AppBar>
-      </Scroll>
-      <Box display={{ xs: "none", sm: "inline" }}>
+
+      <AppBar
+        position={"sticky"}
+        elevation={0}
+        padding={"5px 0px"}
+        sx={{
+          backgroundColor: "#F6F5F5",
+        }}
+      >
+        <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
+          <Header />
+        </Container>
+      </AppBar>
+      <Box bgcolor={"#F6F5F5"}>
         <Banner />
       </Box>
-      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
-        <Banner />
-      </Box>
-      <Box>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <About />
         </Container>
       </Box>
-      <Box>
-        <Highlights />
-      </Box>
-      <Box bgcolor={"#F2FFE9"}>
+      <Box bgcolor={"#050C4C"}>
         <Container>
-          <Services />
+          <Events />
         </Container>
       </Box>
-      <Box>
-        <Contact />
+      <Box bgcolor={"#F6F5F5"}>
+        <Container>
+          <Programs />
+        </Container>
       </Box>
-      <Box bgcolor={"#fff"}>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <Footer />
         </Container>

@@ -4,12 +4,20 @@ const navConfig = [
     path: "/",
   },
   {
-    title: "About Us",
-    path: "/about-us",
+    title: "Who We Are",
+    path: "/who-we-are",
   },
   {
-    title: "Our Services",
-    path: "/our-services",
+    title: "What We Do",
+    path: "/what-we-do",
+  },
+  {
+    title: "Events",
+    path: "/our-events",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
   },
   {
     title: "Contact Us",

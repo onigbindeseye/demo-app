@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "GilroyLight";
+    src: local("GilroyLight"),
+      url("./fonts/Gilroy-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "GilroyRegular";
+    src: local("GilroyRegular"),
+      url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "PolySansBulky";
+    src: local("PolySansBulky"),
+      url("./fonts/PolySansTrial-Bulky.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "PolySansMedian";
+    src: local("PolySansMedian"),
+      url("./fonts/PolySansTrial-Median.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "PolySansNeutral";
+    src: local("PolySansNeutral"),
+      url("./fonts/PolySansTrial-Neutral.otf") format("opentype");
+  }

@@ -2,37 +2,35 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
 import Container from "../../common/Container";
+import AppBar from "@mui/material/AppBar";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import AppBar from "@mui/material/AppBar";
 import Banner from "./components/Banner";
-import BlogPosts from "./components/BlogPosts";
-import Scroll from "../Header/Scroll";
 
-const Blog = () => {
+const Events = () => {
   return (
     <Box>
       <Helmet>
-        <title> Blog | BudgIT Active Citizens Awards</title>
+        <title> Blog | Oluseun Onigbinde Resource Centre</title>
       </Helmet>
-      <Scroll>
-        <AppBar position={"fixed"} elevation={0}>
-          <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
-            <Header />
-          </Container>
-        </AppBar>
-      </Scroll>
-      <Box>
+      <AppBar
+        position={"sticky"}
+        elevation={0}
+        padding={"5px 0px"}
+        sx={{
+          backgroundColor: "#F6F5F5",
+        }}
+      >
+        <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
+          <Header />
+        </Container>
+      </AppBar>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <Banner />
         </Container>
       </Box>
-      <Box>
-        <Container>
-          <BlogPosts />
-        </Container>
-      </Box>
-      <Box bgcolor={"#049593"}>
+      <Box bgcolor={"#F6F5F5"}>
         <Container>
           <Footer />
         </Container>
@@ -41,4 +39,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Events;
