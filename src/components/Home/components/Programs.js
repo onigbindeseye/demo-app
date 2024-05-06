@@ -42,7 +42,7 @@ const programs = [
 
 const Programs = () => {
   return (
-    <Grid container padding={{ xs: "2% 0% 20% 0%", sm: "2% 0% 10% 0%" }}>
+    <Grid container padding={{ xs: "25% 0% 20% 0%", sm: "10% 0% 10% 0%" }}>
       <Box
         width={{ xs: "100%", sm: "40%" }}
         marginLeft={{ xs: "0%", sm: "0%" }}
@@ -65,60 +65,6 @@ const Programs = () => {
         justifyContent={"space-between"}
         flexWrap={"wrap"}
       >
-        {/* <Grid item xs={12} md={6} marginTop={{ xs: "10%", sm: "5%" }}>
-          <Card sx={{ maxWidth: 555, bgcolor: "#071783" }}>
-            <CardContent>
-              <Typography
-                fontWeight={500}
-                variant="body2"
-                color={"#F2C844"}
-                padding={"6% 0% 4% 0%"}
-              >
-                PROGRAM
-              </Typography>
-              <Typography
-                gutterBottom
-                fontWeight={300}
-                variant="h3"
-                paddingTop={"5%"}
-                paddingBottom={"2%"}
-                color="#fff"
-              >
-                What We Support
-              </Typography>
-              <Typography
-                gutterBottom
-                fontWeight={400}
-                variant="body1"
-                component="div"
-                paddingTop={"5%"}
-                paddingBottom={"5%"}
-                color="#fff"
-              >
-                Our mission is to enhance the quality of life for individuals
-                and communities by providing access to essential services,
-                educational resources, and economic opportunities.
-              </Typography>
-              <Box paddingBottom={"6%"} paddingTop={"2%"}>
-                <Link
-                  underline="none"
-                  component="a"
-                  href="/what-we-do"
-                  color="#fff"
-                  fontWeight={600}
-                  variant="body2"
-                  sx={{
-                    "&:hover": {
-                      color: "#050C4C",
-                    },
-                  }}
-                >
-                  Learn More &#10095;&#10095;&#10095;
-                </Link>
-              </Box>
-            </CardContent>{" "}
-          </Card>
-        </Grid> */}
         {programs.map((details, index) => {
           const { pics, title, description, links } = details;
           return (

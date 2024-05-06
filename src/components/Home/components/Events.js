@@ -111,7 +111,7 @@ const Events = () => {
             padding={{ xs: "2% 0%", sm: "1%" }}
             lineHeight={1.5}
           >
-            <strong>Time: </strong>1p.m
+            <strong>Time: </strong>1 p.m
           </Typography>
           <Box marginTop={"4%"}>
             <ColorButton

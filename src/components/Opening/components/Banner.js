@@ -29,7 +29,7 @@ const Banner = () => {
         paddingBottom={"2%"}
         color="#071783"
       >
-        Official Opening of Oluseun Onigbinde Resource Centre
+        Official Opening of the Oluseun Onigbinde Resource Centre
       </Typography>
     </Box>
   );
