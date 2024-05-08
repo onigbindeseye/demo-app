@@ -89,7 +89,7 @@ const Footer = () => {
             <Link
               underline="none"
               component="a"
-              href="/what-we-do"
+              href="/resources/infographics"
               color="#071783"
               variant={"body1"}
               fontWeight={500}
@@ -101,7 +101,7 @@ const Footer = () => {
                 },
               }}
             >
-              Our Team
+              Our Resources
             </Link>
             <Link
               underline="none"

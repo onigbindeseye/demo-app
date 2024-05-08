@@ -157,7 +157,7 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/blog"
+              href="/resources/infographics"
               color={"#071783"}
               fontWeight={700}
               sx={{
@@ -166,7 +166,7 @@ const Header = () => {
                 },
               }}
             >
-              Blog
+              Resources
             </Link>
           </Box>
           <Box>

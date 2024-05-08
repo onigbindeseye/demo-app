@@ -23,6 +23,7 @@ import Literacy2023 from "./components/Literacy2023";
 import Scholarship from "./components/Scholarship";
 import Blog from "./components/Blog";
 import Opening from "./components/Opening";
+import Resources from "./components/Resources";
 
 const theme = createTheme({
   typography: {
@@ -40,6 +41,7 @@ function App() {
           <Switch>
             <Route exact path="/contact-us" component={Contact} />
             <Route exact path="/blog" component={Blog} />
+            <Route path="/resources" component={Resources} />
             <Route
               exact
               path="/official-launching-of-oluseun-onigbinde-resource-centre"

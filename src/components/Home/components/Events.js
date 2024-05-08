@@ -34,7 +34,7 @@ const Events = () => {
         <Grid item xs={12} sm={6} margin={{ xs: "25% 0% 10% 0%", sm: "0%" }}>
           <Box
             component="img"
-            height={{ xs: "75vh", sm: "450px" }}
+            height={{ xs: "45vh", sm: "550px" }}
             width={{ xs: "100%", sm: "100%" }}
             src={library}
             alt={"image"}

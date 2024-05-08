@@ -74,7 +74,7 @@ const Details = () => {
         <Grid xs={12} sm={6} display={{ xs: "none", sm: "block" }}>
           <Box
             component="img"
-            height={{ xs: "95vh", sm: "550px" }}
+            height={{ xs: "95vh", sm: "650px" }}
             sx={{
               objectFit: "cover",
               width: "100%",
