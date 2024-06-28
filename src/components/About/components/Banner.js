@@ -23,13 +23,13 @@ const Banner = () => {
     >
       <Typography
         gutterBottom
-        fontWeight={300}
-        variant="h3"
+        fontWeight={700}
+        variant="h2"
         paddingTop={{ xs: "35%", sm: "5%" }}
         paddingBottom={"2%"}
-        color="#071783"
+        color="#025066"
       >
-        Who We Are
+        About Tracka
       </Typography>
     </Box>
   );

@@ -1,50 +1,135 @@
 import * as React from "react";
+import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import banner1 from "../../../assets/images/outreach.jpg";
+import { Typography } from "@mui/material";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
+import banner1 from "../../../assets/banner/landmark.jpg";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+
+const ColorButton = styled(Button)(() => ({
+  color: "#fff",
+  width: 200,
+  height: 55,
+  fontWeight: 700,
+  fontSize: "16px",
+  textTransform: "capitalize",
+  backgroundColor: "#F89521",
+  borderColor: "3px solid #F89521",
+  "&:hover": {
+    color: "#fff",
+    backgroundColor: "#099795",
+    borderColor: "#099795",
+  },
+}));
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+const images = [
+  {
+    label: "banner_image1",
+    imgPath: banner1,
+  },
+];
 
 function Banner() {
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
+
   return (
-    <Box>
-      <Box
-        sx={{ flexGrow: 1 }}
-        marginTop={{ xs: "5%", sm: "0%" }}
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
+    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "15%", sm: "0%" }}>
+      <AutoPlaySwipeableViews
+        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+        index={activeStep}
+        onChangeIndex={handleStepChange}
+        enableMouseEvents
+        interval={5000}
       >
-        <Box
-          paddingBottom={"3%"}
-          top={{ xs: "15%", sm: "20%" }}
-          marginLeft={{ xs: "0%", sm: "0%" }}
-          width={{ xs: "100%", sm: "40%" }}
-        >
-          {" "}
-          <Typography
-            variant="h2"
-            color="#071783"
-            fontWeight={500}
-            padding={{ xs: "0%", sm: "0% 15% 0% 0%" }}
-            textTransform={"capitalize"}
-            textAlign={"left"}
-          >
-            Empowering Individuals, Building Resilient Communities
-          </Typography>
-        </Box>
-        <Box width={{ xs: "100%", sm: "60%" }}>
-          {" "}
-          <Box
-            component="img"
-            height={{ xs: "95vh", sm: "80vh" }}
-            sx={{
-              objectFit: "cover",
-              width: "100%",
-            }}
-            src={banner1}
-            alt={"image"}
-          />
-        </Box>
-      </Box>
+        {images.map((step, index) => (
+          <div key={step.label}>
+            {Math.abs(activeStep - index) <= 2 ? (
+              <Box>
+                <Box
+                  component="img"
+                  height={{ xs: "30vh", sm: "120vh" }}
+                  display={{ xs: "none", sm: "block" }}
+                  sx={{
+                    objectFit: "cover",
+                    position: "relative",
+                    overflow: "hidden",
+                    width: "100%",
+                  }}
+                  src={step.imgPath}
+                  alt={step.label}
+                />
+                <Box
+                  display={{ xs: "none", sm: "inline" }}
+                  paddingBottom={"3%"}
+                  position={"absolute"}
+                  top={{ xs: "55%", sm: "29%" }}
+                  marginLeft={{ xs: "0%", sm: "2%" }}
+                  width={"100%"}
+                >
+                  <Typography
+                    color={"#F89521"}
+                    variant="h2"
+                    fontWeight={700}
+                    align="center"
+                    paddingTop={{ xs: "10%", sm: "5%" }}
+                    fontFamily={("Caveat", "cursive")}
+                  >
+                    Building People, Moulding Nations
+                  </Typography>
+                  <Typography
+                    color={"#fff"}
+                    variant="h6"
+                    fontWeight={700}
+                    align="center"
+                    paddingTop={{ xs: "3%", sm: "2%" }}
+                  >
+                    September 14, 2024
+                  </Typography>
+                  <Typography
+                    color={"#fff"}
+                    variant="h6"
+                    fontWeight={700}
+                    align="center"
+                  >
+                    Landmark Centre, Oniru, Victoria Island, Lagos
+                  </Typography>
+                  <Typography
+                    color={"#fff"}
+                    variant="h6"
+                    fontWeight={700}
+                    align="center"
+                  >
+                    Time: 9am - 5pm
+                  </Typography>
+                  <Box
+                    display={"flex"}
+                    justifyContent={"center"}
+                    marginTop={{ xs: "10%", sm: "2%" }}
+                  >
+                    <ColorButton
+                      component={"a"}
+                      variant="contained"
+                      size="medium"
+                      href={"/active-citizens-festival"}
+                    >
+                      Register
+                    </ColorButton>
+                  </Box>
+                </Box>
+              </Box>
+            ) : null}
+          </div>
+        ))}
+      </AutoPlaySwipeableViews>
     </Box>
   );
 }

@@ -4,24 +4,20 @@ const navConfig = [
     path: "/",
   },
   {
-    title: "Who We Are",
-    path: "/who-we-are",
+    title: "About Tracka",
+    path: "/about-tracka",
   },
   {
-    title: "What We Do",
-    path: "/what-we-do",
+    title: "Success Stories",
+    path: "/our-success-stories",
   },
   {
-    title: "Events",
-    path: "/our-events",
+    title: "The Festival",
+    path: "/active-citizens-festival",
   },
   {
     title: "Blog",
     path: "/blog",
-  },
-  {
-    title: "Contact Us",
-    path: "/contact-us",
   },
 ];
 

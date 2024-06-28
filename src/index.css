@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "GilroyLight", sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,27 +10,6 @@ body {
   margin: 0 auto;
   /* border: 1px solid skyblue; */
 }
-
 a {
-  font-family: "PolySansMedian", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-h1 {
-  font-family: "PolySansBulky", sans-serif;
-}
-h2 {
-  font-family: "PolySansBulky", sans-serif;
-}
-h3 {
-  font-family: "PolySansBulky", sans-serif;
-}
-h4 {
-  font-family: "PolySansBulky", sans-serif;
-}
-h5 {
-  font-family: "PolySansMedian", sans-serif;
-}
-h6 {
-  font-family: "PolySansMedian", sans-serif;
-}
-
-

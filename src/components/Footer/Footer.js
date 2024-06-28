@@ -7,9 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import { blue, red } from "@mui/material/colors";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Divider } from "@mui/material";
 import logo from "../../assets/logos/logo.png";
 
@@ -36,7 +34,7 @@ const Footer = () => {
               component="a"
               underline="none"
               href="/"
-              title="Oluseun Onigbinde Resource Centre"
+              title="Tracka@10"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
               <img src={logo} alt="logo" width={"50%"} />
@@ -55,75 +53,75 @@ const Footer = () => {
             <Link
               underline="none"
               component="a"
-              href="/who-we-are"
-              color="#071783"
+              href="/our-success-stories"
+              color="#fff"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
               paddingRight={{ xs: "0%", sm: "3%" }}
               sx={{
                 "&:hover": {
-                  color: "#050C4C",
+                  color: "#fff",
                 },
               }}
             >
-              Who we are
+              Our Impact
+            </Link>
+            <Link
+              underline="none"
+              component="a"
+              href="/active-citizens-festival"
+              color="#fff"
+              variant={"body1"}
+              fontWeight={500}
+              paddingBottom={{ xs: "5%", sm: "2%" }}
+              paddingRight={{ xs: "0%", sm: "3%" }}
+              sx={{
+                "&:hover": {
+                  color: "#fff",
+                },
+              }}
+            >
+              The Festival
+            </Link>
+            <Link
+              underline="none"
+              component="a"
+              href="/gallery"
+              color="#fff"
+              variant={"body1"}
+              fontWeight={500}
+              paddingBottom={{ xs: "5%", sm: "2%" }}
+              paddingRight={{ xs: "0%", sm: "3%" }}
+              sx={{
+                "&:hover": {
+                  color: "#fff",
+                },
+              }}
+            >
+              Gallery
             </Link>
             <Link
               underline="none"
               component="a"
               href="/blog"
-              color="#071783"
+              color="#fff"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
-              paddingRight={{ xs: "0%", sm: "3%" }}
               sx={{
                 "&:hover": {
-                  color: "#050C4C",
+                  color: "#fff",
                 },
               }}
             >
               Blog
             </Link>
-            <Link
-              underline="none"
-              component="a"
-              href="/resources/infographics"
-              color="#071783"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              paddingRight={{ xs: "0%", sm: "3%" }}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
-            >
-              Our Resources
-            </Link>
-            <Link
-              underline="none"
-              component="a"
-              href="/contact-us"
-              color="#071783"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
-            >
-              Contact
-            </Link>
           </Box>
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Divider color={"#071783"} />
+        <Divider color={"#fff"} />
         <Box
           display="flex"
           justifyContent={"space-between"}
@@ -133,138 +131,20 @@ const Footer = () => {
           marginTop={{ xs: "10%", sm: "3%" }}
         >
           <Box
-            display={{ xs: "flex", sm: "none" }}
-            flexWrap={"wrap"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            flexDirection={{ xs: "row", sm: "row" }}
-            width={{ xs: "90%", sm: "25%" }}
-            marginRight={{ xs: "5%", sm: "0%" }}
-            marginTop={{ xs: "%", sm: "0%" }}
-          >
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://twitter.com/"
-              title="Twitter"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: "#000",
-                  },
-                }}
-              >
-                <XIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.facebook.com/"
-              title="Facebook"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: blue[900],
-                  },
-                }}
-              >
-                <FacebookIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.linkedin.com/company/"
-              title="LinkedIn"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: blue[700],
-                  },
-                }}
-              >
-                <LinkedInIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.instagram.com/"
-              title="Instagram"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: red[800],
-                  },
-                }}
-              >
-                <InstagramIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.youtube.com/"
-              title="YouTube"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: red[600],
-                  },
-                }}
-              >
-                <YouTubeIcon />
-              </Avatar>
-            </Box>
-          </Box>
-          <Box
-            width={{ xs: "100%", sm: "70%" }}
+            width={{ xs: "60%", sm: "70%" }}
             marginLeft={{ xs: "3%", sm: "0%" }}
             marginTop={{ xs: "7%", sm: "0%" }}
           >
-            <Typography align={"left"} variant={"subtitle2"} color="#071783">
-              &copy;{new Date().getFullYear()} Oluseun Onigbinde Resource
-              Centre. All rights reserved
+            <Typography align={"left"} variant={"subtitle2"} color="#fff">
+              &copy;{new Date().getFullYear()} Tracka. All rights reserved
             </Typography>
           </Box>
           <Box
-            display={{ xs: "none", sm: "flex" }}
-            flexWrap={"wrap"}
+            display={"flex"}
             justifyContent={"space-between"}
             alignItems={"center"}
             flexDirection={{ xs: "row", sm: "row" }}
-            width={{ xs: "100%", sm: "25%" }}
+            width={{ xs: "36%", sm: "15%" }}
             marginRight={{ xs: "0%", sm: "0%" }}
             marginTop={{ xs: "4%", sm: "0%" }}
           >
@@ -273,8 +153,8 @@ const Footer = () => {
               component="a"
               underline="none"
               target={"_blank"}
-              href="https://twitter.com/"
-              title="Twitter"
+              href="https://twitter.com/TrackaNG"
+              title="X"
             >
               <Avatar
                 sx={{
@@ -294,7 +174,7 @@ const Footer = () => {
               component="a"
               underline="none"
               target={"_blank"}
-              href="https://www.facebook.com/"
+              href="https://web.facebook.com/trackanigeria/?_rdc=1&_rdr"
               title="Facebook"
             >
               <Avatar
@@ -310,33 +190,13 @@ const Footer = () => {
                 <FacebookIcon />
               </Avatar>
             </Box>
+
             <Box
               display={"flex"}
               component="a"
               underline="none"
               target={"_blank"}
-              href="https://www.linkedin.com/company/"
-              title="LinkedIn"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: blue[700],
-                  },
-                }}
-              >
-                <LinkedInIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/tracka_ng"
               title="Instagram"
             >
               <Avatar
@@ -350,27 +210,6 @@ const Footer = () => {
                 }}
               >
                 <InstagramIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.youtube.com/"
-              title="YouTube"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#bbb",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: red[600],
-                  },
-                }}
-              >
-                <YouTubeIcon />
               </Avatar>
             </Box>
           </Box>

@@ -16,45 +16,26 @@ import { Avatar } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { blue } from "@mui/material/colors";
-import fishing from "../../../assets/images/fishing.jpg";
-import aqua from "../../../assets/images/floating.jpg";
-import covid from "../../../assets/images/covid.jpg";
-import retirement from "../../../assets/images/retirement.jpg";
+import press from "../../../assets/banner/press_1.jpeg";
+import press2 from "../../../assets/2022_aca/img13.jpg";
 import award1 from "../../../assets/banner/banner1.jpg";
+import rollup from "../../../assets/banner/rollup.jpg";
 
 const latest = [
   {
-    img: covid,
-    title: "After COVID-19, What Next?",
-    subtitle:
-      "With NIRSAL, Beneficiaries have the opportunity to access loans...",
-    date: "April 8, 2020",
-    links: "/2020-04-08/after-covid-19-what-next",
+    img: press2,
+    title: " Tunde Onakoya bags BudgIT’s Active Citizens Award",
+    date: "September 18, 2022",
+    links: "/tunde-onakoya-bags-budgit-active-citizens-award",
   },
   {
-    img: retirement,
-    title: "Retirement Just Ahead!",
-    subtitle:
-      "One of the greatest challenges facing typical employees throughout their...",
-    date: "March 13, 2020",
-    links: "/2020-03-13/retirement-just-ahead",
-  },
-  {
-    img: aqua,
-    title: "Aquaculture, the Ideal Industry",
-    subtitle: "The demand for fish in Nigeria is much higher than the local...",
-    date: "March 19, 2019",
-    links: "/2019-03-19/aquaculture-the-ideal-industry",
-  },
-  {
-    img: award1,
-    title: "Aquahack 2019",
-    subtitle:
-      "AquaHack2019 exists to create solutions that can tackle problems...",
-    date: "March 4, 2019",
-    links: "/2019-03-04/aquahack-2019",
+    img: press,
+    title: " Press Statement: Maiden Edition of the Active Citizens Awards",
+    date: "July 15, 2022",
+    links:
+      "/budgit-set-to-host-the-maiden-edition-of-the-active-citizens-awards",
   },
 ];
 
@@ -96,10 +77,10 @@ const ThirdPressRelease = () => {
   return (
     <Box>
       <Helmet>
-        <title> Blog | Aquatic Hub Afrique</title>
+        <title> Blog | BudgIT Active Citizens Awards</title>
       </Helmet>
       <AppBar
-        position={"sticky"}
+        position={"fixed"}
         sx={{
           backgroundColor: theme.palette.background.paper,
         }}
@@ -118,75 +99,63 @@ const ThirdPressRelease = () => {
         >
           <Box
             width={{ xs: "100%", sm: "65%" }}
-            padding={{ xs: "35% 0%", sm: "10% 0%" }}
+            paddingTop={{ xs: "35%", sm: "10%" }}
             marginLeft={{ xs: "0%", sm: "0%" }}
           >
             <Box display={"flex"} alignItems={"center"} marginBottom={"5%"}>
-              <img src={fishing} alt="fishing_img" width="95%" />
+              <img src={award1} alt="logo" width="95%" />
             </Box>
             <Typography
-              variant="h3"
-              color={"#050C4C"}
+              variant="h4"
+              color={"#099795"}
               fontWeight={700}
               paddingBottom={{ xs: "10%", sm: "5%" }}
-              textAlign={"left"}
+              textAlign={"center"}
             >
-              Fish Farming
+              BudgIT Opens Nominations for 2023 Active Citizens Award: Unveils
+              Two New Categories
             </Typography>
             <Box
               paddingBottom={{ xs: "10%", sm: "5%" }}
               display={"flex"}
               alignItems={"center"}
               justifyContent={"space-between"}
-              // flexWrap={"wrap"}
-              width={{ xs: "100%", sm: "50%" }}
-              marginLeft={{ xs: "0%", sm: "0%" }}
+              flexWrap={"wrap"}
+              width={{ xs: "90%", sm: "55%" }}
+              marginLeft={0}
             >
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                width={{ xs: "35%", sm: "35%" }}
-                paddingBottom={{ xs: "0%", sm: "0%" }}
-                marginLeft={{ xs: "0%", sm: "0%" }}
+                width={{ xs: "45%", sm: "35%" }}
+                paddingBottom={{ xs: "5%", sm: "0%" }}
               >
-                <CalendarTodayIcon
-                  sx={{
-                    color: "#194ec3",
-                    width: 18,
-                    height: 18,
-                  }}
-                />
+                <CalendarTodayIcon sx={{ color: "#099795" }} />
                 <Typography variant="body1" color={"#4f4f4f"}>
-                  April 4, 2019
+                  July 17, 2023
                 </Typography>
               </Box>
-              <Box width={{ xs: "55%", sm: "40%" }}>
+              <Box width={{ xs: "65%", sm: "40%" }}>
                 <Breadcrumbs
                   aria-label="breadcrumb"
-                  separator={<DoubleArrowIcon fontSize="small" />}
+                  separator={<NavigateNextIcon fontSize="small" />}
                 >
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#194ec3"
+                    color="#099795"
                     href="/"
                   >
-                    <HomeIcon
-                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
-                      fontSize="inherit"
-                    />
+                    <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                     Home
                   </Link>
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#194ec3"
-                    href="/blog"
+                    color="#099795"
+                    href="/Blog"
                   >
-                    <WhatshotIcon
-                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
-                      fontSize="inherit"
-                    />
+                    <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                     Blog
                   </Link>
                 </Breadcrumbs>
@@ -198,61 +167,13 @@ const ThirdPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              Fish farming activity in Nigeria dates back to about 50 years ago,
-              with the establishment of a small experimental station at Onikan
-              Lagos and an industrial farm about 20 hectares at Panyam in
-              Plateau State by the Federal Government. The involvement of
-              government and some private establishment in fish farming
-              generated a lot of interest in the people. However,
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              The Nigerian population still depends largely on captured fishes.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Such captured fishes are from the wild
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Mostly frozen for distribution to urban centres throughout the
-              country
+              BudgIT, a foremost civic-tech organization leading the advocacy
+              for accountability, transparency, and effective service delivery
+              in Nigeria, is set to host the second edition of the Active
+              Citizens Awards. This year’s award, themed ‘Trailblazers of
+              Change: Pioneering Solutions, Shaping the Future,’ is scheduled to
+              hold on Saturday, September 16, 2023, at the Civic Centre,
+              Victoria Island, Lagos.
             </Typography>
             <Typography
               variant="body1"
@@ -260,16 +181,17 @@ const ThirdPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Or smoked for distribution to villages where there is limited
-              cold-storage infrastructure.
+              The Active Citizens Award is a BudgIT signature effort to honor
+              and spotlight individuals and organizations doing ground-breaking
+              humanitarian work in Nigeria’s civic space. Among the recipients
+              of the maiden edition was Tunde Onakoya, the founder of Chess in
+              Slums, who was presented with the Star Award—the Active Citizens
+              Award. The Debt Management Office (DMO) was acknowledged with the
+              Institutional Transparency Award in the Government Agencies
+              category, Debo Macaroni was honored with the Art for Activism
+              Award, while Femi Falana, SAN, was recognized with the Hall of
+              Fame Award for Civic Activism, alongside other deserving
+              individuals and organizations.
             </Typography>
             <Typography
               variant="body1"
@@ -277,17 +199,18 @@ const ThirdPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              This has made Nigeria to become one of the largest importers of
-              fish in the developing world with about 600,000 metric tons
-              imported annually.
+              According to BudgIT’s Global Director, Oluseun Onigbinde, the
+              award represents a prominent endeavor to highlight and acknowledge
+              individuals, organizations, and agencies leading the advocacy for
+              transparency, accountability, and good governance in the Nation’s
+              democracy through groundbreaking projects. “Based on the success
+              of the inaugural edition, BudgIT will continue to recognize those
+              who are making a difference in their respective fields through
+              remarkable efforts. We are excited to host the 2023 Active Citizen
+              Award and spotlight incredible individuals and organizations
+              making significant impacts in our society. Through these awards,
+              we seek to acknowledge and honor those driving change and actively
+              contributing to a better and improved Nigeria,” he said.
             </Typography>
             <Typography
               variant="body1"
@@ -295,56 +218,33 @@ const ThirdPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              Despite the high rate of captured fish importation into the
-              country,
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
+              For this year’s edition, the award will feature two new
+              categories—the Health Activism Award and the Climate Change
+              Activism Award—in addition to the existing eleven categories. We
+              anticipate an engaging event through the invaluable support of
+              civic leaders, industry leaders, and the general public.
+              Nominations for the categories are now officially open, allowing
+              individuals to nominate heroes directly through the official
+              website at:{" "}
+              <Link
+                component={"a"}
+                color="#099795"
+                fontWeight={700}
+                variant={"body1"}
+                sx={{
+                  cursor: "pointer",
+                }}
               >
-                &#8226;{" "}
-              </Typography>{" "}
-              Many Nigerians still suffer from protein deficiency due to low
-              fish food consumption. We barely consume about 11kg per capita
-              which is 10kg short of the 21kg per capita standard laid by the
-              FAO.
+                https://awards.civichive.org/
+              </Link>
             </Typography>
             <Typography
               variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Out of 35 grams of animal protein per day per person as
-              recommended by the Food and Agriculture Organisation, less than 7
-              grams is consumed on the average (FAO, 1991).
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-              fontStyle={"italic"}
+              paddingBottom={{ xs: "2%", sm: "1%" }}
               fontWeight={700}
+              color={"#4f4f4f"}
             >
-              To solve this problem of protein deficiency, Nigerians must be
-              ready for improved fish production and aquaculture.
+              Nominations
             </Typography>
             <Typography
               variant="body1"
@@ -352,211 +252,80 @@ const ThirdPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              At Aquatic Hub Afrique Network, we have observed that aquaculture
-              expansion in Africa and Nigeria
+              For the 2023 edition, there are a total of thirteen (13) award
+              categories. Out of these categories, only seven are eligible for
+              public nominations, after which a distinguished panel of judges
+              will thoroughly identify the winners of each category. The awards
+              committee will select the winners for the remaining six categories
+              through extensive research and thoughtful deliberations based on
+              specific criteria.
             </Typography>
             <Typography
               variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Has been on a slow process.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Is faced with several challenges which have threatened its
-              sustainability.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Such challenges incude inadequate fish fingerlings and grow-out
-              feeds for farmers, disease, processing, marketing and ignorance of
-              fish farmers on the technicalities of fish rearing.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              Thus,
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We are confident that optimization of aquaculture value chain can
-              sustain the economy of this country, Nigeria.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We are an Academy focused on liberating Africa from the shackles
-              of poverty and hunger through capacity building in aquaculture.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We offer technical training to fish farmers, small holder farmers,
-              women, youths, farm managers and new entrants on the basics of
-              fish farming, consumer awareness, sustainable fish feed
-              production, breeding disease-resistant and fast growing
-              fingerlings, fish processing, packaging, marketing and transfer of
-              technology among others.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We are also involved in the training and retraining of farm hands.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We offer the best in-class training facilities, curriculum as well
-              as entrepreneurial and risk management insight to aquaculture as
-              well as hands-on farm practical training.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              We are also open to collaborations/partnership of individuals,
-              corporate bodies, private organisations and government parastatals
-              to sponsor their youths and employees to acquire practical
-              aquaculture skills in our Institute for Self Reliance. At present,
-              the institute is embarking on a project to train and establish
-              five thousand (5,000) individuals in practical and sustainable
-              aquaculture.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
+              paddingBottom={{ xs: "2%", sm: "1%" }}
               fontWeight={700}
-            >
-              Citations and further readings
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
               color={"#4f4f4f"}
-              fontStyle={"italic"}
             >
-              WorldFish (2019). Nigeria.
-              https://www.worldfishcenter.org/country-pages/nigeria. (Accessed
-              March, 2019).
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-              fontStyle={"italic"}
-            >
-              Fabian Odum (2016). FISH SUPPLY DEFICIT: Bridging Gap, Boosting
-              Protein Access.
-              https://guardian.ng/features/agro-care/fish-supply-deficit-bridging-gap-boosting-protein-access/.
-              (Accessed March, 2019).
+              Criteria and Eligibility for Nomination
             </Typography>
             <Typography
               variant="body1"
               paddingBottom={{ xs: "5%", sm: "2%" }}
               lineHeight={1.75}
               color={"#4f4f4f"}
-              fontStyle={"italic"}
             >
-              FAO/WHO (1991) Protein Quality Evaluation
+              To submit a nomination for an individual or organization in any
+              open category, it is essential to thoroughly assess their
+              eligibility for the specific category they are nominated for. The
+              evaluation of the shortlist and selection of winners in each
+              category will be conducted according to the specified criteria,
+              which include innovation, impact, milestones, sustainability,
+              diversity, inclusion, organizational structure, and leadership
+              quality. This requirement entails that upon submitting a
+              nomination, it is necessary to include links to relevant impacts
+              or projects the nominee has successfully undertaken within a
+              designated time frame, aligning with the specified criteria.
+            </Typography>
+            <Typography
+              variant="body1"
+              paddingBottom={{ xs: "2%", sm: "1%" }}
+              fontWeight={700}
+              color={"#4f4f4f"}
+            >
+              Shortlisting and Selection
+            </Typography>
+            <Typography
+              variant="body1"
+              paddingBottom={{ xs: "5%", sm: "2%" }}
+              lineHeight={1.75}
+              color={"#4f4f4f"}
+            >
+              Following the nomination period, all submissions will undergo a
+              thorough review process conducted by a carefully chosen Panel of
+              Judges, consisting of three stages. After completing the selection
+              process, the final shortlist will comprise three individuals with
+              the highest grade points in each category. Of these three
+              nominees, only one will emerge as the winner in each category.
+            </Typography>
+            <Typography
+              variant="body1"
+              paddingBottom={{ xs: "5%", sm: "2%" }}
+              lineHeight={1.75}
+              color={"#4f4f4f"}
+            >
+              For more information about the 2023 Active Citizen Award,
+              including sponsorship opportunities, visit:{" "}
+              <Link
+                component={"a"}
+                color="#099795"
+                fontWeight={700}
+                variant={"body1"}
+                sx={{
+                  cursor: "pointer",
+                }}
+              >
+                https://awards.civichive.org/
+              </Link>
             </Typography>
             <Typography
               variant="body1"
@@ -566,111 +335,97 @@ const ThirdPressRelease = () => {
               Signed
             </Typography>
             <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
-              Admin
+              Nancy Odimegwu
+            </Typography>
+            <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
+              Communications Associate
             </Typography>
             <Box
               marginTop={"5%"}
               width={{ xs: "60%", sm: "40%" }}
               marginLeft={0}
             >
-              <Typography
-                variant="body1"
-                fontWeight={700}
-                color={"#3E4095"}
-                gutterBottom
-              >
+              <Typography variant="body1" fontWeight={700} color={"#099795"}>
                 Share this post
-              </Typography>
-              <Box
-                display={"flex"}
-                justifyContent={"space-between"}
-                width={{ xs: "70%", sm: "50%" }}
-                marginLeft={{ xs: "0%", sm: "0%" }}
-              >
-                <Avatar
-                  sx={{
-                    bgcolor: blue[900],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="facebook"
-                  onClick={handleShare}
+                <Box
+                  display={"flex"}
+                  justifyContent={"space-between"}
+                  width={{ xs: "70%", sm: "50%" }}
+                  marginLeft={"0%"}
                 >
-                  <FacebookIcon />
-                </Avatar>
-                <Avatar
-                  sx={{
-                    bgcolor: blue[300],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="twitter"
-                  onClick={handleShare}
-                >
-                  <TwitterIcon />
-                </Avatar>
-                <Avatar
-                  sx={{
-                    bgcolor: blue[700],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="linkedin"
-                  onClick={handleShare}
-                >
-                  <LinkedInIcon
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[900],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
+                    }}
+                    id="facebook"
+                    onClick={handleShare}
+                  >
+                    <FacebookIcon />
+                  </Avatar>
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[300],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
+                    }}
+                    id="twitter"
+                    onClick={handleShare}
+                  >
+                    <TwitterIcon />
+                  </Avatar>
+                  <Avatar
                     sx={{
                       bgcolor: blue[700],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
                     }}
-                  />
-                </Avatar>
-              </Box>
+                    id="linkedin"
+                    onClick={handleShare}
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        bgcolor: blue[700],
+                      }}
+                    />
+                  </Avatar>
+                </Box>
+              </Typography>
             </Box>
           </Box>
           <Box
             width={{ xs: "92%", sm: "25%" }}
-            marginTop={{ xs: "5%", sm: "10%" }}
+            marginTop={{ xs: "25%", sm: "10%" }}
           >
-            <Typography variant="h5" fontWeight={700} color={"#3E4095"}>
-              Previous Posts
+            <Typography variant="h5" fontWeight={700} color={"#099795"}>
+              Related Posts
             </Typography>
             {latest.map((post, index) => (
               <Box
-                marginTop={{ xs: "5%", sm: "10%" }}
+                marginTop={"10%"}
                 display={"flex"}
                 key={index}
                 justifyContent={"space-between"}
-                alignItems={"flex-start"}
+                alignItems={"center"}
                 flexWrap={{ xs: "wrap", sm: "none" }}
-                marginBottom={"5%"}
               >
                 <Box
+                  display={"flex"}
+                  alignItems={"left"}
+                  marginBottom={"5%"}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={{ xs: "65%", sm: "40%" }}
                 >
-                  <Link href={post.links}>
-                    <Box
-                      component="img"
-                      height={{ xs: "15vh", sm: "15vh" }}
-                      width={{ xs: "100%", sm: "100%" }}
-                      src={post.img}
-                      alt={"Fishery"}
-                      sx={{
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Link>
+                  <img src={post.img} alt="logo" width={"100%"} />
                 </Box>
-                <Box
-                  width={{ xs: "65%", sm: "50%" }}
-                  marginLeft={{ xs: "0%", sm: "0%" }}
-                >
+                <Box width={{ xs: "100%", sm: "50%" }}>
                   <Link
                     variant="body2"
-                    color={"#3E4095"}
+                    color={"#099795"}
                     fontWeight={500}
                     paddingBottom={{ xs: "10%", sm: "5%" }}
                     textAlign={"center"}
@@ -681,14 +436,6 @@ const ThirdPressRelease = () => {
                   </Link>
                   <Typography
                     variant="body2"
-                    fontWeight={400}
-                    color={"#4f4f4f"}
-                    paddingTop={"2%"}
-                  >
-                    {post.subtitle}
-                  </Typography>
-                  <Typography
-                    variant="caption"
                     fontWeight={500}
                     color={"#aaa"}
                     paddingTop={"2%"}
@@ -698,10 +445,23 @@ const ThirdPressRelease = () => {
                 </Box>
               </Box>
             ))}
+            <Box
+              component="img"
+              height={{ xs: "27vh", sm: "170vh" }}
+              sx={{
+                objectFit: "cover",
+              }}
+              src={rollup}
+              alt={"aca2023_img"}
+              display={{ xs: "none", sm: "block" }}
+              marginRight={{ xs: "0%", sm: "0.5%" }}
+              marginBottom={{ xs: "1%", sm: "0.5%" }}
+              marginTop={{ xs: "1%", sm: "10%" }}
+            />
           </Box>
         </Box>
       </Container>
-      <Box bgcolor={"#000058"}>
+      <Box bgcolor={"#099795"}>
         <Container>
           <Footer />
         </Container>

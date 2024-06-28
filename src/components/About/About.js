@@ -2,18 +2,17 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
 import Container from "../../common/Container";
-import AppBar from "@mui/material/AppBar";
 import Header from "../../components/Header";
+import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
-import Image2 from "../../assets/banner/banner1.jpg";
+import Image2 from "../../assets/banner/rollup2.jpg";
 import Intro from "./components/Intro";
-import Founder from "./components/Founder";
 import Impact from "./components/Impact";
 
 const styles = {
   paperContainer: {
-    height: 700,
+    height: 1000,
     backgroundImage: `url(${Image2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,43 +23,39 @@ const About = () => {
   return (
     <Box>
       <Helmet>
-        <title> About Us | Oluseun Onigbinde Resource Centre</title>
+        <title> About Tracka | Tracka 10th Year Anniversary</title>
       </Helmet>
-      {/* <Scroll> */}
       <AppBar
         position={"sticky"}
         elevation={0}
         padding={"5px 0px"}
         sx={{
-          backgroundColor: "#F6F5F5",
+          backgroundColor: "#fff",
         }}
       >
         <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
           <Header />
         </Container>
       </AppBar>
-      {/* </Scroll> */}
-      <Box bgcolor={"#F6F5F5"}>
+      <Box display={{ xs: "none", sm: "inline" }}>
         <Container>
           <Banner />
         </Container>
       </Box>
-      <Box bgcolor={"#F6F5F5"}>
+      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+        <Banner />
+      </Box>
+      <Box>
         <Container>
           <Intro />
         </Container>
       </Box>
-      <Box bgcolor={"#071783"}>
+      <Box>
         <Container>
           <Impact />
         </Container>
       </Box>
-      <Box bgcolor={"#F6F5F5"}>
-        <Container>
-          <Founder />
-        </Container>
-      </Box>
-      <Box bgcolor={"#F6F5F5"}>
+      <Box bgcolor={"#025066"}>
         <Container>
           <Footer />
         </Container>

@@ -1,181 +1,232 @@
-import React from "react";
-import { useTheme, styled } from "@mui/material/styles";
-import Button from "@mui/material/Button";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
-import outreach from "../../../assets/images/medical.jpg";
-import library from "../../../assets/images/library.jpg";
-import iread from "../../../assets/images/iread3.jpeg";
-import fellowship from "../../../assets/images/fellowship.jpg";
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
-
-const images = [
-  {
-    label: "banner_image1",
-    imgPath: outreach,
-  },
-  {
-    label: "banner_image2",
-    imgPath: library,
-  },
-  {
-    label: "banner_image3",
-    imgPath: iread,
-  },
-  {
-    label: "banner_image4",
-    imgPath: fellowship,
-  },
-];
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 
 const ColorButton = styled(Button)(() => ({
-  color: "#F2C844",
-  width: 185,
+  color: "#fff",
+  width: 200,
   height: 55,
   fontWeight: 700,
   fontSize: "16px",
   textTransform: "capitalize",
-  backgroundColor: "#050C4C",
-  borderColor: "#050C4C",
+  backgroundColor: "#F89521",
+  borderColor: "3px solid #F89521",
   "&:hover": {
     color: "#fff",
-    backgroundColor: "#071783",
-    borderColor: "#071783",
+    backgroundColor: "#B84028",
+    borderColor: "#B84028",
   },
 }));
 
 const About = () => {
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2024-09-14T00:00:00+01:00") - +new Date();
 
-  const handleStepChange = (step) => {
-    setActiveStep(step);
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        days: ("0" + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
+        hours: ("0" + Math.floor((difference / (1000 * 60 * 60)) % 24)).slice(
+          -2
+        ),
+        minutes: ("0" + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
+        seconds: ("0" + Math.floor((difference / 1000) % 60)).slice(-2),
+      };
+    }
+
+    return timeLeft;
   };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  });
+
   return (
     <Box
-      sx={{
-        position: "relative",
-        "&::after": {
-          position: "absolute",
-          content: '""',
-          width: "30%",
-          zIndex: 1,
-          top: 0,
-          right: 0,
-          height: "21%",
-          backgroundSize: "18px 18px",
-          backgroundImage: `radial-gradient(${"#050C4C"} 20%, transparent 30%)`,
-          opacity: 0.05,
-        },
-      }}
+      display={"flex"}
+      justifyContent={"space-between"}
+      alignItems={"center"}
+      flexWrap={"wrap"}
+      marginTop={{ xs: "25%", sm: "0%" }}
     >
-      <Grid
-        container
-        display={"flex"}
-        alignItems={"center"}
-        marginTop={{ xs: "0%", sm: "5%" }}
+      <Box
+        width={{ xs: "100%", sm: "50%" }}
+        padding={{ xs: "5% 0% ", sm: "2%" }}
       >
-        <Grid
-          item
-          xs={12}
-          sm={6}
-          padding={{ xs: "30% 0% 5% 0%", sm: "4% 6% 3% 0%" }}
-          marginBottom={{ xs: "0%", sm: "5%" }}
+        <Typography
+          variant={"h3"}
+          fontWeight={700}
+          textAlign={"center"}
+          color={"#fff"}
+          paddingBottom={"4%"}
         >
-          <Typography
-            variant={"h3"}
-            fontWeight={300}
-            textAlign={"left"}
-            color={"#071783"}
-            paddingBottom={"1%"}
-          >
-            Who We Are
-          </Typography>
-
-          <Typography
-            variant={"body1"}
-            fontWeight={400}
-            textAlign={"left"}
-            color={"#4f4f4f"}
-            padding={{ xs: "1% 0%", sm: "4% 0% 0% 0%" }}
-            lineHeight={1.5}
-          >
-            Oluseun Onigbinde Resource Centre is a dynamic charitable
-            organization founded by Oluseun Onigbinde, dedicated to fostering
-            positive change and empowerment within communities across Oyo State.
-            With a steadfast commitment to uplifting individuals and creating
-            sustainable opportunities, the Trust operates across various sectors
-            including healthcare, education, skill development, and
-            entrepreneurship.
-          </Typography>
-          <Typography
-            variant={"body1"}
-            fontWeight={400}
-            textAlign={"left"}
-            color={"#4f4f4f"}
-            padding={{ xs: "2% 0%", sm: "2% 0%" }}
-            lineHeight={1.5}
-          >
-            With a firm belief in the transformative power of collective action
-            and community engagement, the Trust endeavors to address pressing
-            social challenges and unlock opportunities for individuals to
-            thrive.
-          </Typography>
-          <Box marginTop={"4%"}>
-            <ColorButton
-              component={"a"}
-              variant="contained"
-              size="medium"
-              href={"/who-we-are"}
-            >
-              Read More
-            </ColorButton>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={6} margin={{ xs: "2% 0% 20% 0%", sm: "0%" }}>
-          {/* <AutoPlaySwipeableViews
-            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-            index={activeStep}
-            onChangeIndex={handleStepChange}
-            enableMouseEvents
-            interval={10000}
-          >
-            {images.map((step, index) => (
-              <div key={step.label}>
-                {Math.abs(activeStep - index) <= 2 ? (
-                  <Box>
-                    <Box
-                      component="img"
-                      height={{ xs: "105vh", sm: "450px" }}
-                      width={{ xs: "100%", sm: "100%" }}
-                      src={step.imgPath}
-                      alt={step.label}
-                      sx={{
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Box>
-                ) : null}
-              </div>
-            ))}
-          </AutoPlaySwipeableViews> */}
+          Coming Very Soon!
+        </Typography>
+        {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
           <Box
-            component="img"
-            height={{ xs: "105vh", sm: "450px" }}
+            display={"flex"}
+            justifyContent={"space-between"}
+            alignItems={"center"}
             width={{ xs: "100%", sm: "100%" }}
-            src={library}
-            alt={"image"}
-            sx={{
-              objectFit: "cover",
-            }}
-          />
-        </Grid>
-      </Grid>
+            marginTop={{ xs: "5%", sm: "1%" }}
+          >
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              backgroundColor={"#B84028"}
+              width={"35%"}
+              margin={{ xs: "1%", sm: "2%" }}
+              padding={"2%"}
+            >
+              <Box padding={"2%"}>
+                <Typography variant="h3" color={"#fff"} textAlign={"center"}>
+                  {timeLeft.days}
+                </Typography>
+              </Box>
+              <Typography
+                variant="body"
+                color={"#fff"}
+                textAlign={"center"}
+                paddingTop={"2%"}
+                fontWeight={700}
+              >
+                Days
+              </Typography>
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              backgroundColor={"#B84028"}
+              width={"35%"}
+              margin={{ xs: "1%", sm: "2%" }}
+              padding={"2%"}
+            >
+              <Box padding={"2%"}>
+                <Typography variant="h3" color={"#fff"} textAlign={"center"}>
+                  {timeLeft.hours}
+                </Typography>
+              </Box>
+              <Typography
+                variant="body1"
+                color={"#fff"}
+                textAlign={"center"}
+                paddingTop={"2%"}
+                fontWeight={700}
+              >
+                Hours
+              </Typography>
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              backgroundColor={"#B84028"}
+              width={"35%"}
+              margin={{ xs: "1%", sm: "2%" }}
+              padding={"2%"}
+            >
+              <Box padding={"2%"}>
+                <Typography variant="h3" color={"#fff"} textAlign={"center"}>
+                  {timeLeft.minutes}
+                </Typography>
+              </Box>
+              <Typography
+                variant="body1"
+                color={"#fff"}
+                textAlign={"center"}
+                paddingTop={"2%"}
+                fontWeight={700}
+              >
+                Minutes
+              </Typography>
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              backgroundColor={"#B84028"}
+              width={"30%"}
+              margin={{ xs: "1%", sm: "2%" }}
+              padding={"2%"}
+            >
+              <Box padding={"2%"}>
+                <Typography variant="h3" color={"#fff"} textAlign={"center"}>
+                  {timeLeft.seconds}
+                </Typography>
+              </Box>
+              <Typography
+                variant="body1"
+                color={"#fff"}
+                textAlign={"center"}
+                paddingTop={"2%"}
+                fontWeight={700}
+              >
+                Seconds
+              </Typography>
+            </Box>
+          </Box>
+        ) : (
+          <Typography
+            variant="h3"
+            color={"#F89521"}
+            textAlign={"center"}
+            paddingTop={"5%"}
+            fontFamily={("Caveat", "cursive")}
+          >
+            Let's Have Fun! 🔥
+          </Typography>
+        )}
+      </Box>
+
+      <Box
+        width={{ xs: "100%", sm: "50%" }}
+        padding={{ xs: "20% 2%", sm: "4% 4%" }}
+      >
+        <Typography
+          gutterBottom
+          fontWeight={700}
+          variant="h3"
+          paddingTop={"2%"}
+          paddingBottom={"2%"}
+          color="#F89521"
+          fontFamily={("Caveat", "cursive")}
+        >
+          Active Citizens' Festival
+        </Typography>
+        <Typography
+          gutterBottom
+          fontWeight={400}
+          variant="body1"
+          component="div"
+          paddingTop={"2%"}
+          paddingBottom={"2%"}
+          color="#fff"
+        >
+          The Active Citizens' Festival is packed with diverse and engaging
+          activities designed to entertain, educate, and unite attendees. From
+          the intellectually stimulating Essay Competition to the dynamic and
+          interactive Games Arena, each event caters to different interests and
+          promotes community spirit. The Silent Disco and Karaoke sessions offer
+          fun and creative outlets, while the Sip & Paint and Governance and
+          History Booth provide enriching experiences. The Green Room emphasizes
+          sustainability, and the Documentary Screening showcases Tracka's
+          impactful journey.
+        </Typography>
+        <Box padding={"5% 2% 1% 0%"}>
+          <ColorButton
+            component={"a"}
+            variant="contained"
+            size="medium"
+            href={"/active-citizens-festival"}
+          >
+            Learn More
+          </ColorButton>
+        </Box>
+      </Box>
     </Box>
   );
 };

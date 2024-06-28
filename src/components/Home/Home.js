@@ -2,53 +2,58 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
 import Container from "../../common/Container";
-import AppBar from "@mui/material/AppBar";
 import Header from "../../components/Header";
+import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
-import Banner from "./components/Banner1";
-import Image2 from "../../assets/banner/banner1.jpg";
-import Programs from "./components/Programs";
+import Scroll from "../Header/Scroll";
+import Banner from "./components/Banner";
 import About from "./components/About";
-import Events from "./components/Events";
+import Image2 from "../../assets/banner/rollup.jpg";
+import Impact from "./components/Impact";
+import Gallery from "./components/Gallery";
+
+const styles = {
+  paperContainer: {
+    height: 1000,
+    backgroundImage: `url(${Image2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  },
+};
 
 const Home = () => {
   return (
     <Box>
       <Helmet>
-        <title> Homepage | Oluseun Onigbinde Resource Centre</title>
+        <title> Homepage | Tracka 10th Year Anniversary</title>
       </Helmet>
-
-      <AppBar
-        position={"sticky"}
-        elevation={0}
-        padding={"5px 0px"}
-        sx={{
-          backgroundColor: "#F6F5F5",
-        }}
-      >
-        <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
-          <Header />
-        </Container>
-      </AppBar>
-      <Box bgcolor={"#F6F5F5"}>
+      <Scroll>
+        <AppBar position={"fixed"} elevation={0}>
+          <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
+            <Header />
+          </Container>
+        </AppBar>
+      </Scroll>
+      <Box display={{ xs: "none", sm: "inline" }}>
         <Banner />
       </Box>
-      <Box bgcolor={"#F6F5F5"}>
+      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+        <Banner />
+      </Box>
+      <Box bgcolor={"#025066"}>
         <Container>
           <About />
         </Container>
       </Box>
-      <Box bgcolor={"#050C4C"}>
+      <Box>
+        <Impact />
+      </Box>
+      <Box bgcolor={"#F89521"}>
         <Container>
-          <Events />
+          <Gallery />
         </Container>
       </Box>
-      <Box bgcolor={"#F6F5F5"}>
-        <Container>
-          <Programs />
-        </Container>
-      </Box>
-      <Box bgcolor={"#F6F5F5"}>
+      <Box bgcolor={"#025066"}>
         <Container>
           <Footer />
         </Container>

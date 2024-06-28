@@ -16,45 +16,19 @@ import { Avatar } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { blue } from "@mui/material/colors";
-import fishing from "../../../assets/images/fishing.jpg";
-import aqua from "../../../assets/images/floating.jpg";
-import covid from "../../../assets/images/covid.jpg";
-import retirement from "../../../assets/images/retirement.jpg";
-import award1 from "../../../assets/banner/banner1.jpg";
+import press2 from "../../../assets/banner/press_1.jpeg";
+import press from "../../../assets/2022_aca/img13.jpg";
+import rollup from "../../../assets/banner/rollup.jpg";
 
 const latest = [
   {
-    img: covid,
-    title: "After COVID-19, What Next?",
-    subtitle:
-      "With NIRSAL, Beneficiaries have the opportunity to access loans...",
-    date: "April 8, 2020",
-    links: "/2020-04-08/after-covid-19-what-next",
-  },
-  {
-    img: fishing,
-    title: "Fish Farming",
-    subtitle:
-      "Fish farming activity in Nigeria dates back to about 50 years ago...",
-    date: "April 4, 2019",
-    links: "/2019-04-04/fish-farming",
-  },
-  {
-    img: aqua,
-    title: "Aquaculture, the Ideal Industry",
-    subtitle: "The demand for fish in Nigeria is much higher than the local...",
-    date: "March 19, 2019",
-    links: "/2019-03-19/aquaculture-the-ideal-industry",
-  },
-  {
-    img: award1,
-    title: "Aquahack 2019",
-    subtitle:
-      "AquaHack2019 exists to create solutions that can tackle problems...",
-    date: "March 4, 2019",
-    links: "/2019-03-04/aquahack-2019",
+    img: press2,
+    title: " Press Statement: Maiden Edition of the Active Citizens Awards",
+    date: "July 15, 2022",
+    links:
+      "/budgit-set-to-host-the-maiden-edition-of-the-active-citizens-awards",
   },
 ];
 
@@ -96,10 +70,10 @@ const SecondPressRelease = () => {
   return (
     <Box>
       <Helmet>
-        <title> Blog | Aquatic Hub Afrique</title>
+        <title> Blog | BudgIT Active Citizens Awards</title>
       </Helmet>
       <AppBar
-        position={"sticky"}
+        position={"fixed"}
         sx={{
           backgroundColor: theme.palette.background.paper,
         }}
@@ -118,75 +92,63 @@ const SecondPressRelease = () => {
         >
           <Box
             width={{ xs: "100%", sm: "65%" }}
-            padding={{ xs: "35% 0%", sm: "10% 0%" }}
+            paddingTop={{ xs: "35%", sm: "10%" }}
             marginLeft={{ xs: "0%", sm: "0%" }}
           >
             <Box display={"flex"} alignItems={"center"} marginBottom={"5%"}>
-              <img src={retirement} alt="retirement_img" width="95%" />
+              <img src={press} alt="logo" width={{ xs: "95%", sm: "90%" }} />
             </Box>
             <Typography
-              variant="h3"
-              color={"#050C4C"}
+              variant="h4"
+              color={"#099795"}
               fontWeight={700}
               paddingBottom={{ xs: "10%", sm: "5%" }}
-              textAlign={"left"}
+              textAlign={"center"}
             >
-              Retirement Just Ahead!
+              Tunde Onakoya bags BudgIT’s Active Citizens Award; Debt Management
+              Office, Mr Macaroni and others win other categories
             </Typography>
             <Box
               paddingBottom={{ xs: "10%", sm: "5%" }}
               display={"flex"}
               alignItems={"center"}
               justifyContent={"space-between"}
-              // flexWrap={"wrap"}
-              width={{ xs: "100%", sm: "50%" }}
-              marginLeft={{ xs: "0%", sm: "0%" }}
+              flexWrap={"wrap"}
+              width={{ xs: "90%", sm: "75%" }}
+              marginLeft={0}
             >
               <Box
                 display={"flex"}
                 alignItems={"center"}
-                width={{ xs: "35%", sm: "35%" }}
-                paddingBottom={{ xs: "0%", sm: "0%" }}
-                marginLeft={{ xs: "0%", sm: "0%" }}
+                width={{ xs: "60%", sm: "35%" }}
+                paddingBottom={{ xs: "5%", sm: "0%" }}
               >
-                <CalendarTodayIcon
-                  sx={{
-                    color: "#194ec3",
-                    width: 18,
-                    height: 18,
-                  }}
-                />
+                <CalendarTodayIcon sx={{ color: "#099795" }} />
                 <Typography variant="body1" color={"#4f4f4f"}>
-                  March 13, 2020
+                  September 18, 2022
                 </Typography>
               </Box>
-              <Box width={{ xs: "55%", sm: "40%" }}>
+              <Box>
                 <Breadcrumbs
                   aria-label="breadcrumb"
-                  separator={<DoubleArrowIcon fontSize="small" />}
+                  separator={<NavigateNextIcon fontSize="small" />}
                 >
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#194ec3"
+                    color="#099795"
                     href="/"
                   >
-                    <HomeIcon
-                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
-                      fontSize="inherit"
-                    />
+                    <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                     Home
                   </Link>
                   <Link
                     underline="hover"
                     sx={{ display: "flex", alignItems: "center" }}
-                    color="#194ec3"
-                    href="/blog"
+                    color="#099795"
+                    href="/Blog"
                   >
-                    <WhatshotIcon
-                      sx={{ mr: 0.5, color: "#194ec3", width: 18, height: 18 }}
-                      fontSize="inherit"
-                    />
+                    <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
                     Blog
                   </Link>
                 </Breadcrumbs>
@@ -198,20 +160,11 @@ const SecondPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              One of the greatest challenges facing typical employees throughout
-              their working life is ‘life after retirement’. Some of the
-              challenges that come with retirement include emotional,
-              psychological and financial challenges. To such challenges, the
-              workers have to prepare well ahead of time. Also, retirement
-              happens at old age, leveraging on reduced strength and health of
-              the previously agile and healthy worker. It is however saddening
-              that most workers do not plan ahead of their retirement and
-              therefore live with guilt for the rest of their lives, blaming
-              themselves for short-sighted vision. Unfortunately, the public
-              sector pension schemes have today been faced with many failure and
-              the workers have to set aside some money from their income through
-              contributory pension scheme to invest for their retirement from
-              service.
+              On Saturday, September 10, 2022, BudgIT, a foremost civic-tech
+              organisation leading the advocacy for accountability, transparency
+              and effective service delivery in Nigeria and four other African
+              countries, officially announced and celebrated the winners of the
+              maiden edition of the Active Citizens’ Award.
             </Typography>
             <Typography
               variant="body1"
@@ -219,66 +172,15 @@ const SecondPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              Although, Egbuta (1991) described retirement as the withdrawal of
-              the individual from gainful employment in the later part of his or
-              her life in order to enjoy a period of leisure till death, most
-              workers do not enjoy any ‘period of leisure’ after their
-              retirement. In a report by Kolawole and Mullum (2004), the typical
-              retiree in Nigeria is confronted with the challenge of managing
-              insufficient financial resources, problem of securing residential
-              accommodation, the challenge of a new and low social status,
-              difficult health and challenges of declining health. The main
-              cause of these problems as listed by Yunusa (2013) include
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Non-payment of Gratuities and delays in the payment of pension.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Non-review of pensioners’ allowances as provided for in the 1999
-              constitution of the Federal Republic of Nigeria.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              The non-recognition of retirees by government in the schemes of
-              development programmes.
+              The award celebrated phenomenal individuals and organisations that
+              are creating sustainable impacts that have benefited citizens and
+              instituted civic and social change to improve the nation's
+              democratic development. It was a pleasure to host dignitaries
+              celebrating the new heroes of Nigeria’s democracy. The award had
+              in attendance Adenike Adeyemi, Executive Director, Fate
+              Foundation; Oreoluwa Somolu Lesi, Executive Director, Women's
+              Technology Empowerment Centre, Hamzat Lawal, Executive Director,
+              Connected Development, among others.
             </Typography>
             <Typography
               variant="body1"
@@ -286,15 +188,10 @@ const SecondPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Lack of preparation for retirement.
+              Announcing the winners, Tunde Onakoya, founder of Chess in Slums,
+              emerged winner of the star award, which was the Active Citizens
+              Award, for his tremendous contribution to empowering Nigerian
+              children in impoverished communities.
             </Typography>
             <Typography
               variant="body1"
@@ -302,152 +199,14 @@ const SecondPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              At Aquatic Hub Afrique Network,
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We are not insensitive to the troubles and pains of our esteemed
-              retirees who have spent a greater portion of their productive life
-              in national service.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We also observed that most retirees either lost their gratuity
-              while attempting a business they are not good in or were duped by
-              advanced fee fraudsters.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We are focused on liberating Africa from the shackles of poverty
-              and hunger through capacity building in aquaculture
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Thus, our Institute has set up series of flexible training in
-              aquaculture and fish farming for workers in-service and the
-              retirees.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              To this effect, we offer technical training to fish farmers on the
-              basics of fish farming, consumer awareness, sustainable fish feed
-              production, breeding disease-resistant and fast growing
-              fingerlings, fish processing, packaging and marketing among
-              others.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We offer the best in-class training facilities, curriculum as well
-              as entrepreneurial and risk management insight to aquaculture as
-              well as hands-on farm practical training.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              We train workers in-service and encourage them to start the
-              aquaculture and fish farming business while in service.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-            >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              Hence, some of our trainees retired voluntarily from service to
-              face their aquaculture business while other see retirement as an
-              opportunity to face their already running aquaculture business
-              with little or no disturbances.
+              In the same vein, the Debt Management Office and Debo Macaroni
+              emerged as winners of the Awards for Institutional Transparency
+              (Government Agencies), which recognise a government agency that
+              provides quality service delivery that contributes significantly
+              to the development of the Nigerian populace, and the Art for
+              Activism Award, which celebrates a work of art that has pushed for
+              political consciousness, reform, and national change,
+              respectively.
             </Typography>
             <Typography
               variant="body1"
@@ -455,60 +214,57 @@ const SecondPressRelease = () => {
               lineHeight={1.75}
               color={"#4f4f4f"}
             >
-              <Typography
-                component={"span"}
-                color="#050C4C"
-                fontWeight={500}
-                variant={"h5"}
-              >
-                &#8226;{" "}
-              </Typography>{" "}
-              This way, our institute projects to train and establish two
-              thousand (2,000) in-service workers and retirees respectively per
-              annum.
+              Recipients for other non-nomination categories include TIERS
+              Nigeria, which won the Award for Inclusion and Diversity for
+              promoting equality through inclusion and diversity among
+              marginalised groups; Femi Falana, SAN, who won the Hall of Fame
+              Award for Civic Activism for his contribution to national
+              development via civic activism; and Union Bank of Nigeria, which
+              won the Corporate Award for Civic Investments for positively
+              impacting society through its support or engagement in civic
+              activism.
             </Typography>
             <Typography
               variant="body1"
               paddingBottom={{ xs: "5%", sm: "2%" }}
               lineHeight={1.75}
               color={"#4f4f4f"}
-              fontWeight={700}
             >
-              Citations and further readings
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-              fontStyle={"italic"}
-            >
-              Egbuta I. C. (1991). Thinking of Your Retirement, A Guidance in
-              Retirement Planning, Ages, Nigeria Limited.
-            </Typography>
-            <Typography
-              variant="body1"
-              paddingBottom={{ xs: "5%", sm: "1%" }}
-              lineHeight={1.75}
-              color={"#4f4f4f"}
-              fontStyle={"italic"}
-            >
-              Kolawole S.A. and Mallum, A.Y. (2004). Retirement counseling:
-              Challenges, opportunities and coping strategies. Paper presented
-              at the Annual Conference of the Counselling Association of Nigeria
-              (CASSON), Maiduguri, Nigeria.
+              For the nomination category, the recipients are Solomon O.
+              Ayodele, Founder, Boys Quarters Africa, who won the Award for
+              Community Service; Taiwo Adebulu, The Cable, who won the Solutions
+              Journalism Award; Adepeju Jaiyeoba, BrownButton Foundation, who
+              won the Oby Ezekwesili Award for Women Advocacy; Muazu Alhaji
+              Modu, Spotlight for Transparency and Accountability, who won the
+              Civic Activism Award, and Sola Owoniko, Project Enable, who bagged
+              the award for Disability Empowerment.
             </Typography>
             <Typography
               variant="body1"
               paddingBottom={{ xs: "5%", sm: "2%" }}
               lineHeight={1.75}
               color={"#4f4f4f"}
-              fontStyle={"italic"}
             >
-              Yunusa, A.I. (2013). Retirement challenges and management
-              strategies among retired civil servants in Kogi state.
-              International Journal of Social Sciences and Humanities Reviews,
-              4(1): 53 – 66
+              Commenting, BudgIT’s Global Director, Oluseun Onigbinde, noted
+              that the Active Citizens Awards will be an annual signature event
+              to foster dialogue and value the contributions of development
+              leaders to good governance and effective service delivery in
+              Nigeria, adding that BudgIT is open to leveraging public-private
+              partnerships for future editions in order to expand the scope of
+              the awards beyond its immediate threshold’.
+            </Typography>
+            <Typography
+              variant="body1"
+              paddingBottom={{ xs: "5%", sm: "2%" }}
+              lineHeight={1.75}
+              color={"#4f4f4f"}
+            >
+              ‘The Active Citizen’s Award will be a yearly event to commemorate
+              BudgIT’s anniversary. While we promote personalities who are doing
+              incredible work in Nigeria’s democracy and across different
+              spectrums, we would also measure our impact within Nigeria’s civic
+              ecosystem. Congratulations to all the nominees and winners.’
+              Oluseun added.
             </Typography>
             <Typography
               variant="body1"
@@ -518,111 +274,97 @@ const SecondPressRelease = () => {
               Signed
             </Typography>
             <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
-              Admin
+              Nancy Odimegwu
+            </Typography>
+            <Typography variant="body2" color={"#4f4f4f"} fontWeight={700}>
+              Communications Officer
             </Typography>
             <Box
               marginTop={"5%"}
               width={{ xs: "60%", sm: "40%" }}
               marginLeft={0}
             >
-              <Typography
-                variant="body1"
-                fontWeight={700}
-                color={"#3E4095"}
-                gutterBottom
-              >
+              <Typography variant="body1" fontWeight={700} color={"#099795"}>
                 Share this post
-              </Typography>
-              <Box
-                display={"flex"}
-                justifyContent={"space-between"}
-                width={{ xs: "70%", sm: "50%" }}
-                marginLeft={{ xs: "0%", sm: "0%" }}
-              >
-                <Avatar
-                  sx={{
-                    bgcolor: blue[900],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="facebook"
-                  onClick={handleShare}
+                <Box
+                  display={"flex"}
+                  justifyContent={"space-between"}
+                  width={{ xs: "70%", sm: "50%" }}
+                  marginLeft={"0%"}
                 >
-                  <FacebookIcon />
-                </Avatar>
-                <Avatar
-                  sx={{
-                    bgcolor: blue[300],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="twitter"
-                  onClick={handleShare}
-                >
-                  <TwitterIcon />
-                </Avatar>
-                <Avatar
-                  sx={{
-                    bgcolor: blue[700],
-                    width: 36,
-                    height: 36,
-                    cursor: "pointer",
-                  }}
-                  id="linkedin"
-                  onClick={handleShare}
-                >
-                  <LinkedInIcon
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[900],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
+                    }}
+                    id="facebook"
+                    onClick={handleShare}
+                  >
+                    <FacebookIcon />
+                  </Avatar>
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[300],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
+                    }}
+                    id="twitter"
+                    onClick={handleShare}
+                  >
+                    <TwitterIcon />
+                  </Avatar>
+                  <Avatar
                     sx={{
                       bgcolor: blue[700],
+                      width: 36,
+                      height: 36,
+                      cursor: "pointer",
                     }}
-                  />
-                </Avatar>
-              </Box>
+                    id="linkedin"
+                    onClick={handleShare}
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        bgcolor: blue[700],
+                      }}
+                    />
+                  </Avatar>
+                </Box>
+              </Typography>
             </Box>
           </Box>
           <Box
             width={{ xs: "92%", sm: "25%" }}
-            marginTop={{ xs: "5%", sm: "10%" }}
+            marginTop={{ xs: "25%", sm: "10%" }}
           >
-            <Typography variant="h5" fontWeight={700} color={"#3E4095"}>
-              Previous Posts
+            <Typography variant="h5" fontWeight={700} color={"#099795"}>
+              Related Posts
             </Typography>
             {latest.map((post, index) => (
               <Box
-                marginTop={{ xs: "5%", sm: "10%" }}
+                marginTop={"10%"}
                 display={"flex"}
                 key={index}
                 justifyContent={"space-between"}
-                alignItems={"flex-start"}
+                alignItems={"center"}
                 flexWrap={{ xs: "wrap", sm: "none" }}
-                marginBottom={"5%"}
               >
                 <Box
+                  display={"flex"}
+                  alignItems={"left"}
+                  marginBottom={"5%"}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={{ xs: "65%", sm: "40%" }}
                 >
-                  <Link href={post.links}>
-                    <Box
-                      component="img"
-                      height={{ xs: "15vh", sm: "15vh" }}
-                      width={{ xs: "100%", sm: "100%" }}
-                      src={post.img}
-                      alt={"Fishery"}
-                      sx={{
-                        objectFit: "cover",
-                      }}
-                    />
-                  </Link>
+                  <img src={post.img} alt="logo" width={"100%"} />
                 </Box>
-                <Box
-                  width={{ xs: "65%", sm: "50%" }}
-                  marginLeft={{ xs: "0%", sm: "0%" }}
-                >
+                <Box width={{ xs: "100%", sm: "50%" }}>
                   <Link
                     variant="body2"
-                    color={"#3E4095"}
+                    color={"#099795"}
                     fontWeight={500}
                     paddingBottom={{ xs: "10%", sm: "5%" }}
                     textAlign={"center"}
@@ -633,14 +375,6 @@ const SecondPressRelease = () => {
                   </Link>
                   <Typography
                     variant="body2"
-                    fontWeight={400}
-                    color={"#4f4f4f"}
-                    paddingTop={"2%"}
-                  >
-                    {post.subtitle}
-                  </Typography>
-                  <Typography
-                    variant="caption"
                     fontWeight={500}
                     color={"#aaa"}
                     paddingTop={"2%"}
@@ -650,10 +384,23 @@ const SecondPressRelease = () => {
                 </Box>
               </Box>
             ))}
+            <Box
+              component="img"
+              height={{ xs: "27vh", sm: "170vh" }}
+              sx={{
+                objectFit: "cover",
+              }}
+              src={rollup}
+              alt={"aca2023_img"}
+              display={{ xs: "none", sm: "block" }}
+              marginRight={{ xs: "0%", sm: "0.5%" }}
+              marginBottom={{ xs: "1%", sm: "0.5%" }}
+              marginTop={{ xs: "1%", sm: "10%" }}
+            />
           </Box>
         </Box>
       </Container>
-      <Box bgcolor={"#000058"}>
+      <Box bgcolor={"#099795"}>
         <Container>
           <Footer />
         </Container>

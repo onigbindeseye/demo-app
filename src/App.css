@@ -1,25 +1,30 @@
+/* @font-face {
+    font-family: "African";
+    src: local("African"),
+      url("./font/African.ttf") format("truetype");
+  }
 @font-face {
-    font-family: "GilroyLight";
-    src: local("GilroyLight"),
-      url("./fonts/Gilroy-Light.ttf") format("truetype");
+    font-family: "Visbycf-heavy";
+    src: local("Visbycf-heavy"),
+      url("./font/Visbycf-heavy.otf") format("opentype");
   }
-  @font-face {
-    font-family: "GilroyRegular";
-    src: local("GilroyRegular"),
-      url("./fonts/Gilroy-Regular.ttf") format("truetype");
+@font-face {
+    font-family: "Visbycf-light";
+    src: local("Visbycf-light"),
+      url("./font/Visbycf-light.otf") format("opentype");
   }
-  @font-face {
-    font-family: "PolySansBulky";
-    src: local("PolySansBulky"),
-      url("./fonts/PolySansTrial-Bulky.otf") format("opentype");
+@font-face {
+    font-family: "Visbycf-medium";
+    src: local("Visbycf-medium"),
+      url("./font/Visbycf-medium.otf") format("opentype");
   }
-  @font-face {
-    font-family: "PolySansMedian";
-    src: local("PolySansMedian"),
-      url("./fonts/PolySansTrial-Median.otf") format("opentype");
+@font-face {
+    font-family: "Visbycf-regular";
+    src: local("Visbycf-regular"),
+      url("./font/Visbycf-regular.otf") format("opentype");
   }
-  @font-face {
-    font-family: "PolySansNeutral";
-    src: local("PolySansNeutral"),
-      url("./fonts/PolySansTrial-Neutral.otf") format("opentype");
-  }
+@font-face {
+    font-family: "Visbycf-thin";
+    src: local("Visbycf-thin"),
+      url("./font/Visbycf-thin.otf") format("opentype");
+  } */

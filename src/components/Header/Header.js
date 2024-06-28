@@ -72,28 +72,23 @@ const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       width={"100%"}
-      marginBottom={{ xs: 2, sm: 1 }}
+      marginBottom={{ xs: 2, sm: 2 }}
       marginTop={{ xs: 2, sm: 2 }}
       id="back-to-top-anchor"
     >
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={"20%"}
+        width={130}
       >
-        <Box
-          component="a"
-          underline="none"
-          href="/"
-          title="Oluseun Onigbinde Resource Centre"
-        >
-          <img src={logo} alt="logo" width={"70%"} />
+        <Box component="a" underline="none" href="/" title="Tracka@10">
+          <img src={logo} alt="logo" width={"80%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "55%" }}
+        width={{ xs: "100%", sm: "50%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -108,81 +103,44 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/who-we-are"
-              color={"#071783"}
+              href="/about-tracka"
+              color={"#F89521"}
               fontWeight={700}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
             >
-              Who We Are
+              About Tracka
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/what-we-do"
-              color={"#071783"}
+              href="/our-success-stories"
+              color={"#F89521"}
               fontWeight={700}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
             >
-              What We Do
-            </Link>
-          </Box>
-
-          <Box>
-            <Link
-              underline="none"
-              component="a"
-              href="/our-events"
-              color={"#071783"}
-              fontWeight={700}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
-            >
-              Events
+              Success Stories
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/resources/infographics"
-              color={"#071783"}
+              href="/active-citizens-festival"
+              color={"#F89521"}
               fontWeight={700}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
             >
-              Resources
+              The Festival
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/contact-us"
-              color="#071783"
+              href="/blog"
+              color="#F89521"
               fontWeight={700}
-              sx={{
-                "&:hover": {
-                  color: "#050C4C",
-                },
-              }}
             >
-              Contact Us
+              Blog
             </Link>
           </Box>
         </Box>
@@ -192,7 +150,7 @@ const Header = () => {
               position="fixed"
               zIndex={theme.zIndex.drawer + 1}
               sx={{
-                backgroundColor: "#F6F5F5",
+                backgroundColor: theme.palette.background.paper,
               }}
             >
               <Toolbar>
@@ -200,21 +158,20 @@ const Header = () => {
                   component="a"
                   underline="none"
                   href="/"
-                  title="Oluseun Onigbinde Resource Centre"
-                  width={"100%"}
-                  marginRight={18}
-                  marginTop={2}
-                  marginBottom={2}
+                  title="Tracka@10 "
+                  width={155}
+                  marginRight={20}
+                  marginTop={1}
+                  marginBottom={1}
                 >
                   <Box
                     component="img"
-                    height={"9vh"}
+                    height={"11vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
-                      width: "100%",
-                      objectFit: "cover",
+                      width: "90%",
                     }}
                     src={logo}
                     alt={"logo"}
@@ -223,7 +180,7 @@ const Header = () => {
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <IconButton onClick={toggleDrawer(anchor, true)}>
-                      <MenuIcon fontSize="large" sx={{ color: "#071783" }} />
+                      <MenuIcon fontSize="large" sx={{ color: "#F89521" }} />
                     </IconButton>
                     <SwipeableDrawer
                       anchor={anchor}
@@ -233,7 +190,7 @@ const Header = () => {
                     >
                       <DrawerHeader>
                         <IconButton onClick={handleDrawerClose}>
-                          <CloseIcon sx={{ color: "#071783" }} />
+                          <CloseIcon sx={{ color: "#F89521" }} />
                         </IconButton>
                       </DrawerHeader>
                       <Divider />
