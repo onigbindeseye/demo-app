@@ -20,7 +20,7 @@ const Activities = () => {
       <Box
         width={"100%"}
         marginBottom={"10%"}
-        marginTop={{ xs: "25%", sm: "0%" }}
+        marginTop={{ xs: "5%", sm: "0%" }}
       >
         <Box
           width={{ xs: "100%", sm: "55%" }}

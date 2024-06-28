@@ -60,27 +60,8 @@ const Gallery = () => {
   const photosToShow = isMd ? photos : photos.slice(0, photos.length);
 
   return (
-    <Box padding={{ xs: "10% 0%", sm: "2% 0% 10% 0%" }}>
+    <Box padding={{ xs: "25% 0%", sm: "5% 0% 10% 0%" }}>
       <Box>
-        {/* <Box width={{ xs: "100%", sm: "40%" }}>
-          <Typography
-            variant="h3"
-            color="#fff"
-            fontWeight={800}
-            paddingBottom={"2%"}
-            textAlign={"center"}
-          >
-            <Typography
-              component={"span"}
-              color="#D7A036"
-              fontWeight={800}
-              variant={"h3"}
-            >
-              The Photo {""}
-            </Typography>
-            Gallery
-          </Typography>
-        </Box> */}
         <Typography
           variant={"h5"}
           fontWeight={400}
@@ -104,7 +85,7 @@ const Gallery = () => {
             src={item}
             alt={"tracka_townhall_img"}
             marginRight={{ xs: "0%", sm: "0.5%" }}
-            marginBottom={{ xs: "1%", sm: "0.5%" }}
+            marginBottom={{ xs: "2%", sm: "0.5%" }}
             width={{ xs: "100%", sm: "24%" }}
           />
         ))}

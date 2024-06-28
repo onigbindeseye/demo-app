@@ -5,7 +5,7 @@ import { Link } from "@mui/material";
 
 const Intro = () => {
   return (
-    <Box>
+    <Box padding={{ xs: "20% 0%", sm: "0%" }}>
       <Typography variant="body1" color="#4f4f4f" align="left">
         Tracka's 10th anniversary is a monumental milestone, celebrating a
         decade of empowering communities through active citizenship and vigilant
