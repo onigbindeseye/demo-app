@@ -11,7 +11,7 @@ const Activities = () => {
         variant="h3"
         color="#B84028"
         fontWeight={700}
-        paddingBottom={"4%"}
+        paddingBottom={{ xs: "2%", sm: "4%" }}
         textAlign={"left"}
         fontFamily={("Caveat", "cursive")}
       >
@@ -20,7 +20,7 @@ const Activities = () => {
       <Box
         width={"100%"}
         marginBottom={"10%"}
-        marginTop={{ xs: "5%", sm: "0%" }}
+        marginTop={{ xs: "2%", sm: "0%" }}
       >
         <Box
           width={{ xs: "100%", sm: "55%" }}

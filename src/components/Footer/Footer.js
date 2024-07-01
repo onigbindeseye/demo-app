@@ -9,11 +9,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Divider } from "@mui/material";
-import logo from "../../assets/logos/logo.png";
+import logo from "../../assets/logos/logo3.png";
 
 const Footer = () => {
   return (
-    <Grid container spacing={1} marginTop={5}>
+    <Grid container spacing={1} marginTop={2}>
       <Grid item xs={12} sm={6} md={12} marginBottom={2}>
         <Box
           display={"flex"}
@@ -37,7 +37,7 @@ const Footer = () => {
               title="Tracka@10"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
-              <img src={logo} alt="logo" width={"50%"} />
+              <img src={logo} alt="logo" width={"90%"} />
             </Box>
           </Box>
           <Box
@@ -54,14 +54,14 @@ const Footer = () => {
               underline="none"
               component="a"
               href="/our-success-stories"
-              color="#fff"
+              color="#025066"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
               paddingRight={{ xs: "0%", sm: "3%" }}
               sx={{
                 "&:hover": {
-                  color: "#fff",
+                  color: "#F89521",
                 },
               }}
             >
@@ -71,14 +71,14 @@ const Footer = () => {
               underline="none"
               component="a"
               href="/active-citizens-festival"
-              color="#fff"
+              color="#025066"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
               paddingRight={{ xs: "0%", sm: "3%" }}
               sx={{
                 "&:hover": {
-                  color: "#fff",
+                  color: "#F89521",
                 },
               }}
             >
@@ -88,14 +88,14 @@ const Footer = () => {
               underline="none"
               component="a"
               href="/gallery"
-              color="#fff"
+              color="#025066"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
               paddingRight={{ xs: "0%", sm: "3%" }}
               sx={{
                 "&:hover": {
-                  color: "#fff",
+                  color: "#F89521",
                 },
               }}
             >
@@ -105,13 +105,13 @@ const Footer = () => {
               underline="none"
               component="a"
               href="/blog"
-              color="#fff"
+              color="#025066"
               variant={"body1"}
               fontWeight={500}
               paddingBottom={{ xs: "5%", sm: "2%" }}
               sx={{
                 "&:hover": {
-                  color: "#fff",
+                  color: "#F89521",
                 },
               }}
             >
@@ -121,7 +121,7 @@ const Footer = () => {
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Divider color={"#fff"} />
+        <Divider color={"#F89521"} />
         <Box
           display="flex"
           justifyContent={"space-between"}
@@ -135,7 +135,7 @@ const Footer = () => {
             marginLeft={{ xs: "3%", sm: "0%" }}
             marginTop={{ xs: "7%", sm: "0%" }}
           >
-            <Typography align={"left"} variant={"subtitle2"} color="#fff">
+            <Typography align={"left"} variant={"subtitle2"} color="#025066">
               &copy;{new Date().getFullYear()} Tracka. All rights reserved
             </Typography>
           </Box>
@@ -158,7 +158,7 @@ const Footer = () => {
             >
               <Avatar
                 sx={{
-                  bgcolor: "#bbb",
+                  bgcolor: "#F89521",
                   width: 36,
                   height: 36,
                   "&:hover": {
@@ -179,7 +179,7 @@ const Footer = () => {
             >
               <Avatar
                 sx={{
-                  bgcolor: "#bbb",
+                  bgcolor: "#F89521",
                   width: 36,
                   height: 36,
                   "&:hover": {
@@ -201,7 +201,7 @@ const Footer = () => {
             >
               <Avatar
                 sx={{
-                  bgcolor: "#bbb",
+                  bgcolor: "#F89521",
                   width: 36,
                   height: 36,
                   "&:hover": {

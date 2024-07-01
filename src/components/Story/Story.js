@@ -7,7 +7,6 @@ import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
 import SuccessStory from "./components/SuccessStory";
-import Scroll from "../Header/Scroll";
 import Image2 from "../../assets/banner/rollup2.jpg";
 import Intro from "./components/Intro";
 import Mentions from "./components/Mentions";
@@ -27,7 +26,6 @@ const Story = () => {
       <Helmet>
         <title> Our Success Story | Tracka 10th Year Anniversary</title>
       </Helmet>
-      {/* <Scroll> */}
       <AppBar
         position={"sticky"}
         elevation={0}
@@ -40,7 +38,6 @@ const Story = () => {
           <Header />
         </Container>
       </AppBar>
-      {/* </Scroll> */}
       <Box display={{ xs: "none", sm: "inline" }}>
         <Container>
           <Banner />
@@ -60,7 +57,7 @@ const Story = () => {
           <Mentions />
         </Container>
       </Box>
-      <Box bgcolor={"#025066"}>
+      <Box bgcolor={"#fff"}>
         <Container>
           <Footer />
         </Container>

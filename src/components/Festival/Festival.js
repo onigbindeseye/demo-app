@@ -56,7 +56,7 @@ const Festival = () => {
           <Activities3 />
         </Container>
       </Box>
-      <Box bgcolor={"#025066"}>
+      <Box bgcolor={"#fff"}>
         <Container>
           <Footer />
         </Container>

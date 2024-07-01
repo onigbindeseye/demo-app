@@ -72,17 +72,17 @@ const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       width={"100%"}
-      marginBottom={{ xs: 2, sm: 2 }}
-      marginTop={{ xs: 2, sm: 2 }}
+      marginBottom={{ xs: 2, sm: 0.5 }}
+      marginTop={{ xs: 2, sm: 0.5 }}
       id="back-to-top-anchor"
     >
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={130}
+        width={150}
       >
         <Box component="a" underline="none" href="/" title="Tracka@10">
-          <img src={logo} alt="logo" width={"80%"} />
+          <img src={logo} alt="logo" width={"100%"} />
         </Box>
       </Box>
       <Box
@@ -166,11 +166,12 @@ const Header = () => {
                 >
                   <Box
                     component="img"
-                    height={"11vh"}
+                    height={"12vh"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
+                      objectFit: "cover",
                       width: "90%",
                     }}
                     src={logo}
