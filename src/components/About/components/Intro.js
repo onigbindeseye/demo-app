@@ -88,7 +88,7 @@ const Intro = () => {
             color="#fff"
             padding={{ xs: "4%", sm: "8%" }}
             align="center"
-            bgcolor={"#025066"}
+            bgcolor={"#B84028"}
             fontWeight={700}
             fontStyle={"italic"}
             fontFamily={("Caveat", "cursive")}

@@ -8,18 +8,8 @@ import Footer from "../../components/Footer";
 import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner";
 import About from "./components/About";
-import Image2 from "../../assets/banner/rollup.jpg";
 import Impact from "./components/Impact";
 import Gallery from "./components/Gallery";
-
-const styles = {
-  paperContainer: {
-    height: 1000,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
 
 const Home = () => {
   return (
@@ -34,10 +24,7 @@ const Home = () => {
           </Container>
         </AppBar>
       </Scroll>
-      <Box display={{ xs: "none", sm: "inline" }}>
-        <Banner />
-      </Box>
-      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+      <Box bgcolor={"#025066"}>
         <Banner />
       </Box>
       <Box bgcolor={"#025066"}>

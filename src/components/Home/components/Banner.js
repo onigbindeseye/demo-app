@@ -19,8 +19,8 @@ const ColorButton = styled(Button)(() => ({
   borderColor: "3px solid #F89521",
   "&:hover": {
     color: "#fff",
-    backgroundColor: "#099795",
-    borderColor: "#099795",
+    backgroundColor: "#B84028",
+    borderColor: "#B84028",
   },
 }));
 
@@ -56,8 +56,7 @@ function Banner() {
               <Box>
                 <Box
                   component="img"
-                  height={{ xs: "30vh", sm: "120vh" }}
-                  display={{ xs: "none", sm: "block" }}
+                  height={{ xs: "105vh", sm: "120vh" }}
                   sx={{
                     objectFit: "cover",
                     position: "relative",
@@ -68,10 +67,9 @@ function Banner() {
                   alt={step.label}
                 />
                 <Box
-                  display={{ xs: "none", sm: "inline" }}
                   paddingBottom={"3%"}
                   position={"absolute"}
-                  top={{ xs: "55%", sm: "29%" }}
+                  top={{ xs: "18%", sm: "29%" }}
                   marginLeft={{ xs: "0%", sm: "2%" }}
                   width={"100%"}
                 >
@@ -119,6 +117,7 @@ function Banner() {
                       component={"a"}
                       variant="contained"
                       size="medium"
+                      target="_blank"
                       href={"/active-citizens-festival"}
                     >
                       Register

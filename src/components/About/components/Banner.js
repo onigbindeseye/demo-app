@@ -16,7 +16,7 @@ const Banner = () => {
           right: 0,
           height: "80%",
           backgroundSize: "18px 18px",
-          backgroundImage: `radial-gradient(${"#071783"} 20%, transparent 30%)`,
+          backgroundImage: `radial-gradient(${"#099795"} 20%, transparent 30%)`,
           opacity: 0.1,
         },
       }}

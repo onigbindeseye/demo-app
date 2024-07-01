@@ -13,7 +13,7 @@ import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 // import banner from "../../../assets/banner/banner1b.JPG";
-import logo from "../../../assets/logos/logo.png";
+import logo from "../../../assets/logos/fist.png";
 import story from "../../../static/story";
 
 export default function CustomizedTimeline() {
@@ -45,13 +45,13 @@ export default function CustomizedTimeline() {
                   {stories.year}
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                  <TimelineConnector sx={{ bgcolor: "#389493" }} />
+                  <TimelineConnector sx={{ bgcolor: "#F89521" }} />
                   <TimelineDot
                     sx={{ width: 44, height: 44, bgcolor: "#025066" }}
                   >
                     {stories.icon}
                   </TimelineDot>
-                  <TimelineConnector sx={{ bgcolor: "#389493" }} />
+                  <TimelineConnector sx={{ bgcolor: "#F89521" }} />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
                   <Typography
@@ -85,7 +85,7 @@ export default function CustomizedTimeline() {
                     component="img"
                     sx={{
                       objectFit: "cover",
-                      width: "100%",
+                      width: "85%",
                       borderRadius: "50%",
                     }}
                     src={logo}
