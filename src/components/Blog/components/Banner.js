@@ -5,42 +5,31 @@ import Typography from "@mui/material/Typography";
 const Banner = () => {
   return (
     <Box
-      marginTop={{ xs: "35%", sm: "12%" }}
       sx={{
         position: "relative",
         "&::after": {
           position: "absolute",
           content: '""',
-          width: "50%",
+          width: "30%",
           zIndex: 1,
           top: 0,
           right: 0,
-          height: "100%",
+          height: "80%",
           backgroundSize: "18px 18px",
-          backgroundImage: `radial-gradient(${"#F89521"} 20%, transparent 30%)`,
+          backgroundImage: `radial-gradient(${"#099795"} 20%, transparent 30%)`,
           opacity: 0.1,
         },
       }}
     >
-      <Box width={"100%"}>
-        <Typography
-          variant="h2"
-          color="#F89521"
-          fontWeight={800}
-          paddingBottom={"2%"}
-          textAlign={"left"}
-        >
-          <Typography
-            component={"span"}
-            color="#099795"
-            fontWeight={800}
-            variant={"h2"}
-          >
-            Latest {""}
-          </Typography>
-          Blog Posts
-        </Typography>
-      </Box>
+      <Typography
+        gutterBottom
+        fontWeight={700}
+        variant="h2"
+        paddingTop={{ xs: "35%", sm: "5%" }}
+        color="#025066"
+      >
+        Blog Posts
+      </Typography>
     </Box>
   );
 };

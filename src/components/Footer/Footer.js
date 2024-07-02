@@ -87,7 +87,7 @@ const Footer = () => {
             <Link
               underline="none"
               component="a"
-              href="/gallery"
+              href="/register"
               color="#025066"
               variant={"body1"}
               fontWeight={500}
@@ -99,7 +99,7 @@ const Footer = () => {
                 },
               }}
             >
-              Gallery
+              Register
             </Link>
             <Link
               underline="none"

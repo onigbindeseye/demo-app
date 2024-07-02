@@ -79,7 +79,7 @@ function Banner() {
                     fontWeight={700}
                     align="center"
                     paddingTop={{ xs: "10%", sm: "5%" }}
-                    fontFamily={("Caveat", "cursive")}
+                    // fontFamily={("Caveat", "cursive")}
                   >
                     Building People, Moulding Nations
                   </Typography>
@@ -117,8 +117,7 @@ function Banner() {
                       component={"a"}
                       variant="contained"
                       size="medium"
-                      target="_blank"
-                      href={"/active-citizens-festival"}
+                      href={"/register"}
                     >
                       Register
                     </ColorButton>

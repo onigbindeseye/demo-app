@@ -6,21 +6,21 @@ import image2 from "../../../assets/images/card.jpg";
 
 const Activities = () => {
   return (
-    <Box paddingTop={{ xs: "20%", sm: "10%" }}>
+    <Box paddingTop={{ xs: "25%", sm: "10%" }}>
       <Typography
         variant="h3"
         color="#B84028"
         fontWeight={700}
-        paddingBottom={{ xs: "2%", sm: "4%" }}
+        paddingBottom={{ xs: "0%", sm: "4%" }}
         textAlign={"left"}
-        fontFamily={("Caveat", "cursive")}
+        // fontFamily={("Caveat", "cursive")}
       >
         Festival Activities
       </Typography>
       <Box
         width={"100%"}
         marginBottom={"10%"}
-        marginTop={{ xs: "2%", sm: "0%" }}
+        marginTop={{ xs: "0%", sm: "0%" }}
       >
         <Box
           width={{ xs: "100%", sm: "55%" }}
@@ -41,7 +41,7 @@ const Activities = () => {
           />
           <Box
             width={{ xs: "100%", sm: "70%" }}
-            top={{ xs: "15%", sm: "60%" }}
+            top={{ xs: "10%", sm: "60%" }}
             marginLeft={{ xs: "0%", sm: "0%" }}
             position={"absolute"}
             transform="translate(-50%, -50%)"
@@ -241,30 +241,10 @@ const Activities = () => {
         <Box display={{ xs: "block", sm: "none" }}>
           <Box
             width={{ xs: "100%", sm: "100%" }}
-            marginTop={{ xs: "20%", sm: "0%" }}
+            marginTop={{ xs: "10%", sm: "0%" }}
             bgcolor={"#fff"}
             padding={{ xs: "0%", sm: "4%" }}
           >
-            {/* <Typography
-              variant="h1"
-              color="#389493"
-              fontWeight={700}
-              paddingBottom={"2%"}
-              textAlign={"left"}
-            >
-              14/
-              <Typography
-                component={"span"}
-                variant="h2"
-                color="#389493"
-                fontWeight={600}
-                paddingTop={"1%"}
-                paddingBottom={"2%"}
-                textAlign={"left"}
-              >
-                09
-              </Typography>
-            </Typography> */}
             <Box
               component="img"
               height={{ xs: "80vh", sm: "680px" }}

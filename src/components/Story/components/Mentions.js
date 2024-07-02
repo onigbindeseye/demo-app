@@ -45,30 +45,18 @@ const Mentions = () => {
 
   return (
     <Box padding={{ xs: "20% 0%", sm: "4% 0%" }}>
-      <Box>
-        <Box width={{ xs: "100%", sm: "40%" }}>
-          <Typography
-            gutterBottom
-            fontWeight={700}
-            variant="h3"
-            paddingTop={"2%"}
-            paddingBottom={"2%"}
-            color="#F89521"
-            fontFamily={("Caveat", "cursive")}
-          >
-            Media Mentions
-          </Typography>
-        </Box>
-        {/* <Typography
-          variant={"body2"}
-          fontWeight={500}
-          color={"#fff"}
-          padding={"1% 0%"}
-          textAlign={"center"}
-        >
-          Images from 2022 Active Citizens Awards
-        </Typography> */}
-      </Box>
+      <Typography
+        gutterBottom
+        fontWeight={700}
+        variant="h3"
+        paddingTop={"2%"}
+        paddingBottom={"2%"}
+        textAlign={"left"}
+        color="#F89521"
+      >
+        Media Mentions
+      </Typography>
+
       <Box
         display={"flex"}
         justifyContent={"space-between"}

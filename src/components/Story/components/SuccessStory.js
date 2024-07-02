@@ -26,7 +26,6 @@ export default function CustomizedTimeline() {
         paddingTop={"2%"}
         paddingBottom={"2%"}
         color="#F89521"
-        fontFamily={("Caveat", "cursive")}
       >
         Success Stories
       </Typography>

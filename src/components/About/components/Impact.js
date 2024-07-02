@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 const Impact = () => {
   return (
-    <Grid container padding={"2%"} margin={{ xs: "25% 0%", sm: "4% 0%" }}>
+    <Grid container padding={"2%"} margin={{ xs: "25% 0%", sm: "2% 0%" }}>
       <Grid
         items
         xs={12}
@@ -20,7 +20,7 @@ const Impact = () => {
           variant="h3"
           paddingBottom={"2%"}
           color="#F89521"
-          fontFamily={("Caveat", "cursive")}
+          // fontFamily={("Caveat", "cursive")}
         >
           Impact in a Decade
         </Typography>
@@ -34,7 +34,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -66,7 +66,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -98,7 +98,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -125,7 +125,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -152,7 +152,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -179,7 +179,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -206,7 +206,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#025066"}
+          color={"#099795"}
           fontWeight={700}
           paddingBottom={"2%"}
         >

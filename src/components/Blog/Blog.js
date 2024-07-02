@@ -6,33 +6,31 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AppBar from "@mui/material/AppBar";
 import Banner from "./components/Banner";
-import BlogPosts from "./components/BlogPosts";
-import Scroll from "../Header/Scroll";
 
 const Blog = () => {
   return (
     <Box>
       <Helmet>
-        <title> Blog | BudgIT Active Citizens Awards</title>
+        <title> Blog | Tracka 10th Year Anniversary</title>
       </Helmet>
-      <Scroll>
-        <AppBar position={"fixed"} elevation={0}>
-          <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
-            <Header />
-          </Container>
-        </AppBar>
-      </Scroll>
+      <AppBar
+        position={"sticky"}
+        elevation={0}
+        padding={"5px 0px"}
+        sx={{
+          backgroundColor: "#fff",
+        }}
+      >
+        <Container paddingY={{ xs: 1 / 2, sm: 1 / 2 }}>
+          <Header />
+        </Container>
+      </AppBar>
       <Box>
         <Container>
           <Banner />
         </Container>
       </Box>
       <Box>
-        <Container>
-          <BlogPosts />
-        </Container>
-      </Box>
-      <Box bgcolor={"#099795"}>
         <Container>
           <Footer />
         </Container>

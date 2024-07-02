@@ -175,7 +175,7 @@ const About = () => {
             color={"#F89521"}
             textAlign={"center"}
             paddingTop={"5%"}
-            fontFamily={("Caveat", "cursive")}
+            // fontFamily={("Caveat", "cursive")}
           >
             Let's Have Fun! 🔥
           </Typography>
@@ -193,7 +193,7 @@ const About = () => {
           paddingTop={"2%"}
           paddingBottom={"2%"}
           color="#F89521"
-          fontFamily={("Caveat", "cursive")}
+          // fontFamily={("Caveat", "cursive")}
         >
           Active Citizens' Festival
         </Typography>

@@ -38,14 +38,14 @@ const Story = () => {
           <Header />
         </Container>
       </AppBar>
-      <Box display={{ xs: "none", sm: "inline" }}>
+      <Box>
         <Container>
           <Banner />
         </Container>
       </Box>
-      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+      {/* <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
         <Banner />
-      </Box>
+      </Box> */}
       <Box>
         <Container>
           <Intro />

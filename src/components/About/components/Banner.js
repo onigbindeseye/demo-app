@@ -26,7 +26,6 @@ const Banner = () => {
         fontWeight={700}
         variant="h2"
         paddingTop={{ xs: "35%", sm: "5%" }}
-        paddingBottom={"2%"}
         color="#025066"
       >
         About Tracka

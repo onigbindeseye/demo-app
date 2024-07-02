@@ -91,7 +91,7 @@ const Intro = () => {
             bgcolor={"#B84028"}
             fontWeight={700}
             fontStyle={"italic"}
-            fontFamily={("Caveat", "cursive")}
+            // fontFamily={("Caveat", "cursive")}
           >
             "Tracka is currently present in 36 states and the FCT, with State
             Officers in 26 states of the federation."

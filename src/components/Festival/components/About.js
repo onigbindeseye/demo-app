@@ -1,8 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 
 const About = () => {
+  const ColorButton = styled(Button)(() => ({
+    color: "#fff",
+    width: 200,
+    height: 55,
+    fontWeight: 700,
+    fontSize: "16px",
+    textTransform: "capitalize",
+    backgroundColor: "#F89521",
+    borderColor: "3px solid #F89521",
+    "&:hover": {
+      color: "#fff",
+      backgroundColor: "#B84028",
+      borderColor: "#B84028",
+    },
+  }));
+
   const calculateTimeLeft = () => {
     const difference = +new Date("2024-09-14T00:00:00+01:00") - +new Date();
 
@@ -37,17 +55,6 @@ const About = () => {
       flexWrap={"wrap"}
       marginTop={{ xs: "25%", sm: "0%" }}
     >
-      {/* <Box width={{ xs: "100%", sm: "50%" }}> */}
-      {/* <Box
-          component="img"
-          height={{ xs: "95vh", sm: "810px" }}
-          sx={{
-            objectFit: "cover",
-            width: "100%",
-          }}
-          src={library}
-          alt={"image"}
-        /> */}
       <Box
         width={{ xs: "100%", sm: "50%" }}
         padding={{ xs: "5% 0%", sm: "2%" }}
@@ -172,6 +179,17 @@ const About = () => {
             Let's Have Fun! 🔥
           </Typography>
         )}
+
+        <Box display={"flex"} justifyContent={"center"} paddingTop={"4%"}>
+          <ColorButton
+            component={"a"}
+            variant="contained"
+            size="medium"
+            href={"/register"}
+          >
+            Register
+          </ColorButton>
+        </Box>
       </Box>
 
       <Box
@@ -184,7 +202,7 @@ const About = () => {
           variant="h3"
           paddingTop={"2%"}
           paddingBottom={"2%"}
-          fontFamily={("Caveat", "cursive")}
+          // fontFamily={("Caveat", "cursive")}
           color="#F89521"
         >
           About the Festival

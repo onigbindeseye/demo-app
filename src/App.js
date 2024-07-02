@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Story from "./components/Story";
 import Festival from "./components/Festival";
 import About from "./components/About";
+import Blog from "./components/Blog";
 
 const theme = createTheme({
   typography: {
@@ -22,6 +23,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <div className="App">
           <Switch>
+            <Route exact path="/blog" component={Blog} />
             <Route
               exact
               path="/active-citizens-festival"
