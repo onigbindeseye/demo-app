@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner";
 import About from "./components/About";
-import Image2 from "../../assets/banner/rollup.jpg";
+import Image2 from "../../assets/images/cocktail.jpg";
 import Activities from "./components/Activities";
 import Activities2 from "./components/Activities2";
 import Activities3 from "./components/Activities3";
@@ -26,10 +26,7 @@ const Festival = () => {
   return (
     <Box>
       <Helmet>
-        <title>
-          {" "}
-          Activce Citizen's Festival | Tracka 10th Year Anniversary
-        </title>
+        <title> Active Citizens' Festival | Tracka 10th Year Anniversary</title>
       </Helmet>
       <Scroll>
         <AppBar position={"fixed"} elevation={0}>

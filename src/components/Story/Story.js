@@ -7,18 +7,8 @@ import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
 import SuccessStory from "./components/SuccessStory";
-import Image2 from "../../assets/banner/rollup2.jpg";
 import Intro from "./components/Intro";
 import Mentions from "./components/Mentions";
-
-const styles = {
-  paperContainer: {
-    height: 1000,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
 
 const Story = () => {
   return (

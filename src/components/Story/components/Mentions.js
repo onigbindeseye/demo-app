@@ -44,7 +44,7 @@ const Mentions = () => {
   const photosToShow = isMd ? photos : photos.slice(0, photos.length);
 
   return (
-    <Box padding={{ xs: "20% 0%", sm: "4% 0%" }}>
+    <Box padding={{ xs: "20% 0%", sm: "4% 0% 6% 0%" }}>
       <Typography
         gutterBottom
         fontWeight={700}
@@ -63,8 +63,12 @@ const Mentions = () => {
         flexWrap={"wrap"}
         alignItems={"center"}
         width={{ xs: "100%", sm: "100%" }}
+        marginBottom={{ xs: "0%", sm: "1%" }}
       >
-        <Box width={{ xs: "100%", sm: "50%" }}>
+        <Box
+          width={{ xs: "100%", sm: "50%" }}
+          display={{ xs: "none", sm: "block" }}
+        >
           <Box
             component="img"
             height={{ xs: "25vh", sm: "300px" }}
@@ -104,7 +108,7 @@ const Mentions = () => {
             alt={"aca2022_img"}
             marginRight={{ xs: "0%", sm: "0.5%" }}
             marginBottom={{ xs: "4%", sm: "0.5%" }}
-            width={{ xs: "100%", sm: "19%" }}
+            width={{ xs: "100%", sm: "32%" }}
           />
         ))}
 

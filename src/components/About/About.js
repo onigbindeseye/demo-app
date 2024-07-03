@@ -6,18 +6,8 @@ import Header from "../../components/Header";
 import AppBar from "@mui/material/AppBar";
 import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
-import Image2 from "../../assets/banner/rollup2.jpg";
 import Intro from "./components/Intro";
 import Impact from "./components/Impact";
-
-const styles = {
-  paperContainer: {
-    height: 1000,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
 
 const About = () => {
   return (
@@ -42,9 +32,6 @@ const About = () => {
           <Banner />
         </Container>
       </Box>
-      {/* <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
-        <Banner />
-      </Box> */}
       <Box>
         <Container>
           <Intro />

@@ -70,7 +70,6 @@ function Banner() {
                   paddingBottom={"3%"}
                   position={"absolute"}
                   top={{ xs: "18%", sm: "29%" }}
-                  marginLeft={{ xs: "0%", sm: "2%" }}
                   width={"100%"}
                 >
                   <Typography
@@ -117,7 +116,8 @@ function Banner() {
                       component={"a"}
                       variant="contained"
                       size="medium"
-                      href={"/register"}
+                      target={"_blank"}
+                      href={"https://forms.gle/up29j1w3wSX8bPEZ9"}
                     >
                       Register
                     </ColorButton>

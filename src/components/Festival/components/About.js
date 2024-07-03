@@ -185,7 +185,8 @@ const About = () => {
             component={"a"}
             variant="contained"
             size="medium"
-            href={"/register"}
+            target={"_blank"}
+            href={"https://forms.gle/up29j1w3wSX8bPEZ9"}
           >
             Register
           </ColorButton>

@@ -87,7 +87,8 @@ const Footer = () => {
             <Link
               underline="none"
               component="a"
-              href="/register"
+              target={"_blank"}
+              href={"https://forms.gle/up29j1w3wSX8bPEZ9"}
               color="#025066"
               variant={"body1"}
               fontWeight={500}

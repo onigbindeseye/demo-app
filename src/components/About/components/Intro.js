@@ -81,17 +81,16 @@ const Intro = () => {
         </Box>
         <Box
           width={{ xs: "100%", sm: "40%" }}
-          marginTop={{ xs: "25%", sm: "0%" }}
+          marginTop={{ xs: "20%", sm: "0%" }}
         >
           <Typography
             variant="h3"
             color="#fff"
-            padding={{ xs: "4%", sm: "8%" }}
+            padding={{ xs: "15% 4%", sm: "8%" }}
             align="center"
             bgcolor={"#B84028"}
             fontWeight={700}
             fontStyle={"italic"}
-            // fontFamily={("Caveat", "cursive")}
           >
             "Tracka is currently present in 36 states and the FCT, with State
             Officers in 26 states of the federation."
