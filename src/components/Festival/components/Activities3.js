@@ -34,6 +34,7 @@ const Activities3 = () => {
           width={{ xs: "100%", sm: "50%" }}
           marginTop={{ xs: "10%", sm: "0%" }}
           padding={{ xs: "0%", sm: "3%" }}
+          data-aos={"fade-up"}
         >
           <Typography
             variant="h4"

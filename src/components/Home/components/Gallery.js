@@ -29,6 +29,7 @@ const Gallery = () => {
   const theme = useTheme();
 
   const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
@@ -68,6 +69,7 @@ const Gallery = () => {
           color={"#fff"}
           padding={"1% 0%"}
           textAlign={"center"}
+          data-aos={"fade-down"}
         >
           A decade of connecting people with the government
         </Typography>
@@ -77,7 +79,10 @@ const Gallery = () => {
           <Box
             component="img"
             height={{ xs: "27vh", sm: "23vh" }}
-            onClick={() => setIsViewerOpen(index)}
+            onClick={() => {
+              setCurrentImageIndex(index);
+              setIsViewerOpen(!isViewerOpen);
+            }}
             sx={{
               cursor: "pointer",
               objectFit: "cover",
@@ -89,7 +94,11 @@ const Gallery = () => {
             width={{ xs: "100%", sm: "24%" }}
           />
         ))}
-        <FsLightbox toggler={isViewerOpen} sources={photos} />
+        <FsLightbox
+          toggler={isViewerOpen}
+          sources={photos}
+          slide={currentImageIndex + 1}
+        />
       </Box>
     </Box>
   );

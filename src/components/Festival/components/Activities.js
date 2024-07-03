@@ -50,6 +50,7 @@ const Activities = () => {
               component="img"
               height={{ xs: "30vh", sm: "350px" }}
               display={{ xs: "none", sm: "block" }}
+              data-aos={"fade-up"}
               sx={{
                 objectFit: "cover",
                 overflow: "hidden",

@@ -29,7 +29,7 @@ export default function CustomizedTimeline() {
       >
         Success Stories
       </Typography>
-      <Box>
+      <Box data-aos={"fade-up"}>
         <Box display={{ xs: "none", sm: "block" }}>
           <Timeline position="alternate">
             {story.map((stories, index) => (
@@ -62,17 +62,6 @@ export default function CustomizedTimeline() {
                     {stories.title}
                   </Typography>
                   <Typography variant="body1">{stories.description}</Typography>
-                  {/* <Box
-              component="img"
-              height={{ xs: "95vh", sm: "310px" }}
-              sx={{
-                objectFit: "cover",
-                width: "100%",
-                marginTop: "2%",
-              }}
-              src={stories.images}
-              alt={"image"}
-            /> */}
                 </TimelineContent>
               </TimelineItem>
             ))}
@@ -98,7 +87,12 @@ export default function CustomizedTimeline() {
         </Box>
         <Box display={{ xs: "block", sm: "none" }}>
           {story.map((stories, index) => (
-            <Box component={Card} key={index} margin={"10% 0%"}>
+            <Box
+              component={Card}
+              key={index}
+              margin={"10% 0%"}
+              data-aos={"fade-up"}
+            >
               <CardContent>
                 <Box></Box>
                 <Box

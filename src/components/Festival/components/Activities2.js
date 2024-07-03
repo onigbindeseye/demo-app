@@ -12,6 +12,7 @@ const Activities2 = () => {
           component="img"
           height={{ xs: "80vh", sm: "110vh" }}
           display={{ xs: "block", sm: "none" }}
+          data-aos={"fade-up"}
           sx={{
             objectFit: "cover",
             position: "relative",
@@ -177,6 +178,7 @@ const Activities2 = () => {
             component="img"
             height={{ xs: "30vh", sm: "650px" }}
             display={{ xs: "none", sm: "block" }}
+            data-aos={"fade-up"}
             sx={{
               objectFit: "cover",
               position: "relative",
@@ -193,6 +195,7 @@ const Activities2 = () => {
             component="img"
             height={{ xs: "30vh", sm: "650px" }}
             display={{ xs: "none", sm: "block" }}
+            data-aos={"fade-down"}
             sx={{
               objectFit: "cover",
               position: "relative",

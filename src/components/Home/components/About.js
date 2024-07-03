@@ -58,6 +58,7 @@ const About = () => {
       <Box
         width={{ xs: "100%", sm: "50%" }}
         padding={{ xs: "5% 0% ", sm: "2%" }}
+        data-aos={"fade-up"}
       >
         <Typography
           variant={"h3"}

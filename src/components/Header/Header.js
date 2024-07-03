@@ -79,10 +79,21 @@ const Header = () => {
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
-        width={150}
       >
         <Box component="a" underline="none" href="/" title="Tracka@10">
-          <img src={logo} alt="logo" width={"100%"} />
+          <Box
+            component="img"
+            height={"11vh"}
+            sx={{
+              display: "block",
+              position: "relative",
+              overflow: "hidden",
+              objectFit: "cover",
+              width: "100%",
+            }}
+            src={logo}
+            alt={"logo"}
+          />
         </Box>
       </Box>
       <Box

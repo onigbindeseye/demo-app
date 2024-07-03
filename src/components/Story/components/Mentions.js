@@ -21,6 +21,7 @@ const Mentions = () => {
   const theme = useTheme();
 
   const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
@@ -53,6 +54,7 @@ const Mentions = () => {
         paddingBottom={"2%"}
         textAlign={"left"}
         color="#F89521"
+        data-aos={"fade-down"}
       >
         Media Mentions
       </Typography>
@@ -99,7 +101,10 @@ const Mentions = () => {
           <Box
             component="img"
             height={{ xs: "28vh", sm: "23vh" }}
-            onClick={() => setIsViewerOpen(index)}
+            onClick={() => {
+              setCurrentImageIndex(index);
+              setIsViewerOpen(!isViewerOpen);
+            }}
             sx={{
               cursor: "pointer",
               objectFit: "cover",
@@ -112,7 +117,11 @@ const Mentions = () => {
           />
         ))}
 
-        <FsLightbox toggler={isViewerOpen} sources={photos} />
+        <FsLightbox
+          toggler={isViewerOpen}
+          sources={photos}
+          slide={currentImageIndex + 1}
+        />
       </Box>
     </Box>
   );
