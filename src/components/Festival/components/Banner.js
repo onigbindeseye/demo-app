@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import banner1 from "../../../assets/images/festival.jpg";
+import banner1 from "../../../assets/banner/banner.jpg";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
