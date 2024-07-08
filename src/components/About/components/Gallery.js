@@ -37,10 +37,14 @@ const Gallery = () => {
           component="p"
           color="#025066"
           sx={{ fontWeight: 400 }}
+          paddingBottom={{ xs: "3%", sm: "2%" }}
         >
           This section contains some images of our community town hall meetings,
           government projects tracked, our Community Champions and our State
-          Officers. Click on the Tabs to view images.
+          Officers.
+        </Typography>
+        <Typography variant="body1" color="#B84028" sx={{ fontWeight: 700 }}>
+          Click on the Tabs to view images.
         </Typography>
       </Box>
       <Box sx={{ width: "100%" }}>
