@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
 import Intro from "./components/Intro";
 import Impact from "./components/Impact";
+import Gallery from "./components/Gallery";
 
 const About = () => {
   return (
@@ -40,6 +41,11 @@ const About = () => {
       <Box>
         <Container>
           <Impact />
+        </Container>
+      </Box>
+      <Box>
+        <Container>
+          <Gallery />
         </Container>
       </Box>
       <Box bgcolor={"#fff"}>

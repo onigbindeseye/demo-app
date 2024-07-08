@@ -10,6 +10,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Impact from "./components/Impact";
 import Gallery from "./components/Gallery";
+import Partners from "./components/Partners";
 
 const Home = () => {
   return (
@@ -38,6 +39,11 @@ const Home = () => {
       <Box bgcolor={"#F89521"}>
         <Container>
           <Gallery />
+        </Container>
+      </Box>
+      <Box>
+        <Container>
+          <Partners />
         </Container>
       </Box>
       <Box bgcolor={"#fff"}>

@@ -16,14 +16,6 @@ import gallery8 from "../../../assets/townhall/townhall_9.jpg";
 import gallery10 from "../../../assets/townhall/townhall_10.jpg";
 import gallery11 from "../../../assets/townhall/townhall_11.jpg";
 import gallery12 from "../../../assets/townhall/townhall_12.jpg";
-import gallery13 from "../../../assets/townhall/townhall_13.jpg";
-import gallery14 from "../../../assets/townhall/townhall_14.jpg";
-import gallery15 from "../../../assets/townhall/townhall_15.jpg";
-import gallery16 from "../../../assets/townhall/townhall_16.jpg";
-import gallery17 from "../../../assets/townhall/townhall_17.jpg";
-import gallery18 from "../../../assets/townhall/townhall_18.jpg";
-import gallery19 from "../../../assets/townhall/townhall_19.jpg";
-import gallery20 from "../../../assets/townhall/townhall_20.jpg";
 
 const Gallery = () => {
   const theme = useTheme();
@@ -48,14 +40,6 @@ const Gallery = () => {
     gallery10,
     gallery11,
     gallery12,
-    gallery13,
-    gallery14,
-    gallery15,
-    gallery16,
-    gallery17,
-    gallery18,
-    gallery19,
-    gallery20,
   ];
 
   const photosToShow = isMd ? photos : photos.slice(0, photos.length);

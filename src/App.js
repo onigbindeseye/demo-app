@@ -30,7 +30,7 @@ function App() {
               component={Festival}
             />
             <Route exact path="/our-success-stories" component={Story} />
-            <Route exact path="/about-tracka" component={About} />
+            <Route path="/about-tracka" component={About} />
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
