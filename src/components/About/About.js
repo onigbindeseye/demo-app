@@ -9,6 +9,7 @@ import Banner from "./components/Banner";
 import Intro from "./components/Intro";
 import Impact from "./components/Impact";
 import Gallery from "./components/Gallery";
+// import Demo from "./components/Demo";
 import Townhall from "./components/Townhall";
 
 const About = () => {
@@ -45,9 +46,7 @@ const About = () => {
         </Container>
       </Box>
       <Box>
-        <Container>
-          <Townhall />
-        </Container>
+        <Townhall />
       </Box>
       <Box>
         <Container>
