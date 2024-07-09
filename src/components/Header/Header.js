@@ -114,7 +114,7 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/about-tracka"
+              href="/about-tracka/townhalls"
               color={"#F89521"}
               fontWeight={700}
             >

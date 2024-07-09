@@ -5,7 +5,7 @@ const navConfig = [
   },
   {
     title: "About Tracka",
-    path: "/about-tracka",
+    path: "/about-tracka/townhalls",
   },
   {
     title: "Success Stories",
