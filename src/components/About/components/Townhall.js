@@ -356,22 +356,50 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import gallery1 from "../../../assets/townhall/townhall_1.jpg";
 import gallery2 from "../../../assets/townhall/townhall_2.jpg";
 
 // Define the WithStyles component
-const WithStyles = ({ description, headline, image }) => (
-  <Box textAlign="center" padding={2}>
-    <img src={image} alt={headline} style={{ width: "100%", height: "auto" }} />
-    <Typography variant="h6" color="primary" marginTop={2}>
-      {headline}
-    </Typography>
-    <Typography variant="body2" color="textSecondary">
-      {description}
-    </Typography>
-  </Box>
+const WithStyles = ({ headline, image }) => (
+  <Grid item xs={12} md={4} marginTop={{ xs: "10%", sm: "3%" }}>
+    <Card sx={{ maxWidth: 500 }}>
+      <CardMedia component="img" height={"250vh"} image={image} alt="News" />
+      <CardContent>
+        <Typography
+          fontWeight={500}
+          variant="body2"
+          color={"#aaa"}
+          paddingBottom={"4%"}
+        >
+          {headline}
+        </Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+  //   <Box textAlign="center" padding={2} width={"100%"}>
+  //     {/* <img src={image} alt={headline} style={{ width: "100%", height: "auto" }} /> */}
+  //     <Box
+  //       component="img"
+  //       height={{ xs: "35vh", sm: "50vh" }}
+  //       sx={{
+  //         objectFit: "cover",
+  //         position: "relative",
+  //         overflow: "hidden",
+  //         width: "100%",
+  //       }}
+  //       src={image}
+  //       alt={headline}
+  //     />
+  //     <Typography variant="h6" color="primary" marginTop={2}>
+  //       {headline}
+  //     </Typography>
+  //   </Box>
 );
 
 const responsive = {
@@ -399,11 +427,12 @@ function Townhall() {
       draggable
       showDots={true}
       responsive={responsive}
-      ssr={true} // means to render carousel on server-side.
+      ssr={false} // means to render carousel on server-side.
       infinite={true}
-      autoPlay={true}
+      autoPlay={false}
       autoPlaySpeed={3000}
       keyBoardControl={true}
+      centerMode={true}
       customTransition="all .5"
       transitionDuration={500}
       containerClass="carousel-container"

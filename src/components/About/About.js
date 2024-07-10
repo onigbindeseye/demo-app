@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
+import "react-multi-carousel/lib/styles.css";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
 import Container from "../../common/Container";
@@ -11,6 +12,8 @@ import Impact from "./components/Impact";
 import Gallery from "./components/Gallery";
 // import Demo from "./components/Demo";
 import Townhall from "./components/Townhall";
+import WithScrollbar from "./components/WithScrollbar";
+import Section from "./components/Section";
 
 const About = () => {
   return (
@@ -45,9 +48,13 @@ const About = () => {
           <Impact />
         </Container>
       </Box>
-      <Box>
-        <Townhall />
-      </Box>
+      <Fragment>
+        <Container>
+          <Section>
+            <WithScrollbar />
+          </Section>
+        </Container>
+      </Fragment>
       <Box>
         <Container>
           <Gallery />

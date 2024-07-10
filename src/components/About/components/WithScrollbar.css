@@ -1,0 +1,105 @@
+input[type="range"] {
+    -webkit-appearance: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 2px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 5px;
+    width: 15%;
+    border-radius: 0%;
+    background: #F89521;
+    margin-top: -4px;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+  }
+  .carousel-container-with-scrollbar {
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    padding-bottom: 20px;
+    overflow: visible !important;
+  }
+  .custom-slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .custom-slider__input {
+    width: 100%;
+  }
+  .slider-image-item {
+    padding: 20px 0 20px 20px;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: square;
+  } 
+  .image-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+ .carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+ .increase-size {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .increase-size:hover {
+    transform: scale(1.05);
+  }
+
+  /* .slider {
+    margin:0 20px;
+    overflow:"hidden";
+    padding:2rem 0;
+  }
+  
+  .slider img {
+    max-width: 100%;
+    border-radius:10px;
+    height: 400px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+  
+  .react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+  }
+  
+  .custom-dot-list-style button{
+  border: none;
+  background: rgb(255, 68, 68);
+  }
+  .react-multi-carousel-dot.react-multi-carousel-dot--active button{
+  background: rgb(255, 68, 68) !important;
+  } */
