@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { Helmet } from "react-helmet-async";
 import Box from "@mui/material/Box";
@@ -9,11 +9,9 @@ import Footer from "../../components/Footer";
 import Banner from "./components/Banner";
 import Intro from "./components/Intro";
 import Impact from "./components/Impact";
-import Gallery from "./components/Gallery";
-// import Demo from "./components/Demo";
 import Townhall from "./components/Townhall";
-import WithScrollbar from "./components/WithScrollbar";
-import Section from "./components/Section";
+import Projects from "./components/Projects";
+import Champions from "./components/Champions";
 
 const About = () => {
   return (
@@ -48,17 +46,14 @@ const About = () => {
           <Impact />
         </Container>
       </Box>
-      <Fragment>
-        <Container>
-          <Section>
-            <WithScrollbar />
-          </Section>
-        </Container>
-      </Fragment>
       <Box>
-        <Container>
-          <Gallery />
-        </Container>
+        <Townhall />
+      </Box>
+      <Box>
+        <Projects />
+      </Box>
+      <Box>
+        <Champions />
       </Box>
       <Box bgcolor={"#fff"}>
         <Container>

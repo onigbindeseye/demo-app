@@ -3,7 +3,6 @@ import FsLightbox from "fslightbox-react";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import gallery1 from "../../../assets/officers/img_1.jpg";
 import gallery2 from "../../../assets/officers/img_2.jpg";
 import gallery3 from "../../../assets/officers/img_3.jpg";
