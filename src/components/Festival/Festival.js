@@ -8,19 +8,9 @@ import Footer from "../../components/Footer";
 import Scroll from "../Header/Scroll";
 import Banner from "./components/Banner";
 import About from "./components/About";
-import Image2 from "../../assets/banner/rollup.jpg";
 import Activities from "./components/Activities";
 import Activities2 from "./components/Activities2";
 import Activities3 from "./components/Activities3";
-
-const styles = {
-  paperContainer: {
-    height: 1000,
-    backgroundImage: `url(${Image2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  },
-};
 
 const Festival = () => {
   return (
@@ -35,10 +25,7 @@ const Festival = () => {
           </Container>
         </AppBar>
       </Scroll>
-      <Box display={{ xs: "none", sm: "inline" }}>
-        <Banner />
-      </Box>
-      <Box style={styles.paperContainer} display={{ xs: "block", sm: "none" }}>
+      <Box>
         <Banner />
       </Box>
       <Box bgcolor={"#025066"}>
