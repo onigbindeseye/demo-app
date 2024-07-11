@@ -80,7 +80,7 @@ function Townhall() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "15%", sm: "5%" }}>
+    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "25%", sm: "10%" }}>
       <Typography
         variant="h3"
         color="#F89521"

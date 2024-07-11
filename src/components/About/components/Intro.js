@@ -81,7 +81,7 @@ const Intro = () => {
         </Box>
         <Box
           width={{ xs: "100%", sm: "40%" }}
-          marginTop={{ xs: "20%", sm: "0%" }}
+          margin={{ xs: "20% 0%", sm: "0%" }}
         >
           <Typography
             variant="h3"

@@ -20,7 +20,7 @@ const Impact = () => {
           variant="h3"
           paddingBottom={"2%"}
           color="#F89521"
-          // fontFamily={("Caveat", "cursive")}
+          textAlign={"center"}
         >
           Impact in a Decade
         </Typography>
@@ -34,7 +34,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -53,7 +53,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Projects Tracked
         </Typography>
       </Grid>
@@ -66,7 +66,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -85,7 +85,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Projects Completed
         </Typography>
       </Grid>
@@ -98,7 +98,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -112,7 +112,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Towns Visited
         </Typography>
       </Grid>
@@ -125,7 +125,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -139,7 +139,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Townhall Meetings
         </Typography>
       </Grid>
@@ -152,7 +152,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -166,7 +166,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of State Officers
         </Typography>
       </Grid>
@@ -179,7 +179,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -193,7 +193,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Community Champions
         </Typography>
       </Grid>
@@ -206,7 +206,7 @@ const Impact = () => {
       >
         <Typography
           variant={"h3"}
-          color={"#099795"}
+          color={"#fff"}
           fontWeight={700}
           paddingBottom={"2%"}
         >
@@ -220,7 +220,7 @@ const Impact = () => {
             )}
           </VisibilitySensor>
         </Typography>
-        <Typography variant={"h6"} color={"#025066"}>
+        <Typography variant={"h6"} color={"#F89521"}>
           No of Impact Stories
         </Typography>
       </Grid>

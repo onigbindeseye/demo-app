@@ -41,7 +41,7 @@ const About = () => {
           <Intro />
         </Container>
       </Box>
-      <Box>
+      <Box bgcolor={"#025066"}>
         <Container>
           <Impact />
         </Container>
