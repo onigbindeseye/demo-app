@@ -74,34 +74,13 @@ const Activities = () => {
             />
           </Box>
           <Box
-            width={{ xs: "100%", sm: "100%" }}
+            width={{ xs: "100%", sm: "95%" }}
             bgcolor={"#fff"}
-            padding={{ xs: "0%", sm: "4%" }}
+            padding={{ xs: "0%", sm: "4% 8% 4% 4%" }}
             top={{ xs: "50%", sm: "5%" }}
-            left={{ xs: "0%", sm: "95%" }}
+            left={{ xs: "0%", sm: "90%" }}
             position={"absolute"}
           >
-            {/* <Typography
-              variant="h1"
-              color="#389493"
-              fontWeight={700}
-              // paddingTop={{ xs: "25%", sm: "1%" }}
-              paddingBottom={"2%"}
-              textAlign={"left"}
-            >
-              14/
-              <Typography
-                component={"span"}
-                variant="h2"
-                color="#389493"
-                fontWeight={600}
-                paddingTop={"1%"}
-                paddingBottom={"2%"}
-                textAlign={"left"}
-              >
-                09
-              </Typography>
-            </Typography> */}
             <Typography
               variant="h4"
               color="#F89521"
