@@ -1,12 +1,14 @@
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import banner1 from "../../../assets/banner/landmark.jpg";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+import banner1 from "../../../assets/banner/banner.jpg";
+import banner2 from "../../../assets/banner/rollup.jpg";
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const ColorButton = styled(Button)(() => ({
   color: "#fff",
@@ -23,8 +25,6 @@ const ColorButton = styled(Button)(() => ({
     borderColor: "#B84028",
   },
 }));
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
@@ -56,7 +56,8 @@ function Banner() {
               <Box>
                 <Box
                   component="img"
-                  height={{ xs: "105vh", sm: "120vh" }}
+                  height={{ xs: "30vh", sm: "130vh" }}
+                  display={{ xs: "none", sm: "block" }}
                   sx={{
                     objectFit: "cover",
                     position: "relative",
@@ -67,46 +68,25 @@ function Banner() {
                   alt={step.label}
                 />
                 <Box
+                  component="img"
+                  height={{ xs: "120vh", sm: "130vh" }}
+                  display={{ xs: "block", sm: "none" }}
+                  sx={{
+                    objectFit: "cover",
+                    position: "relative",
+                    overflow: "hidden",
+                    width: "100%",
+                  }}
+                  src={banner2}
+                  alt={step.label}
+                />
+                <Box
                   paddingBottom={"3%"}
                   position={"absolute"}
-                  top={{ xs: "18%", sm: "29%" }}
+                  top={{ xs: "45%", sm: "49%" }}
+                  marginLeft={{ xs: "0%", sm: "0%" }}
                   width={"100%"}
                 >
-                  <Typography
-                    color={"#F89521"}
-                    variant="h2"
-                    fontWeight={700}
-                    align="center"
-                    paddingTop={{ xs: "10%", sm: "5%" }}
-                    // fontFamily={("Caveat", "cursive")}
-                  >
-                    Building People, Moulding Nations
-                  </Typography>
-                  <Typography
-                    color={"#fff"}
-                    variant="h6"
-                    fontWeight={700}
-                    align="center"
-                    paddingTop={{ xs: "3%", sm: "2%" }}
-                  >
-                    September 14, 2024
-                  </Typography>
-                  <Typography
-                    color={"#fff"}
-                    variant="h6"
-                    fontWeight={700}
-                    align="center"
-                  >
-                    Landmark Centre, Oniru, Victoria Island, Lagos
-                  </Typography>
-                  <Typography
-                    color={"#fff"}
-                    variant="h6"
-                    fontWeight={700}
-                    align="center"
-                  >
-                    Time: 9am - 5pm
-                  </Typography>
                   <Box
                     display={"flex"}
                     justifyContent={"center"}

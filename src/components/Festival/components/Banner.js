@@ -5,8 +5,8 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import banner1 from "../../../assets/banner/banner.jpg";
-import banner2 from "../../../assets/banner/rollup.jpg";
+import banner1 from "../../../assets/banner/banner1.jpg";
+import banner2 from "../../../assets/banner/rollup1.jpg";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -83,7 +83,7 @@ function Banner() {
                 <Box
                   paddingBottom={"3%"}
                   position={"absolute"}
-                  top={{ xs: "45%", sm: "49%" }}
+                  top={{ xs: "35%", sm: "78%" }}
                   marginLeft={{ xs: "0%", sm: "0%" }}
                   width={"100%"}
                 >
