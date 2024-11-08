@@ -72,34 +72,23 @@ const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
       width={"100%"}
-      marginBottom={{ xs: 2, sm: 0.5 }}
-      marginTop={{ xs: 2, sm: 0.5 }}
+      marginBottom={{ xs: 2, sm: 0 }}
+      marginTop={{ xs: 2, sm: 0 }}
       id="back-to-top-anchor"
     >
       <Box
         sx={{ display: { xs: "none", md: "flex" } }}
         marginLeft={{ xs: "0%", sm: "0%" }}
+        width={"20%"}
       >
-        <Box component="a" underline="none" href="/" title="Tracka@10">
-          <Box
-            component="img"
-            height={"11vh"}
-            sx={{
-              display: "block",
-              position: "relative",
-              overflow: "hidden",
-              objectFit: "cover",
-              width: "100%",
-            }}
-            src={logo}
-            alt={"logo"}
-          />
+        <Box component="a" underline="none" href="/" title="Eco-Cyclers">
+          <img src={logo} alt="logo" width={"50%"} />
         </Box>
       </Box>
       <Box
         display="flex"
         alignItems={"center"}
-        width={{ xs: "100%", sm: "50%" }}
+        width={{ xs: "100%", sm: "65%" }}
         justifyContent={"space-between"}
         marginRight={{ xs: "0%", sm: "0%" }}
       >
@@ -114,44 +103,55 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/about-tracka"
-              color={"#F89521"}
+              href="/about-us"
+              color={"#4CAF50"}
               fontWeight={700}
             >
-              About Tracka
+              About Us
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/our-success-stories"
-              color={"#F89521"}
+              href="/trash-calculator"
+              color={"#4CAF50"}
               fontWeight={700}
             >
-              Success Stories
+              Trash Calculator
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/active-citizens-festival"
-              color={"#F89521"}
+              href="/resources/gallery"
+              color={"#4CAF50"}
               fontWeight={700}
             >
-              The Festival
+              Resources
             </Link>
           </Box>
           <Box>
             <Link
               underline="none"
               component="a"
-              href="/blog"
-              color="#F89521"
+              href="/our-gallery"
+              color={"#4CAF50"}
               fontWeight={700}
             >
-              Blog
+              Our Gallery
+            </Link>
+          </Box>
+          <Box>
+            <Link
+              underline="none"
+              component="a"
+              href="/contact-us"
+              color="#4CAF50"
+              fontWeight={700}
+            >
+              Contact Us
             </Link>
           </Box>
         </Box>
@@ -169,21 +169,21 @@ const Header = () => {
                   component="a"
                   underline="none"
                   href="/"
-                  title="Tracka@10 "
-                  width={155}
-                  marginRight={20}
-                  marginTop={1}
-                  marginBottom={1}
+                  title="Eco-Cyclers"
+                  width={"100%"}
+                  marginRight={22}
+                  marginTop={2}
+                  marginBottom={2}
                 >
                   <Box
                     component="img"
-                    height={"12vh"}
+                    height={"90px"}
                     sx={{
                       display: "block",
                       position: "relative",
                       overflow: "hidden",
                       objectFit: "cover",
-                      width: "90%",
+                      width: "100%",
                     }}
                     src={logo}
                     alt={"logo"}
@@ -192,7 +192,7 @@ const Header = () => {
                 {["right"].map((anchor) => (
                   <React.Fragment key={anchor}>
                     <IconButton onClick={toggleDrawer(anchor, true)}>
-                      <MenuIcon fontSize="large" sx={{ color: "#F89521" }} />
+                      <MenuIcon fontSize="large" sx={{ color: "#9DCC49" }} />
                     </IconButton>
                     <SwipeableDrawer
                       anchor={anchor}
@@ -202,7 +202,7 @@ const Header = () => {
                     >
                       <DrawerHeader>
                         <IconButton onClick={handleDrawerClose}>
-                          <CloseIcon sx={{ color: "#F89521" }} />
+                          <CloseIcon sx={{ color: "#9DCC49" }} />
                         </IconButton>
                       </DrawerHeader>
                       <Divider />

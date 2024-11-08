@@ -4,15 +4,15 @@ import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
-import Story from "./components/Story";
-import Festival from "./components/Festival";
 import About from "./components/About";
-import Blog from "./components/Blog";
+import Calculator from "./components/Calculator";
+import Resources from "./components/Resources";
+import Contact from "./components/Contact";
 
 const theme = createTheme({
   typography: {
     fontFamily: {
-      fontFamily: "Quicksand",
+      fontFamily: "Noto Sans",
     },
   },
 });
@@ -23,14 +23,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <div className="App">
           <Switch>
-            <Route exact path="/blog" component={Blog} />
-            <Route
-              exact
-              path="/active-citizens-festival"
-              component={Festival}
-            />
-            <Route exact path="/our-success-stories" component={Story} />
-            <Route path="/about-tracka" component={About} />
+            <Route path="/contact-us" component={Contact} />
+            <Route path="/resources" component={Resources} />
+            <Route exact path="/trash-calculator" component={Calculator} />
+            <Route exact path="/about-us" component={About} />
             <Route exact path="/" component={Home} />
           </Switch>
         </div>

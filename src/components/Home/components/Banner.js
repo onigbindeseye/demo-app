@@ -1,113 +1,146 @@
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
 import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import banner1 from "../../../assets/banner/banner.jpg";
-import banner2 from "../../../assets/banner/rollup.jpg";
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import Typography from "@mui/material/Typography";
+import banner1 from "../../../assets/banner/banner1.jpg";
+import Container from "../../../common/Container";
 
 const ColorButton = styled(Button)(() => ({
   color: "#fff",
-  width: 200,
+  width: 180,
   height: 55,
   fontWeight: 700,
   fontSize: "16px",
   textTransform: "capitalize",
-  backgroundColor: "#F89521",
-  borderColor: "3px solid #F89521",
+  backgroundColor: "#3CAB34",
+  borderColor: "#3CAB34",
   "&:hover": {
     color: "#fff",
-    backgroundColor: "#B84028",
-    borderColor: "#B84028",
+    backgroundColor: "#9ACB34",
+    borderColor: "#9ACB34",
   },
 }));
 
-const images = [
-  {
-    label: "banner_image1",
-    imgPath: banner1,
-  },
-];
-
 function Banner() {
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-
-  const handleStepChange = (step) => {
-    setActiveStep(step);
-  };
-
   return (
-    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "15%", sm: "0%" }}>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-        interval={5000}
-      >
-        {images.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Box>
-                <Box
-                  component="img"
-                  height={{ xs: "30vh", sm: "130vh" }}
-                  display={{ xs: "none", sm: "block" }}
-                  sx={{
-                    objectFit: "cover",
-                    position: "relative",
-                    overflow: "hidden",
-                    width: "100%",
-                  }}
-                  src={step.imgPath}
-                  alt={step.label}
-                />
-                <Box
-                  component="img"
-                  height={{ xs: "120vh", sm: "130vh" }}
-                  display={{ xs: "block", sm: "none" }}
-                  sx={{
-                    objectFit: "cover",
-                    position: "relative",
-                    overflow: "hidden",
-                    width: "100%",
-                  }}
-                  src={banner2}
-                  alt={step.label}
-                />
-                <Box
-                  paddingBottom={"3%"}
-                  position={"absolute"}
-                  top={{ xs: "45%", sm: "49%" }}
-                  marginLeft={{ xs: "0%", sm: "0%" }}
-                  width={"100%"}
-                >
-                  <Box
-                    display={"flex"}
-                    justifyContent={"center"}
-                    marginTop={{ xs: "10%", sm: "2%" }}
-                  >
-                    <ColorButton
-                      component={"a"}
-                      variant="contained"
-                      size="medium"
-                      target={"_blank"}
-                      href={"https://forms.gle/up29j1w3wSX8bPEZ9"}
-                    >
-                      Register
-                    </ColorButton>
-                  </Box>
-                </Box>
+    <Box sx={{ flexGrow: 1 }} marginTop={{ xs: "5%", sm: "0%" }}>
+      <Box>
+        <Box
+          component="img"
+          height={{ xs: "110vh", sm: "100vh" }}
+          display={{ xs: "none", sm: "block" }}
+          sx={{
+            objectFit: "cover",
+            position: "relative",
+            overflow: "hidden",
+            width: "100%",
+          }}
+          src={banner1}
+          alt={"banner"}
+        />
+        <Container>
+          <Box
+            paddingBottom={"3%"}
+            position={"absolute"}
+            top={{ xs: "32%", sm: "50%" }}
+            marginLeft={{ xs: "0%", sm: "0%" }}
+            width={{ xs: "90%", sm: "50%" }}
+          >
+            {" "}
+            <Typography
+              variant="h2"
+              color="#fff"
+              fontWeight={800}
+              textAlign={"left"}
+            >
+              Join hands, Let's take Climate Action Together!
+            </Typography>
+            <Box margin={{ xs: "4% 0%", sm: "2% 0%" }}>
+              <ColorButton
+                component={"a"}
+                variant="contained"
+                size="medium"
+                href={"/about-us"}
+              >
+                Read More
+              </ColorButton>
+            </Box>
+          </Box>
+          <Box
+            position={"absolute"}
+            top={{ xs: "15%", sm: "90%" }}
+            // marginLeft={{ xs: "0%", sm: "0%" }}
+            width={{ xs: "100%", sm: "70%" }}
+            display={{ xs: "none", sm: "block" }}
+          >
+            <Box
+              display={"flex"}
+              alignItems={"center"}
+              flexWrap={"wrap"}
+              margin={{ xs: " 0%", sm: "0% 0% 4% 0%" }}
+            >
+              <Box
+                padding={{ xs: "3%", sm: "5%" }}
+                width={{ xs: "100%", sm: "33%" }}
+                margin={{ xs: "0%", sm: "4% 0%" }}
+                bgcolor={"#3CAB34"}
+                color={"#fff"}
+              >
+                <Typography variant={"h5"} fontWeight={700} paddingTop={"6%"}>
+                  Community-Centered Model
+                </Typography>
+                <Typography variant={"subtitle2"} paddingTop={"6%"}>
+                  We actively engages local communities through educational
+                  programs, and partnerships with businesses and schools,
+                  fostering a shared commitment to sustainable waste management.
+                </Typography>
               </Box>
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
+              <Box
+                width={{ xs: "100%", sm: "33%" }}
+                height={"100%"}
+                padding={{ xs: "3%", sm: "5%" }}
+                margin={{ xs: "4% 0%", sm: "4% 0%" }}
+                bgcolor={"#fff"}
+              >
+                <Typography
+                  variant={"h5"}
+                  fontWeight={700}
+                  paddingTop={"6%"}
+                  color={"#3CAB34"}
+                >
+                  Eco-Friendly Innovations
+                </Typography>
+                <Typography variant={"subtitle2"} paddingTop={"6%"}>
+                  By employing unique recycling techniques and innovative tools,
+                  Eco Cyclers maximizes the positive environmental impact of its
+                  waste management initiatives.
+                </Typography>
+              </Box>
+              <Box
+                padding={{ xs: "3%", sm: "5%" }}
+                width={{ xs: "100%", sm: "33%" }}
+                margin={{ xs: "4% 0%", sm: "4% 0%" }}
+                bgcolor={"#fff"}
+              >
+                <Typography
+                  variant={"h5"}
+                  fontWeight={700}
+                  paddingTop={"6%"}
+                  color={"#3CAB34"}
+                >
+                  Behavioral Change Campaigns
+                </Typography>
+                <Typography variant={"subtitle2"} paddingTop={"6%"}>
+                  Through targeted campaigns, we promotes waste reduction,
+                  responsible consumption, and environmental responsibility,
+                  inspiring lasting shifts in public perception and behavior.
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </Container>
+      </Box>
     </Box>
   );
 }

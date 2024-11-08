@@ -7,18 +7,19 @@ import Avatar from "@mui/material/Avatar";
 import { blue, red } from "@mui/material/colors";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Divider } from "@mui/material";
-import logo from "../../assets/logos/logo3.png";
+import EmailIcon from "@mui/icons-material/Email";
+import logo from "../../assets/logos/logo.png";
 
 const Footer = () => {
   return (
-    <Grid container spacing={1} marginTop={2}>
+    <Grid container spacing={1} marginTop={5}>
       <Grid item xs={12} sm={6} md={12} marginBottom={2}>
         <Box
           display={"flex"}
           justifyContent={"space-between"}
-          alignItems={"center"}
           width={{ xs: "100%", sm: "100%" }}
           flexDirection={{ xs: "column", sm: "row" }}
         >
@@ -26,7 +27,7 @@ const Footer = () => {
             display="flex"
             flexWrap={"wrap"}
             alignItems={"left"}
-            flexDirection={"row"}
+            flexDirection={"column"}
             width={{ xs: "90%", sm: "35%" }}
             marginLeft={{ xs: "5%", sm: "0%" }}
           >
@@ -34,185 +35,300 @@ const Footer = () => {
               component="a"
               underline="none"
               href="/"
-              title="Tracka@10"
+              title="Blue Echo Foundation"
               marginLeft={{ xs: "0%", sm: "0%" }}
             >
-              <img src={logo} alt="logo" width={"90%"} />
+              <img src={logo} alt="logo" width={"50%"} />
             </Box>
+            <Typography
+              color="#4f4f4f"
+              variant={"body1"}
+              paddingTop={"2%"}
+              fontWeight={700}
+              paddingRight={{ xs: "0%", sm: "5%" }}
+            >
+              Join hands, Let’s take Climate Action Together!
+            </Typography>
           </Box>
           <Box
             display="flex"
             flexWrap={"wrap"}
             justifyContent={"space-between"}
-            width={{ xs: "95%", sm: "40%" }}
+            width={{ xs: "95%", sm: "100%" }}
             flexDirection={{ xs: "column", sm: "row" }}
-            marginTop={{ xs: "7%", sm: "0%" }}
-            marginRight={{ xs: "0%", sm: "0%" }}
-            paddingLeft={{ xs: "5%", sm: "0%" }}
+            marginLeft={{ xs: "0%", sm: "5%" }}
+            marginBottom={2}
           >
-            <Link
-              underline="none"
-              component="a"
-              href="/our-success-stories"
-              color="#025066"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              paddingRight={{ xs: "0%", sm: "3%" }}
-              sx={{
-                "&:hover": {
-                  color: "#F89521",
-                },
-              }}
+            <Box
+              display="flex"
+              flexWrap={"wrap"}
+              flexDirection={"column"}
+              marginTop={{ xs: "10%", sm: "0%" }}
+              width={{ xs: "90%", sm: "25%" }}
             >
-              Our Impact
-            </Link>
-            <Link
-              underline="none"
-              component="a"
-              href="/active-citizens-festival"
-              color="#025066"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              paddingRight={{ xs: "0%", sm: "3%" }}
-              sx={{
-                "&:hover": {
-                  color: "#F89521",
-                },
-              }}
+              <Typography
+                sx={{ textTransform: "capitalize", fontWeight: 700 }}
+                gutterBottom
+                color={"#000"}
+                align={"left"}
+                variant={"body1"}
+                paddingBottom={{ xs: "2%", sm: "4%" }}
+              >
+                Information
+              </Typography>
+              <Link
+                underline="none"
+                component="a"
+                href="/about-us"
+                color="#4f4f4f"
+                variant={"body1"}
+                fontWeight={500}
+                paddingBottom={{ xs: "2%", sm: "2%" }}
+                lineHeight={2}
+                sx={{
+                  "&:hover": {
+                    color: "#9DCC49",
+                  },
+                }}
+              >
+                About Us
+              </Link>
+              <Link
+                underline="none"
+                component="a"
+                href="#"
+                color="#4f4f4f"
+                variant={"body1"}
+                fontWeight={500}
+                paddingBottom={{ xs: "2%", sm: "2%" }}
+                lineHeight={2}
+                sx={{
+                  "&:hover": {
+                    color: "#9DCC49",
+                  },
+                }}
+              >
+                Blog
+              </Link>
+              <Link
+                underline="none"
+                component="a"
+                href="/our-team"
+                color="#4f4f4f"
+                variant={"body1"}
+                fontWeight={500}
+                paddingBottom={{ xs: "2%", sm: "2%" }}
+                lineHeight={2}
+                sx={{
+                  "&:hover": {
+                    color: "#9DCC49",
+                  },
+                }}
+              >
+                Our Team
+              </Link>
+              <Link
+                underline="none"
+                component="a"
+                href="/our-impact"
+                color="#4f4f4f"
+                variant={"body1"}
+                fontWeight={500}
+                paddingBottom={{ xs: "2%", sm: "2%" }}
+                lineHeight={2}
+                sx={{
+                  "&:hover": {
+                    color: "#9DCC49",
+                  },
+                }}
+              >
+                Our Impact
+              </Link>
+            </Box>
+            <Box
+              display="flex"
+              flexWrap={"wrap"}
+              flexDirection={"column"}
+              marginTop={{ xs: "10%", sm: "0%" }}
+              width={{ xs: "90%", sm: "25%" }}
+              alignItems={"flex-start"}
             >
-              The Festival
-            </Link>
-            <Link
-              underline="none"
-              component="a"
-              target={"_blank"}
-              href={"https://forms.gle/up29j1w3wSX8bPEZ9"}
-              color="#025066"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              paddingRight={{ xs: "0%", sm: "3%" }}
-              sx={{
-                "&:hover": {
-                  color: "#F89521",
-                },
-              }}
+              <Typography
+                sx={{ textTransform: "capitalize", fontWeight: 700 }}
+                gutterBottom
+                color={"#000"}
+                align={"left"}
+                variant={"body1"}
+                paddingBottom={{ xs: "5%", sm: "4%" }}
+              >
+                Useful Links
+              </Typography>
+              <Link
+                underline="none"
+                component="a"
+                href="/trash-calculator"
+                color="#000"
+                variant={"body1"}
+                fontWeight={500}
+                paddingBottom={{ xs: "2%", sm: "2%" }}
+                lineHeight={2}
+                sx={{
+                  "&:hover": {
+                    color: "#9DCC49",
+                  },
+                }}
+              >
+                Trash Calculator
+              </Link>
+            </Box>
+            <Box
+              width={{ xs: "70%", sm: "20%" }}
+              marginLeft={{ xs: "5%", sm: "0%" }}
+              marginTop={{ xs: "10%", sm: "0%" }}
             >
-              Register
-            </Link>
-            <Link
-              underline="none"
-              component="a"
-              href="/blog"
-              color="#025066"
-              variant={"body1"}
-              fontWeight={500}
-              paddingBottom={{ xs: "5%", sm: "2%" }}
-              sx={{
-                "&:hover": {
-                  color: "#F89521",
-                },
-              }}
-            >
-              Blog
-            </Link>
+              <Typography
+                sx={{ textTransform: "capitalize", fontWeight: 700 }}
+                gutterBottom
+                color={"#000"}
+                align={"left"}
+                variant={"body1"}
+              >
+                Contact
+              </Typography>
+              <Box
+                display={"flex"}
+                alignItems={"center"}
+                justifyContent={"space-between"}
+                marginLeft={{ xs: "0%", sm: "0%" }}
+                paddingBottom={{ xs: "4%", sm: "15%" }}
+                width={{ xs: "70%", sm: "100%" }}
+              >
+                <EmailIcon
+                  sx={{
+                    color: "#9DCC49",
+                    width: 23,
+                    height: 23,
+                  }}
+                />{" "}
+                <Typography
+                  variant="body1"
+                  color={"#4f4f4f"}
+                  textAlign={"left"}
+                >
+                  {" "}
+                  info@ecocyclers.org
+                </Typography>
+              </Box>
+              <Box
+                display={"flex"}
+                justifyContent={"space-between"}
+                alignItems={"center"}
+                marginTop={{ xs: "4%", sm: "0%" }}
+              >
+                <Box
+                  display={"flex"}
+                  component="a"
+                  underline="none"
+                  target={"_blank"}
+                  href="https://x.com/EcoCyclers"
+                  title="Twitter"
+                >
+                  <Avatar
+                    sx={{
+                      bgcolor: "#000",
+                      width: 36,
+                      height: 36,
+                      "&:hover": {
+                        bgcolor: "#000",
+                      },
+                    }}
+                  >
+                    <XIcon />
+                  </Avatar>
+                </Box>
+                <Box
+                  display={"flex"}
+                  component="a"
+                  underline="none"
+                  target={"_blank"}
+                  href="https://www.facebook.com/ecoenvironmentng"
+                  title="Facebook"
+                >
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[900],
+                      width: 36,
+                      height: 36,
+                      "&:hover": {
+                        bgcolor: blue[900],
+                      },
+                    }}
+                  >
+                    <FacebookIcon />
+                  </Avatar>
+                </Box>
+                <Box
+                  display={"flex"}
+                  component="a"
+                  underline="none"
+                  target={"_blank"}
+                  href="https://www.linkedin.com/in/eco-cyclers-44a13b283"
+                  title="LinkedIn"
+                >
+                  <Avatar
+                    sx={{
+                      bgcolor: blue[700],
+                      width: 36,
+                      height: 36,
+                      "&:hover": {
+                        bgcolor: blue[700],
+                      },
+                    }}
+                  >
+                    <LinkedInIcon />
+                  </Avatar>
+                </Box>
+                <Box
+                  display={"flex"}
+                  component="a"
+                  underline="none"
+                  target={"_blank"}
+                  href="https://www.instagram.com/eco_cyclers"
+                  title="Instagram"
+                >
+                  <Avatar
+                    sx={{
+                      bgcolor: red[600],
+                      width: 36,
+                      height: 36,
+                      "&:hover": {
+                        bgcolor: red[600],
+                      },
+                    }}
+                  >
+                    <InstagramIcon />
+                  </Avatar>
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Box>
       </Grid>
       <Grid item xs={12}>
-        <Divider color={"#F89521"} />
+        <Divider color={"#4CAF50"} />
         <Box
           display="flex"
           justifyContent={"space-between"}
           alignItems={"center"}
           flexWrap={"wrap"}
           width={"100%"}
-          marginTop={{ xs: "10%", sm: "3%" }}
+          marginTop={"3%"}
         >
-          <Box
-            width={{ xs: "60%", sm: "70%" }}
-            marginLeft={{ xs: "3%", sm: "0%" }}
-            marginTop={{ xs: "7%", sm: "0%" }}
-          >
-            <Typography align={"left"} variant={"subtitle2"} color="#025066">
-              &copy;{new Date().getFullYear()} Tracka. All rights reserved
+          <Box width={{ xs: "100%", sm: "100%" }}>
+            <Typography align={"center"} variant={"subtitle2"} color="#4f4f4f">
+              &copy;{new Date().getFullYear()} Eco-Cyclers Foundation. All
+              rights reserved
             </Typography>
-          </Box>
-          <Box
-            display={"flex"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            flexDirection={{ xs: "row", sm: "row" }}
-            width={{ xs: "36%", sm: "15%" }}
-            marginRight={{ xs: "0%", sm: "0%" }}
-            marginTop={{ xs: "4%", sm: "0%" }}
-          >
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://twitter.com/TrackaNG"
-              title="X"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#F89521",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: "#000",
-                  },
-                }}
-              >
-                <XIcon />
-              </Avatar>
-            </Box>
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://web.facebook.com/trackanigeria/?_rdc=1&_rdr"
-              title="Facebook"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#F89521",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: blue[900],
-                  },
-                }}
-              >
-                <FacebookIcon />
-              </Avatar>
-            </Box>
-
-            <Box
-              display={"flex"}
-              component="a"
-              underline="none"
-              target={"_blank"}
-              href="https://www.instagram.com/tracka_ng"
-              title="Instagram"
-            >
-              <Avatar
-                sx={{
-                  bgcolor: "#F89521",
-                  width: 36,
-                  height: 36,
-                  "&:hover": {
-                    bgcolor: red[800],
-                  },
-                }}
-              >
-                <InstagramIcon />
-              </Avatar>
-            </Box>
           </Box>
         </Box>
       </Grid>
