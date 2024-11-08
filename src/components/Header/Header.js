@@ -110,17 +110,7 @@ const Header = () => {
               About Us
             </Link>
           </Box>
-          <Box>
-            <Link
-              underline="none"
-              component="a"
-              href="/trash-calculator"
-              color={"#4CAF50"}
-              fontWeight={700}
-            >
-              Trash Calculator
-            </Link>
-          </Box>
+
           <Box>
             <Link
               underline="none"
@@ -136,11 +126,11 @@ const Header = () => {
             <Link
               underline="none"
               component="a"
-              href="/our-gallery"
+              href="/trash-calculator"
               color={"#4CAF50"}
               fontWeight={700}
             >
-              Our Gallery
+              Trash Calculator
             </Link>
           </Box>
           <Box>
