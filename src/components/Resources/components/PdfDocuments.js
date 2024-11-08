@@ -7,7 +7,7 @@ const PdfDocuments = () => {
     <Box>
       <Typography
         variant="h4"
-        color="#071783"
+        color="#3CAB34"
         sx={{ fontWeight: 400 }}
         paddingTop={"3%"}
       >
